@@ -337,9 +337,6 @@ function backBtn() {
 function shareText(score) {
     var date2 = new Date();
     deviation_time = (date2.getTime() - _date1.getTime())
-    if (deviation_time > 23000) {
-        return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
-    }
     SubmitResults();
     if (score <= 49) return 'AvavaAVA';
     if (score <= 99) return '给你一拳！';
