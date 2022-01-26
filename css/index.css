@@ -1,0 +1,153 @@
+* {
+    /* 页面初始化 清除元素的内外边距 */
+    padding: 0;
+    margin: 0;
+    /* 盒子模型 */
+    box-sizing: border-box;
+}
+
+body {
+    /* 弹性布局 让页面元素垂直+水平居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 让页面高度占浏览器可视区域的高度 */
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 外边距 上下为0  左右为10px */
+    margin: 0 10px;
+    background-color: #fff;
+    /* 盒子阴影 */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+}
+
+.container table {
+    /* 让表格的边框合并在一起 */
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+    border-collapse: collapse;
+}
+
+
+/* 在做pc端 不注释掉看不到效果 */
+
+.container table thead tr th {
+    color: rgb(238, 115, 66);
+    background-color: rgb(254, 212, 190);
+}
+
+
+/* 还是取单数 */
+
+.container table thead tr th:nth-child(odd) {
+    color: rgb(254, 243, 238);
+    background-color: rgb(252, 150, 109);
+}
+
+
+/* 课表内容*/
+
+#c1202 {
+    background-color: rgb(154, 200, 226);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#c1168 {
+    background-color: rgb(251, 97, 87);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#c1172 {
+    background-color: rgb(203, 186, 228);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#c1231 {
+    background-color: rgb(255, 138, 170);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#c1027 {
+    background-color: rgb(86, 101, 143);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#c3044 {
+    background-color: rgb(162, 141, 218);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.container table thead tr th,
+.container table tbody tr td {
+    text-align: center;
+    /* 先不加 大屏就正常了 */
+    padding: 20px 20px;
+}
+
+.container table tbody tr td {
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.container table tbody tr:nth-child(odd) {
+    background-color: rgba(254, 243, 238, 0.5);
+}
+
+
+/* 先做移动端 */
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(sbg.jpg);
+    }
+    table {
+        table-layout: fixed !important;
+        width: 100% !important;
+        border-collapse: collapse;
+        border: none;
+        font-size: 0.1rem;
+    }
+    .container table thead tr th,
+    .container table tbody tr td {
+        text-align: center;
+        padding: 5px 5px;
+        font-size: 0.5em;
+    }
+    td,
+    th {
+        overflow: hidden;
+        width: 1px;
+        white-space: nowrap;
+        /* 自适应宽度*/
+        word-break: keep-all;
+        /* 避免长单词截断，保持全部 */
+        border: solid #676767 0px;
+        text-align: center;
+        white-space: pre-line;
+        /*word-break: break-all !important;
+        word-wrap: break-word !important;*/
+        display: table-cell;
+        vertical-align: middle !important;
+        white-space: normal !important;
+        height: auto;
+        vertical-align: text-top;
+        padding: 2px 2px 0 2px;
+        display: table-cell;
+    }
+}
+
+
+/* 媒体查询 当页面宽度小于765px时执行里面的代码 */
