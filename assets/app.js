@@ -135,7 +135,17 @@ function renderCards() {
         editAnchor.rel = 'noopener noreferrer';
         editAnchor.textContent = '编辑';
 
-        actions.append(copyBtn, editAnchor);
+        const deleteBtn = document.createElement('button');
+        deleteBtn.className = 'card-action-btn danger';
+        deleteBtn.type = 'button';
+        deleteBtn.textContent = '删除';
+        deleteBtn.title = '删除收藏';
+        deleteBtn.addEventListener('click', () => {
+            const confirmed = confirm(`确定删除“${link.title || '未命名收藏'}”？`);
+            if (confirmed) deleteLink(link);
+        });
+
+        actions.append(copyBtn, editAnchor, deleteBtn);
 
         const heading = document.createElement('h3');
         const anchor = document.createElement('a');
@@ -371,6 +381,12 @@ function updateJsonOutput() {
         links: state.links
     };
     elements.jsonOutput.value = JSON.stringify(payload, null, 2);
+}
+
+function deleteLink(target) {
+    state.links = state.links.filter(link => link !== target);
+    renderAll();
+    showToast('收藏已删除');
 }
 
 function setupJsonCopy() {

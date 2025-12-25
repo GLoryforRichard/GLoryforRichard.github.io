@@ -244,6 +244,16 @@ html[data-theme='dark'] .card-action-btn {
     color: var(--text);
 }
 
+.card-action-btn.danger {
+    color: #dc2626;
+    border-color: rgba(220, 38, 38, 0.35);
+}
+
+html[data-theme='dark'] .card-action-btn.danger {
+    color: #fca5a5;
+    border-color: rgba(251, 113, 133, 0.5);
+}
+
 .empty-state {
     text-align: center;
     margin: 40px 0;
