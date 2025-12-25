@@ -1,0 +1,42 @@
+{
+  "tags_config": [
+    { "name": "开发", "color": "#3B82F6" },
+    { "name": "设计", "color": "#EC4899" },
+    { "name": "生产力", "color": "#14B8A6" },
+    { "name": "阅读", "color": "#F97316" },
+    { "name": "灵感", "color": "#6366F1" },
+    { "name": "CSS", "color": "#0EA5E9" }
+  ],
+  "links": [
+    {
+      "title": "Tailwind CSS",
+      "url": "https://tailwindcss.com",
+      "desc": "原子化 CSS 框架，快速构建定制 UI",
+      "tags": ["开发", "CSS"]
+    },
+    {
+      "title": "Figma",
+      "url": "https://www.figma.com",
+      "desc": "云端协作设计工具",
+      "tags": ["设计", "灵感"]
+    },
+    {
+      "title": "Notion",
+      "url": "https://www.notion.so",
+      "desc": "多合一知识与任务工作区",
+      "tags": ["生产力"]
+    },
+    {
+      "title": "Awwwards",
+      "url": "https://www.awwwards.com",
+      "desc": "优秀网站与创意灵感集合",
+      "tags": ["灵感", "设计"]
+    },
+    {
+      "title": "MDN Web Docs",
+      "url": "https://developer.mozilla.org",
+      "desc": "Web 开发标准文档",
+      "tags": ["开发", "阅读"]
+    }
+  ]
+}

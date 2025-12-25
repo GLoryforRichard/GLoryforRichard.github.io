@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans" data-theme="light">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://www.notion.so/Time-Table-cc36a31159ec48029d64e0f5f47b24f0">
-    <title>Weekly Timetable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="极简白收藏夹 Minimalist Tag-Link Hub">
+    <title>极简白收藏夹 · Minimalist Tag-Link Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
 </head>
 <body>
-    如果您的浏览器没有自动跳转，请点击 <a href="https://www.notion.so/Weekly-Upcoming-Due-b35b6ab2a52b48ca84e35a5dbb1b9ae3">这里</a>。
+    <noscript>
+        <div class="noscript">请启用 JavaScript 以体验极简白收藏夹。</div>
+    </noscript>
+    <div class="app-shell">
+        <header class="app-header">
+            <div class="title-stack">
+                <p class="eyebrow">Minimalist Tag-Link Hub</p>
+                <h1>极简白收藏夹</h1>
+            </div>
+            <div class="header-actions">
+                <button class="ghost-btn" id="themeToggle" aria-label="切换夜间模式" title="切换夜间模式">
+                    <span class="icon" aria-hidden="true">🌙</span>
+                </button>
+            </div>
+        </header>
+        <section class="search-section">
+            <label for="searchInput" class="sr-only">搜索收藏</label>
+            <div class="search-input">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4a7 7 0 0 1 5.523 11.192l4.142 4.142-1.414 1.414-4.142-4.142A7 7 0 1 1 11 4Zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"/></svg>
+                <input type="search" id="searchInput" placeholder="搜索标题、描述或标签 (⌘K / Ctrl+K)" autocomplete="off">
+            </div>
+        </section>
+        <section class="tag-section">
+            <div class="section-title">标签</div>
+            <div class="tag-bar" id="tagBar" role="listbox" aria-label="标签筛选"></div>
+        </section>
+        <main class="card-grid" id="cardGrid" aria-live="polite"></main>
+        <div class="empty-state" id="emptyState" hidden>
+            <p>未找到匹配的收藏。</p>
+            <button class="secondary-btn" id="clearFilters">重置筛选</button>
+        </div>
+        <footer class="app-footer">Powered by GitHub Pages</footer>
+    </div>
+
+    <button class="config-fab" id="configBtn" aria-haspopup="dialog" aria-controls="configPanel">配置</button>
+
+    <div class="config-overlay" id="configOverlay" aria-hidden="true">
+        <div class="config-panel" role="dialog" aria-modal="true" aria-labelledby="configTitle" id="configPanel">
+            <div class="config-header">
+                <div>
+                    <p class="eyebrow">Data Studio</p>
+                    <h2 id="configTitle">管理 JSON 数据</h2>
+                </div>
+                <button class="ghost-btn" id="configClose" aria-label="关闭配置面板">✕</button>
+            </div>
+            <div class="config-body">
+                <section>
+                    <h3>标签设置</h3>
+                    <form id="tagForm">
+                        <div class="form-group">
+                            <label for="tagName">标签名称</label>
+                            <input type="text" id="tagName" required maxlength="20" placeholder="如：开发">
+                        </div>
+                        <div class="form-group">
+                            <span>标签颜色</span>
+                            <div class="color-swatch-row" id="colorSwatches"></div>
+                            <input type="color" id="tagColorPicker" class="sr-only" aria-label="自定义颜色">
+                        </div>
+                        <button class="primary-btn" type="submit">添加 / 更新标签</button>
+                    </form>
+                    <div class="config-list" id="tagConfigList"></div>
+                </section>
+                <section>
+                    <h3>新增收藏</h3>
+                    <form id="linkForm">
+                        <div class="form-group">
+                            <label for="linkTitle">标题</label>
+                            <input type="text" id="linkTitle" required placeholder="Tailwind CSS">
+                        </div>
+                        <div class="form-group">
+                            <label for="linkUrl">链接</label>
+                            <input type="url" id="linkUrl" required placeholder="https://tailwindcss.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="linkDesc">简介</label>
+                            <textarea id="linkDesc" rows="2" placeholder="一句话介绍"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <span>关联标签</span>
+                            <div class="tag-checkboxes" id="linkTagCheckboxes"></div>
+                        </div>
+                        <button class="primary-btn" type="submit">添加收藏</button>
+                    </form>
+                </section>
+                <section>
+                    <h3>导出 JSON</h3>
+                    <p>下方内容实时与当前视图同步，可复制到 <code>data.json</code>。</p>
+                    <textarea id="jsonOutput" readonly rows="10"></textarea>
+                    <div class="export-actions">
+                        <button class="secondary-btn" id="copyJson">复制 JSON</button>
+                        <a class="ghost-btn" href="https://github.com/GLoryforRichard/GLoryforRichard.github.io/blob/master/data.json" target="_blank" rel="noopener noreferrer">在 GitHub 中编辑源文件 →</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script type="module" src="assets/app.js"></script>
 </body>
 </html>
