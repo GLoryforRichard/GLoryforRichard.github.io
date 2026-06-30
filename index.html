@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPTs 词根 × Google Trends 看板</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --td-primary: #0052D9;
+      --td-primary-hover: #366EF4;
+      --td-success: #00A870;
+      --td-warning: #ED7B2F;
+      --td-gray: #8B8FA3;
+      --td-bg: #F3F3F3;
+      --td-card-bg: #FFFFFF;
+      --td-border: #E7E7E7;
+      --td-text: rgba(0,0,0,0.9);
+      --td-text-secondary: rgba(0,0,0,0.6);
+      --td-text-placeholder: rgba(0,0,0,0.4);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+      background: var(--td-bg);
+      min-height: 100vh;
+      padding: 24px 20px 48px;
+      color: var(--td-text);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      color: var(--td-text);
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: var(--td-text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 12px;
+      background: #E0EAFF;
+      color: var(--td-primary);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 3px 12px;
+      border-radius: 999px;
+    }
+
+    .progress-bar {
+      max-width: 1280px;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--td-card-bg);
+      border: 1px solid var(--td-border);
+      border-radius: 6px;
+      padding: 12px 16px;
+    }
+
+    .progress-track {
+      flex: 1;
+      height: 8px;
+      background: #EEEEEE;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--td-success);
+      border-radius: 999px;
+      transition: width 0.3s ease;
+      width: 0%;
+    }
+
+    .progress-text {
+      font-size: 0.82rem;
+      color: var(--td-text-secondary);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .reset-btn {
+      padding: 6px 16px;
+      border-radius: 4px;
+      border: 1px solid #FCA5A5;
+      background: #fff;
+      color: #D54941;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .reset-btn:hover {
+      background: #FEF2F2;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      max-width: 1280px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    .column {
+      background: #EBECF0;
+      border-radius: 8px;
+      padding: 12px;
+      min-height: 120px;
+      transition: background 0.15s;
+    }
+
+    .column.drag-over {
+      background: #DCE7FF;
+      outline: 2px dashed var(--td-primary);
+      outline-offset: -2px;
+    }
+
+    .column-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 6px 12px;
+    }
+
+    .column-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .column[data-status="todo"] .column-dot { background: var(--td-gray); }
+    .column[data-status="doing"] .column-dot { background: var(--td-primary); }
+    .column[data-status="done"] .column-dot { background: var(--td-success); }
+
+    .column-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--td-text);
+    }
+
+    .column-count {
+      margin-left: auto;
+      background: #fff;
+      color: var(--td-text-secondary);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 1px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--td-border);
+    }
+
+    .card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-height: 60px;
+    }
+
+    .card {
+      background: var(--td-card-bg);
+      border-radius: 6px;
+      padding: 14px 14px 12px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+      border-left: 3px solid var(--td-gray);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      cursor: grab;
+      transition: box-shadow 0.15s ease, transform 0.1s ease;
+    }
+
+    .card:active { cursor: grabbing; }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    .card.dragging {
+      opacity: 0.4;
+    }
+
+    .column[data-status="doing"] .card { border-left-color: var(--td-primary); }
+    .column[data-status="done"] .card { border-left-color: var(--td-success); }
+    .column[data-status="done"] .card { opacity: 0.85; }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-num {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #fff;
+      background: var(--td-primary);
+      padding: 2px 8px;
+      border-radius: 999px;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+    }
+
+    .column[data-status="done"] .card-num { background: var(--td-success); }
+
+    .card-range {
+      font-size: 0.72rem;
+      color: var(--td-text-placeholder);
+      font-weight: 500;
+    }
+
+    .keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .kw-tag {
+      display: inline-block;
+      background: #F5F5F5;
+      color: #334155;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid var(--td-border);
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .card-link {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 7px 8px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.74rem;
+      font-weight: 600;
+      transition: background 0.15s, opacity 0.15s;
+    }
+
+    .card-link.us {
+      background: var(--td-primary);
+      color: #fff;
+    }
+
+    .card-link.us:hover {
+      background: var(--td-primary-hover);
+    }
+
+    .card-link.worldwide {
+      background: #F5F5F5;
+      color: #334155;
+      border: 1px solid var(--td-border);
+    }
+
+    .card-link.worldwide:hover {
+      background: #E7E7E7;
+    }
+
+    .card-link svg {
+      flex-shrink: 0;
+      width: 12px;
+      height: 12px;
+    }
+
+    .move-group {
+      display: flex;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .move-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 5px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--td-border);
+      background: #fff;
+      color: var(--td-text-secondary);
+      font-size: 0.72rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .move-btn:hover {
+      border-color: var(--td-primary);
+      color: var(--td-primary);
+      background: #F0F5FF;
+    }
+
+    .move-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    .move-btn:disabled:hover {
+      border-color: var(--td-border);
+      color: var(--td-text-secondary);
+      background: #fff;
+    }
+
+    .empty-hint {
+      text-align: center;
+      padding: 20px 8px;
+      color: var(--td-text-placeholder);
+      font-size: 0.78rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      color: var(--td-text-placeholder);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 880px) {
+      .board {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔍 GPTs 词根 × Google Trends 看板</h1>
+  <p>每组 5 个词根，拖拽或点击箭头切换状态，点击按钮在 Google Trends 中对比查看</p>
+  <span class="badge">共 100 个词根 · 20 组 · 近 7 天 · 🇺🇸 US + 🌍 Worldwide</span>
+</header>
+
+<div class="progress-bar" id="progress-bar">
+  <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+  <span class="progress-text" id="progress-text">0 / 20 已完成</span>
+  <button class="reset-btn" id="reset-btn" onclick="resetAll()">全部重置</button>
+</div>
+
+<div class="board" id="board"></div>
+
+<footer>数据来源：Google Trends · 模板 by 哥飞</footer>
+
+<script>
+  const words = [
+    "Translator", "Generator", "Example", "Convert", "Online",
+    "Downloader", "Maker", "Creator", "Editor", "Processor",
+    "Designer", "Compiler", "Analyzer", "Evaluator", "Sender",
+    "Receiver", "Interpreter", "Uploader", "Calculator", "Sample",
+    "Template", "Format", "Builder", "Scheme", "Pattern",
+    "Checker", "Detector", "Scraper", "Manager", "Explorer",
+    "Dashboard", "Planner", "Tracker", "Recorder", "Optimizer",
+    "Scheduler", "Converter", "Viewer", "Extractor", "Monitor",
+    "Notifier", "Verifier", "Simulator", "Assistant", "Constructor",
+    "Comparator", "Navigator", "Syncer", "Connector", "Cataloger",
+    "Responder", "Humanizer", "Tester", "Answer", "Hint",
+    "Clue", "Cheat", "Solver", "Summarizer", "Transcriber",
+    "Paraphraser", "Writer", "Image", "Photo", "Picture",
+    "Face", "Emoji", "Meme", "Chart", "Graph",
+    "Style", "Filter", "Text", "Chat", "Code",
+    "Video", "Audio", "Voice", "Sound", "Speech",
+    "Song", "Music", "How to", "Icon", "Logo",
+    "Avatar", "Anime", "Portrait", "Product photo", "Cartoon",
+    "Tattoo", "Character", "Coloring page", "Action", "Figure",
+    "Diagram", "Font", "Illustration", "Interior design", "Upscaler"
+  ];
+
+  const groupSize = 5;
+  const totalGroups = Math.ceil(words.length / groupSize);
+  const STORAGE_KEY = "gpts-trends-kanban";
+  const LEGACY_KEY = "gpts-trends-done";
+
+  const STATUSES = [
+    { key: "todo",  label: "待办" },
+    { key: "doing", label: "进行中" },
+    { key: "done",  label: "已完成" }
+  ];
+
+  const groups = [];
+  for (let i = 0; i < words.length; i += groupSize) {
+    const group = words.slice(i, i + groupSize);
+    const groupIndex = Math.floor(i / groupSize) + 1;
+    const from = i + 1;
+    const to = Math.min(i + groupSize, words.length);
+    const q = group.map(w => encodeURIComponent(w)).join(",");
+    groups.push({
+      groupIndex,
+      from,
+      to,
+      words: group,
+      urlUS: `https://trends.google.com/trends/explore?date=now%207-d&geo=US&q=${q}&hl=en-CA`,
+      urlWorldwide: `https://trends.google.com/trends/explore?date=now%207-d&q=${q}&hl=en-CA`
+    });
+  }
+
+  function loadState() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      if (saved) return saved;
+    } catch {}
+
+    // 兼容旧版数据：之前只有"已完成"勾选记录
+    const state = {};
+    try {
+      const legacy = JSON.parse(localStorage.getItem(LEGACY_KEY)) || {};
+      groups.forEach(g => {
+        state[g.groupIndex] = legacy[g.groupIndex] ? "done" : "todo";
+      });
+    } catch {
+      groups.forEach(g => { state[g.groupIndex] = "todo"; });
+    }
+    return state;
+  }
+
+  let state = loadState();
+
+  function saveState() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  }
+
+  function statusOf(groupIndex) {
+    return state[groupIndex] || "todo";
+  }
+
+  function moveCard(groupIndex, newStatus) {
+    state[groupIndex] = newStatus;
+    saveState();
+    render();
+  }
+
+  function resetAll() {
+    if (!confirm("确定要重置所有卡片为「待办」吗？")) return;
+    groups.forEach(g => { state[g.groupIndex] = "todo"; });
+    saveState();
+    render();
+  }
+
+  const linkIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+    <polyline points="15 3 21 3 21 9"/>
+    <line x1="10" y1="14" x2="21" y2="3"/>
+  </svg>`;
+
+  function cardHtml(g) {
+    const status = statusOf(g.groupIndex);
+    const statusIdx = STATUSES.findIndex(s => s.key === status);
+    const prevStatus = STATUSES[statusIdx - 1];
+    const nextStatus = STATUSES[statusIdx + 1];
+    const tagsHtml = g.words.map(w => `<span class="kw-tag">${w}</span>`).join("");
+
+    return `
+      <div class="card" draggable="true"
+           data-group="${g.groupIndex}"
+           ondragstart="onDragStart(event, ${g.groupIndex})"
+           ondragend="onDragEnd(event)">
+        <div class="card-header">
+          <span class="card-num">Group ${g.groupIndex}</span>
+          <span class="card-range">#${g.from} – #${g.to}</span>
+        </div>
+        <div class="keywords">${tagsHtml}</div>
+        <div class="btn-group">
+          <a class="card-link us" href="${g.urlUS}" target="_blank" rel="noopener">${linkIcon} 🇺🇸 US</a>
+          <a class="card-link worldwide" href="${g.urlWorldwide}" target="_blank" rel="noopener">${linkIcon} 🌍 全球</a>
+        </div>
+        <div class="move-group">
+          <button class="move-btn" ${prevStatus ? "" : "disabled"} onclick="moveCard(${g.groupIndex}, '${prevStatus ? prevStatus.key : ""}')">
+            ← ${prevStatus ? prevStatus.label : ""}
+          </button>
+          <button class="move-btn" ${nextStatus ? "" : "disabled"} onclick="moveCard(${g.groupIndex}, '${nextStatus ? nextStatus.key : ""}')">
+            ${nextStatus ? nextStatus.label : ""} →
+          </button>
+        </div>
+      </div>
+    `;
+  }
+
+  function render() {
+    const board = document.getElementById("board");
+    board.innerHTML = STATUSES.map(s => {
+      const cardsInColumn = groups.filter(g => statusOf(g.groupIndex) === s.key);
+      const cardsHtml = cardsInColumn.length
+        ? cardsInColumn.map(cardHtml).join("")
+        : `<div class="empty-hint">暂无卡片</div>`;
+
+      return `
+        <div class="column" data-status="${s.key}"
+             ondragover="onDragOver(event)"
+             ondragleave="onDragLeave(event)"
+             ondrop="onDrop(event, '${s.key}')">
+          <div class="column-header">
+            <span class="column-dot"></span>
+            <span class="column-title">${s.label}</span>
+            <span class="column-count">${cardsInColumn.length}</span>
+          </div>
+          <div class="card-list">${cardsHtml}</div>
+        </div>
+      `;
+    }).join("");
+
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const doneCount = groups.filter(g => statusOf(g.groupIndex) === "done").length;
+    document.getElementById("progress-text").textContent = `${doneCount} / ${totalGroups} 已完成`;
+    document.getElementById("progress-fill").style.width = `${(doneCount / totalGroups) * 100}%`;
+  }
+
+  let draggedGroupIndex = null;
+
+  function onDragStart(e, groupIndex) {
+    draggedGroupIndex = groupIndex;
+    e.dataTransfer.effectAllowed = "move";
+    e.dataTransfer.setData("text/plain", String(groupIndex));
+    requestAnimationFrame(() => e.target.classList.add("dragging"));
+  }
+
+  function onDragEnd(e) {
+    e.target.classList.remove("dragging");
+    draggedGroupIndex = null;
+  }
+
+  function onDragOver(e) {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = "move";
+    e.currentTarget.classList.add("drag-over");
+  }
+
+  function onDragLeave(e) {
+    e.currentTarget.classList.remove("drag-over");
+  }
+
+  function onDrop(e, status) {
+    e.preventDefault();
+    e.currentTarget.classList.remove("drag-over");
+    const groupIndex = Number(e.dataTransfer.getData("text/plain")) || draggedGroupIndex;
+    if (groupIndex) moveCard(groupIndex, status);
+  }
+
+  render();
+</script>
+
+</body>
+</html>
