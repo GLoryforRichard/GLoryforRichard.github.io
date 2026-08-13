@@ -1,9 +1,378 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
+  <title>月收入模拟器</title>
+  <meta name="description" content="用产品数、付费用户数和月单价，即时模拟你的月收入。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #14201a;
+      --ink-soft: #3d5248;
+      --mute: #6b7f74;
+      --line: rgba(20, 32, 26, 0.12);
+      --panel: rgba(255, 255, 255, 0.55);
+      --accent: #0f7a4a;
+      --accent-deep: #0a5c38;
+      --glow: rgba(15, 122, 74, 0.18);
+      --result: #0b3d28;
+      --track: rgba(20, 32, 26, 0.1);
+      --thumb: #0f7a4a;
+      --radius: 18px;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      min-height: 100vh;
+      font-family: "Outfit", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 700px at 12% -10%, rgba(120, 190, 150, 0.35), transparent 55%),
+        radial-gradient(900px 600px at 95% 8%, rgba(240, 200, 120, 0.28), transparent 50%),
+        radial-gradient(700px 500px at 70% 100%, rgba(90, 160, 130, 0.22), transparent 45%),
+        linear-gradient(165deg, #e8f2eb 0%, #f7f3e8 48%, #eef6f1 100%);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(20, 32, 26, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 32, 26, 0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse at center, black 30%, transparent 78%);
+      opacity: 0.7;
+    }
+
+    .stage {
+      position: relative;
+      z-index: 1;
+      width: min(920px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: clamp(2.5rem, 8vh, 5rem) 0 clamp(3rem, 6vh, 4rem);
+      display: grid;
+      gap: clamp(1.75rem, 4vh, 2.75rem);
+    }
+
+    .brand {
+      display: grid;
+      gap: 0.65rem;
+      animation: rise 0.8s var(--ease) both;
+    }
+
+    .brand-mark {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+    }
+
+    h1 {
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      font-size: clamp(2.4rem, 7vw, 4.2rem);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      max-width: 10ch;
+    }
+
+    .lede {
+      max-width: 34ch;
+      color: var(--ink-soft);
+      font-size: clamp(1rem, 2.2vw, 1.15rem);
+      line-height: 1.55;
+    }
+
+    .result {
+      position: relative;
+      padding: clamp(1.4rem, 3vw, 2rem) 0 0.4rem;
+      animation: rise 0.9s var(--ease) 0.08s both;
+    }
+
+    .result::before {
+      content: "";
+      position: absolute;
+      left: -8%;
+      top: 10%;
+      width: 40%;
+      height: 70%;
+      background: radial-gradient(circle, var(--glow), transparent 70%);
+      filter: blur(10px);
+      pointer-events: none;
+    }
+
+    .result-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mute);
+      margin-bottom: 0.55rem;
+    }
+
+    .result-value {
+      font-family: "Fraunces", serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-size: clamp(3rem, 12vw, 6.5rem);
+      line-height: 0.92;
+      letter-spacing: -0.04em;
+      color: var(--result);
+      font-variant-numeric: tabular-nums;
+      transition: transform 0.35s var(--ease);
+    }
+
+    .result-value.is-ticking {
+      transform: scale(1.015);
+    }
+
+    .result-sub {
+      margin-top: 0.9rem;
+      color: var(--ink-soft);
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+
+    .result-sub strong {
+      color: var(--accent-deep);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .controls {
+      display: grid;
+      gap: 1.15rem;
+      animation: rise 1s var(--ease) 0.14s both;
+    }
+
+    .control {
+      padding: 1.15rem 1.25rem 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.55) inset;
+    }
+
+    .control-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.95rem;
+    }
+
+    .control-label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .control-value {
+      font-family: "Fraunces", serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--accent-deep);
+      font-variant-numeric: tabular-nums;
+      min-width: 4.5ch;
+      text-align: right;
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 8px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent) var(--fill, 0%), var(--track) var(--fill, 0%));
+      outline: none;
+      cursor: pointer;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #fff;
+      border: 3px solid var(--thumb);
+      box-shadow: 0 2px 10px rgba(15, 122, 74, 0.28);
+      transition: transform 0.2s var(--ease);
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #fff;
+      border: 3px solid var(--thumb);
+      box-shadow: 0 2px 10px rgba(15, 122, 74, 0.28);
+    }
+
+    input[type="range"]:active::-webkit-slider-thumb {
+      transform: scale(1.12);
+    }
+
+    .formula {
+      color: var(--mute);
+      font-size: 0.92rem;
+      line-height: 1.5;
+      animation: rise 1.05s var(--ease) 0.2s both;
+    }
+
+    .formula code {
+      font-family: "Outfit", sans-serif;
+      font-weight: 600;
+      color: var(--ink-soft);
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0.15rem 0.45rem;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (min-width: 820px) {
+      .stage {
+        grid-template-columns: 1.05fr 0.95fr;
+        align-items: end;
+        gap: 2.5rem 3rem;
+        min-height: 100vh;
+        padding-block: 4rem;
+      }
+
+      .brand { grid-column: 1; grid-row: 1; align-self: start; padding-top: 1rem; }
+      .result { grid-column: 1; grid-row: 2; align-self: end; }
+      .controls { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+      .formula { grid-column: 1 / -1; grid-row: 3; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
 </head>
-<body></body>
+<body>
+  <main class="stage">
+    <header class="brand">
+      <p class="brand-mark">Monthly Revenue Lab</p>
+      <h1>月收入模拟器</h1>
+      <p class="lede">拖动三个变量，马上看到产品矩阵能带来多少经常性收入。</p>
+    </header>
+
+    <section class="result" aria-live="polite">
+      <p class="result-label">预估月收入</p>
+      <p class="result-value" id="monthly">$2,900</p>
+      <p class="result-sub">年收入约 <strong id="yearly">$34,800</strong></p>
+    </section>
+
+    <section class="controls" aria-label="收入变量">
+      <div class="control">
+        <div class="control-top">
+          <label class="control-label" for="products">产品数</label>
+          <span class="control-value" id="products-val">1</span>
+        </div>
+        <input id="products" type="range" min="1" max="50" step="1" value="1" />
+      </div>
+
+      <div class="control">
+        <div class="control-top">
+          <label class="control-label" for="users">每产品付费用户数</label>
+          <span class="control-value" id="users-val">100</span>
+        </div>
+        <input id="users" type="range" min="0" max="10000" step="10" value="100" />
+      </div>
+
+      <div class="control">
+        <div class="control-top">
+          <label class="control-label" for="price">月付单价（$）</label>
+          <span class="control-value" id="price-val">$29</span>
+        </div>
+        <input id="price" type="range" min="1" max="499" step="1" value="29" />
+      </div>
+    </section>
+
+    <p class="formula">公式：<code>月收入 = 产品数 × 付费用户数 × 月单价</code></p>
+  </main>
+
+  <script>
+    const products = document.getElementById("products");
+    const users = document.getElementById("users");
+    const price = document.getElementById("price");
+    const productsVal = document.getElementById("products-val");
+    const usersVal = document.getElementById("users-val");
+    const priceVal = document.getElementById("price-val");
+    const monthlyEl = document.getElementById("monthly");
+    const yearlyEl = document.getElementById("yearly");
+
+    const money = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 0,
+    });
+
+    const plain = new Intl.NumberFormat("en-US");
+
+    function fill(el) {
+      const min = Number(el.min);
+      const max = Number(el.max);
+      const val = Number(el.value);
+      const pct = ((val - min) / (max - min)) * 100;
+      el.style.setProperty("--fill", pct + "%");
+    }
+
+    function update() {
+      const p = Number(products.value);
+      const u = Number(users.value);
+      const pr = Number(price.value);
+      const monthly = p * u * pr;
+      const yearly = monthly * 12;
+
+      productsVal.textContent = plain.format(p);
+      usersVal.textContent = plain.format(u);
+      priceVal.textContent = money.format(pr);
+      monthlyEl.textContent = money.format(monthly);
+      yearlyEl.textContent = money.format(yearly);
+
+      monthlyEl.classList.remove("is-ticking");
+      void monthlyEl.offsetWidth;
+      monthlyEl.classList.add("is-ticking");
+
+      [products, users, price].forEach(fill);
+    }
+
+    [products, users, price].forEach((el) => {
+      el.addEventListener("input", update);
+      fill(el);
+    });
+
+    update();
+  </script>
+</body>
 </html>
