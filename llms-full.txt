@@ -18,8 +18,8 @@
   <Mark n={3} box="mentions" shape="rect">**Mentions 1.64 万**（+19.3%）：AI 回答里提到 remove.bg 的次数。</Mark>
   <Mark n={4} box="citations" shape="rect">**Citations 1.16 万**（+33.6%）：AI 回答把 remove.bg 的页面列为引用来源的次数。</Mark>
   <Mark n={5} box="citedPages" shape="rect">**Cited Pages 3,400**（-27.5%）：被引用过的页面数在减少，引用越来越集中在少数页面上。</Mark>
-  <Mark n={6} box="aiOverview" shape="rect" label="46.9% 来自谷歌 AI 概览" at="right" dx={-330}>
-    Distribution by LLM：提及次数里，谷歌 AI Overview 占 46.9%，Gemini 22.4%，AI Mode 21.6%，ChatGPT 只有 9.1%。
+  <Mark n={6} box="aiOverview" shape="rect">
+    **46.9% 来自谷歌 AI 概览**：Distribution by LLM：提及次数里，谷歌 AI Overview 占 46.9%，Gemini 22.4%，AI Mode 21.6%，ChatGPT 只有 9.1%。
   </Mark>
   <Mark n={7} box="usRow" shape="rect">Mentions by Country：美国占 30.1%，巴西 6.5%，西班牙 4.4%。</Mark>
 </Shot>
@@ -38,8 +38,8 @@
   <Mark n={3} box="intent" shape="rect">
     Intent：除了熟悉的四种，还多了 **Task（任务型，8%）**——用户让 AI 直接帮他完成某件事。
   </Mark>
-  <Mark n={4} box="brands" shape="rect" label="AI 最常推荐的品牌" at="right" dx={10}>
-    Brands Mentioned：回答里提到了 9,000 个品牌，最多的是 giphy、canva、tenor。remove.bg 不在前三，说明在 GIF 这个场景里它不是 AI 的首选。
+  <Mark n={4} box="brands" shape="rect">
+    **AI 最常推荐的品牌**：Brands Mentioned：回答里提到了 9,000 个品牌，最多的是 giphy、canva、tenor。remove.bg 不在前三，说明在 GIF 这个场景里它不是 AI 的首选。
   </Mark>
   <Mark n={5} box="sources" shape="rect">TOP Sources：AI 引用最多的来源是 youtube.com、adobe.com、giphy.com——视频教程在 AI 回答里很有分量。</Mark>
   <Mark n={6} box="tPrompts" shape="rect">切到 Prompts 能看到具体的提问原文，是写 FAQ 和教程的好素材。</Mark>
@@ -77,10 +77,10 @@
   <Mark n={5} box="count" shape="rect">一共 11,892 个机会网站。</Mark>
   <Mark n={6} box="colMatches" shape="rect">Matches 2/3：三个网站里有两个被它链接了（两个竞品）。</Mark>
   <Mark n={7} box="colRemove" shape="rect">remove.bg 列是 0：这个网站没有链接 remove.bg。</Mark>
-  <Mark n={8} box="wix" shape="rect" label="建站平台" at="right" dx={-470}>
+  <Mark n={8} box="wix" shape="rect" label="建站平台" at="right" dx={-620}>
     wix.com（AS 81）给 photoroom 25 条链接：很可能是 Wix 的应用市场或帮助文档里推荐了这些工具。
   </Mark>
-  <Mark n={9} box="prnewswire" shape="rect" label="新闻稿平台" at="right" dx={-470}>
+  <Mark n={9} box="prnewswire" shape="rect" label="新闻稿平台" at="right" dx={-620}>
     prnewswire.com：说明竞品发过新闻稿。
   </Mark>
 </Shot>
@@ -139,13 +139,13 @@
   <Mark n={1} box="status" shape="rect">All / Active / New / Lost：New 是最近新增的引荐域名，Lost 是丢失的。看竞品最近从哪里拿到链接，就点 New。</Mark>
   <Mark n={2} box="followToggle" shape="rect">Follow / Nofollow：只有 follow 链接传递权重。</Mark>
   <Mark n={3} box="colAs" shape="rect">AS：引荐域名自己的 Authority Score。</Mark>
-  <Mark n={4} box="topRows" shape="rect" label="AS 2–7 的导航站" at="top" dy={-4}>
-    按外链数排序，排在最前面的是 hory-ai.com、coders-junction.com 这类 AS 只有 2–7 的网站，每个给了十几万到二十几万条链接——典型的全站链接、导航站或采集站，几乎没有价值。
+  <Mark n={4} box="topRows" shape="rect">
+    **AS 只有 2–7 的导航站**：按外链数排序，排在最前面的是 hory-ai.com、coders-junction.com 这类 AS 只有 2–7 的网站，每个给了十几万到二十几万条链接——典型的全站链接、导航站或采集站，几乎没有价值。
   </Mark>
   <Mark n={5} box="nofollowTag" shape="rect">Nofollow 标签：这个网站给的链接是 nofollow。</Mark>
   <Mark n={6} box="newTag" shape="rect">New 标签：最近新增的引荐域名，First Seen 是 Semrush 第一次发现它的日期。</Mark>
-  <Mark n={7} box="yahooAs" shape="rect" label="AS 100 的雅虎" at="right" dx={10}>
-    yahoo.com（AS 100）也链接了 remove.bg：真正有价值的是这种高权威网站的链接。
+  <Mark n={7} box="yahooAs" shape="rect">
+    **AS 100 的雅虎**：yahoo.com（AS 100）也链接了 remove.bg：真正有价值的是这种高权威网站的链接。
   </Mark>
 </Shot>
 
@@ -265,7 +265,7 @@ remove.bg：AI Visibility 38（Medium），提及主要来自谷歌 AI 概览。
     Global Volume 5.07 万，其中美国就占了 3.31 万——和主词（印度最多）不同，这个词的需求集中在美国，英文页面就能覆盖大部分。
   </Mark>
   <Mark n={4} box="intent" shape="rect">Intent 显示 n/a：Semrush 还没给它分类，新词经常这样。</Mark>
-  <Mark n={5} box="trendSpike" shape="rect" label="5 个月前才冒出来" at="left" dx={-10}>
+  <Mark n={5} box="trendSpike" shape="rect" label="5 个月前才冒出来" at="top" dx={-16} dy={-4}>
     Trend：前 6 个月几乎为 0，最近 5 个月突然起量。**这是新需求的典型曲线**，也解释了为什么 Intent 还没分类。注意 12 个月平均值 3.31 万被前面几个月拉低了，最近几个月的真实搜索量更高。
   </Mark>
   <Mark n={6} box="cpc" shape="rect">CPC $1.73：有一定商业价值。</Mark>
@@ -373,7 +373,7 @@ remove.bg：AI Visibility 38（Medium），提及主要来自谷歌 AI 概览。
   <Mark n={6} box="trafficChart" shape="rect">
     Traffic：深色是自然流量，浅紫色是品牌词流量。两条线几乎同步，再次说明流量主要靠品牌。
   </Mark>
-  <Mark n={7} box="kwDrop" shape="rect" label="排名词数大幅下滑" at="top" dy={-10}>
+  <Mark n={7} box="kwDrop" shape="rect" label="排名词大幅下滑" at="right" dx={-14} dy={-25}>
     Keywords：按排名区间（Top 3、4–10、11–20…）堆叠的关键词数。2026 年 4–8 月，排名词从 50 多万降到 14 万左右，但流量基本没变——掉的都是排在后面、几乎没流量的长尾词。
   </Mark>
   <Mark n={8} box="markers" shape="rect">
@@ -399,7 +399,7 @@ remove.bg：AI Visibility 38（Medium），提及主要来自谷歌 AI 概览。
   <Mark n={5} box="iNav" shape="rect">
     **导航型词只占 6.1%，却带来 200 万流量**，比占 83.7% 的信息型词还多——品牌词的力量。
   </Mark>
-  <Mark n={6} box="bars13" shape="rect" label="前 3 名" at="top" dy={-8} />
+  <Mark n={6} box="bars13" shape="rect" label="前 3 名" at="top" dx={6} dy={-8} />
   <Mark n={7} box="bars2100" shape="rect" label="21–100 名的词最多" at="top" dy={-8}>
     Organic Position Distribution：大部分词排在 21–100 名，这些词几乎没有流量，但说明谷歌认为页面和这些词相关，是可以优化的储备。
   </Mark>
@@ -414,13 +414,13 @@ remove.bg：AI Visibility 38（Medium），提及主要来自谷歌 AI 概览。
   <Mark n={2} box="comLevel" shape="rect">Com. Level：竞争程度，共同关键词越多、占比越高，条越长。</Mark>
   <Mark n={3} box="comKw" shape="rect">Com. Keywords：两站都有排名的共同关键词数。photoroom 和 remove.bg 有 6,842 个共同词。</Mark>
   <Mark n={4} box="seKw" shape="rect">SE Keywords：竞品自己的排名词总数。photoroom 有 4.27 万个，比 remove.bg（US 2.9 万）还多。</Mark>
-  <Mark n={5} box="bRemove" shape="rect" label="词不多，流量最大" at="left" dx={-10}>
+  <Mark n={5} box="bRemove" shape="rect" label="词少流量大" at="left" dx={-10}>
     Competitive Positioning Map：横轴是关键词数，纵轴是自然流量，气泡越大流量越大。remove.bg 在 3 万个词的位置拿到了 300 多万流量。
   </Mark>
   <Mark n={6} box="bPhotoroom" shape="rect" label="词最多，流量小" at="top" dy={-6}>
     photoroom 排名词最多，但流量只有 remove.bg 的十分之一左右——词多不等于流量大，关键看有没有占住大词的前几名。
   </Mark>
-  <Tag box="adHead" text="没有投搜索广告" at="right" dx={10} />
+  <Tag box="adHead" text="没有投搜索广告" at="right" dx={22} />
 </Shot>
 
 页面再往下是 **Backlinks** 外链概况：
@@ -820,15 +820,15 @@ KD%（Keyword Difficulty）是 Semrush 根据**谷歌前十名页面的权威度
 
 <Shot id="sm-kmt-kd" caption="KD % 筛选下拉：六个难度档位和自定义区间" space={[0, 0, 0, 16]}>
   <Mark n={1} box="kdBtn" shape="rect">KD % 筛选。</Mark>
-  <Mark n={2} box="hardRows" shape="rect" label="新站别碰" at="right" dx={10}>
-    Very hard 85–100%、Hard 70–84%、Difficult 50–69%：需要大量高质量外链，新站一年内都很难排进前十。
+  <Mark n={2} box="hardRows" shape="rect">
+    **新站别碰**：Very hard 85–100%、Hard 70–84%、Difficult 50–69%：需要大量高质量外链，新站一年内都很难排进前十。
   </Mark>
-  <Mark n={3} box="easyRows" shape="rect" label="新站从这里开始" at="right" dx={10}>
-    Possible 30–49%、Easy 15–29%、Very easy 0–14%：内容写好、做好站内优化，就有机会排上去。
+  <Mark n={3} box="easyRows" shape="rect">
+    **新站从这里开始**：Possible 30–49%、Easy 15–29%、Very easy 0–14%：内容写好、做好站内优化，就有机会排上去。
   </Mark>
   <Mark n={4} box="custom" shape="rect">Custom range：自定义区间，比如 0–40。</Mark>
-  <Mark n={5} box="kd39" shape="rect" label="黄点 = Possible" at="left" dx={-10}>
-    表格里 KD 数字旁的颜色点和档位对应：深红、红是 Hard 以上，橙色是 Difficult，黄色是 Possible，绿色是 Easy 及以下。
+  <Mark n={5} box="kd39" shape="rect">
+    **黄点 = Possible**：表格里 KD 数字旁的颜色点和档位对应：深红、红是 Hard 以上，橙色是 Difficult，黄色是 Possible，绿色是 Easy 及以下。
   </Mark>
 </Shot>
 
@@ -882,12 +882,12 @@ KD% 是前十名的平均难度。平均值高，不代表每个位置都难。�
 ## 第一步：填写对比的域名 [#第一步填写对比的域名]
 
 <Shot id="sm-kg-setup" caption="Keyword Gap：remove.bg 对比 photoroom.com、pixelcut.ai" space={[0, 0, 0, 0]}>
-  <Mark n={1} box="you" shape="rect" label="你的网站" at="top" dy={-4}>第一行固定是"你"，这里填 remove.bg。</Mark>
+  <Mark n={1} box="you" shape="rect">第一行固定是"你"，这里填 remove.bg。</Mark>
   <Mark n={2} box={["comp1", "comp2"]} shape="rect">竞品：最多再填 4 个。可以先用 Domain Overview 里的 Main Organic Competitors 挑。</Mark>
   <Mark n={3} box="rdCol" shape="rect">每个域名可以单独选范围：Root domain、Subdomain、Subfolder、URL。</Mark>
   <Mark n={4} box="typeCol" shape="rect">关键词类型：Organic（自然）、Paid（付费广告）、PLA（购物广告），可以混着比。</Mark>
   <Mark n={5} box="db" shape="rect">数据库（国家）。</Mark>
-  <Mark n={6} box="compare" shape="rect" label="开始对比" at="top" dy={-4} />
+  <Mark n={6} box="compare" shape="rect">点 Compare 开始对比。</Mark>
 </Shot>
 
 ## 第二步：看机会词和重叠关系 [#第二步看机会词和重叠关系]
@@ -895,8 +895,8 @@ KD% 是前十名的平均难度。平均值高，不代表每个位置都难。�
 <Shot id="sm-kg-top" caption="Keyword Gap 结果：Top Opportunities、Keyword Overlap 和六种分类" space={[0, 0, 0, 16]}>
   <Mark n={1} box="kwTypes" shape="rect">可以随时切换比较自然词、付费词或购物广告词。</Mark>
   <Mark n={2} box="missWeak" shape="rect">Top Opportunities：Semrush 先挑出的机会词，Missing 是你没有、竞品都有的；Weak 是你排名比竞品都低的。</Mark>
-  <Mark n={3} box="resizer" shape="rect" label="月搜索 183 万" at="right" dx={10}>
-    第一个机会词是 image resizer（调整图片尺寸）——remove.bg 只做抠图，竞品已经在做更多图片工具。
+  <Mark n={3} box="resizer" shape="rect">
+    第一个机会词是 image resizer（调整图片尺寸），月搜索 183 万——remove.bg 只做抠图，竞品已经在做更多图片工具。
   </Mark>
   <Mark n={4} box="vennCenter" shape="rect" label="三家共有的词" at="right" dx={130}>
     Keyword Overlap：三个圆分别是三个网站的关键词，重叠部分是共同词。photoroom 的圆最大（2.62 万个词）。
@@ -919,11 +919,11 @@ KD% 是前十名的平均难度。平均值高，不代表每个位置都难。�
 <Shot id="sm-kg-missing" caption="All keyword details › Missing：竞品都有排名、remove.bg 没有的词（按搜索量排序）" space={[0, 0, 0, 16]}>
   <Mark n={1} box="colRemove" shape="rect">remove.bg 列全是 0：没有排名。</Mark>
   <Mark n={2} box={["colPhotoroom", "colPixelcut"]} shape="rect">两个竞品的排名，绿色底色表示几家里排名最好的那个。</Mark>
-  <Mark n={3} box="upscaler3" shape="rect" label="pixelcut 排第 3" at="right" dx={10}>
-    image upscaler（图片放大）月搜索 4.95 万，pixelcut 已经排到第 3。
+  <Mark n={3} box="upscaler3" shape="rect">
+    **pixelcut 已经排第 3**：image upscaler（图片放大）月搜索 4.95 万，pixelcut 已经排到第 3。
   </Mark>
-  <Mark n={4} box="kd68" shape="rect" label="难度只有 68" at="right" dx={10}>
-    unblur image（去模糊）难度 68，是这批词里最低的，两个竞品都只排在 15–17 名——还没有人做透。
+  <Mark n={4} box="kd68" shape="rect">
+    **难度只有 68**：unblur image（去模糊）难度 68，是这批词里最低的，两个竞品都只排在 15–17 名——还没有人做透。
   </Mark>
   <Mark n={5} box="colKd" shape="rect">KD%：这批词难度普遍在 75–92，正面竞争很难，适合找它们的长尾词（见 [Keyword Magic Tool](/semrush/keyword-magic-tool)）。</Mark>
 </Shot>
@@ -953,8 +953,8 @@ KD% 是前十名的平均难度。平均值高，不代表每个位置都难。�
 
 <Shot id="sm-kmt" caption="Keyword Magic Tool：remove background（US，All Keywords，按 Volume 排序）" space={[0, 0, 0, 16]}>
   <Mark n={1} box="allQ" shape="rect">All / Questions：Questions 只看问题词（how、what、can…）。</Mark>
-  <Mark n={2} box="matchTypes" shape="rect" label="匹配方式" at="top" dy={-6}>
-    All Keywords、Broad Match、Phrase Match、Exact Match、Related，区别见下表。
+  <Mark n={2} box="matchTypes" shape="rect">
+    匹配方式：All Keywords、Broad Match、Phrase Match、Exact Match、Related，区别见下表。
   </Mark>
   <Mark n={3} box="languages" shape="rect">Languages：只看某种语言的词。</Mark>
   <Mark n={4} box="fKd" shape="rect">筛选：Volume、KD %、Intent、CPC、Include keywords（必须包含）、Exclude keywords（排除）、Advanced filters。</Mark>
@@ -982,8 +982,8 @@ KD% 是前十名的平均难度。平均值高，不代表每个位置都难。�
 
 <Shot id="sm-kmt-lowkd" caption="KD 30–49（Possible）的筛选结果：1,437 个词" space={[0, 0, 0, 16]}>
   <Mark n={1} box="chip" shape="rect">生效的筛选会显示成一个小标签，点 × 取消。</Mark>
-  <Mark n={2} box="avgKd" shape="rect" label="平均难度降到 38%" at="right" dx={10}>
-    剩下 1,437 个词，合计月搜索 80 万。
+  <Mark n={2} box="avgKd" shape="rect">
+    **平均难度降到 38%**：剩下 1,437 个词，合计月搜索 80 万。
   </Mark>
   <Mark n={3} box="gCanvas" shape="rect">分组也跟着变：canvas、photoshop、transparent 这些"工具名 + 去背景"的组冒了出来。</Mark>
   <Mark n={4} box="rGif" shape="rect">remove background from gif：3.31 万搜索、难度 37。下一章和实战章会继续分析这个词。</Mark>
@@ -1035,7 +1035,7 @@ KD% 是前十名的平均难度。平均值高，不代表每个位置都难。�
     **Global Volume 820 万**，其中印度 340 万、美国只有 82.3 万。做这个词不能只看美国。
   </Mark>
   <Mark n={5} box="intent" shape="rect">Intent：Informational（信息型）。Semrush 按搜索结果页的内容判断用户想干什么。</Mark>
-  <Mark n={6} box="trendPeak" shape="rect" label="近期搜索量走高" at="left" dx={-10}>
+  <Mark n={6} box="trendPeak" shape="rect" label="近期搜索量走高" at="top" dy={-4}>
     Trend：过去 12 个月每月的搜索量，近半年明显走高，但最后一个月回落。
   </Mark>
   <Mark n={7} box="cpc" shape="rect">**CPC $2.65**：投谷歌广告时每次点击的平均价格，越高说明这个词越值钱。</Mark>
@@ -1051,17 +1051,17 @@ KD% 是前十名的平均难度。平均值高，不代表每个位置都难。�
 ## 关键词扩展：变体、问题、主题 [#关键词扩展变体问题主题]
 
 <Shot id="sm-ko-ideas" caption="Keyword ideas：Keyword Variations、Questions、Keyword Strategy" space={[0, 0, 0, 16]}>
-  <Mark n={1} box="varHead" shape="rect" label="4.67 万个变体" at="right" dx={10}>
-    Keyword Variations：包含 remove background 的所有词，合计月搜索 430 万。点下方 View all 进入 [Keyword Magic Tool](/semrush/keyword-magic-tool)。
+  <Mark n={1} box="varHead" shape="rect">
+    **4.67 万个变体**：Keyword Variations 是包含 remove background 的所有词，合计月搜索 430 万。点下方 View all 进入 [Keyword Magic Tool](/semrush/keyword-magic-tool)。
   </Mark>
   <Mark n={2} box="gimpRow" shape="rect">
     how to remove background in gimp：月搜索 13.5 万，难度只有 39（黄色）。教程类的长尾词难度低得多。
   </Mark>
-  <Mark n={3} box="qHead" shape="rect" label="1.25 万个问题" at="right" dx={10}>
-    Questions：以 how、what、why 等开头的问题词，适合写教程、做 FAQ。
+  <Mark n={3} box="qHead" shape="rect">
+    **1.25 万个问题**：Questions 是以 how、what、why 等开头的问题词，适合写教程、做 FAQ。
   </Mark>
-  <Mark n={4} box="kd29" shape="rect" label="难度 29" at="left" dx={-10}>
-    how to remove background in canva：月搜索 6.05 万，难度 29（绿色，Easy）。
+  <Mark n={4} box="kd29" shape="rect">
+    **难度 29**：how to remove background in canva：月搜索 6.05 万，难度 29（绿色，Easy）。
   </Mark>
   <Mark n={5} box="tree" shape="rect">
     Keyword Strategy：Semrush 自动把相关词分成"主题 + 子页面"，比如 erase image background、transparent background。点 View all clusters 进入 Keyword Strategy Builder。
@@ -1216,7 +1216,7 @@ Overview 再往下，有最重要的两张卡片：
     Cited Pages 220：被 AI 回答引用为来源的页面数，下降了 32.31%。
   </Mark>
   <Mark n={4} box="citedLine" shape="rect">紫色线是 Cited Pages 的趋势：从年初开始一路下滑，而自然流量（深色线）在 5 月后反而上涨。</Mark>
-  <Mark n={5} box="urlToggle" shape="rect" label="只看新页面" at="bottom" dy={4}>
+  <Mark n={5} box="urlToggle" shape="rect" label="只看新页面" at="top" dy={-2}>
     All URLs / New / Lost：New 是最近新出现流量的页面，Lost 是失去流量的页面。
   </Mark>
   <Mark n={6} box="row1" shape="rect">
