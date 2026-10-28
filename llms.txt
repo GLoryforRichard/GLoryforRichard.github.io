@@ -1,0 +1,71 @@
+# Docs
+
+- Similarweb 教程: 看流量、找竞品、挖新词
+
+  - **入门**
+  - [Similarweb 教程](/similarweb): 从界面导览到实战找词，一步一图，带你把 Similarweb 用明白。
+  - [Similarweb 简介](/similarweb/intro): Similarweb 是什么、能回答哪些问题、数据从哪来、准不准，以及它和 Semrush 的分工。
+  - [Similarweb 界面导览与通用控件](/similarweb/interface): 先认路：左侧导航的五大模块、模块里的二级菜单，以及每个报告顶部都有的日期、国家、对比控件。
+
+  - **网站分析 Website analysis**
+  - [Similarweb 网站概览 Website performance](/similarweb/website-performance): 输入一个域名后看到的第一个报告：流量规模、互动质量、国家、渠道、搜索词一屏总览。
+  - [Similarweb 流量与互动 Traffic & engagement](/similarweb/traffic-engagement): 逐月看访问量、独立访客、新老访客和去重受众，再看访问时长、浏览页数、跳出率，并区分桌面端和移动端。
+  - [Similarweb 营销渠道 Marketing channels](/similarweb/marketing-channels): 一个网站的流量靠什么渠道获得？哪个渠道在拉动增长？具体是哪些来源网站带来的？
+  - [Similarweb 受众画像 Audience](/similarweb/audience): 访客来自哪些国家、是什么年龄和性别、平时还逛哪些网站、和竞品的用户重合多少。
+  - [Similarweb 相似网站 Similar sites](/similarweb/similar-sites): 一键列出和目标网站最像的 40 个网站，是找竞品、找替代品、摸清赛道格局的第一步。
+  - [Similarweb 网站内容 Website content](/similarweb/website-content): 看一个网站的流量落在哪些目录、页面和子域名上。对平台型网站尤其有用。
+  - [Similarweb 搜索流量 Search overview](/similarweb/search-overview): 一个网站从搜索引擎拿到多少流量、多少关键词、多少靠前排名、花了多少广告费，以及最赚流量的非品牌词和付费落地页。
+  - [Similarweb 引荐流量 Referral](/similarweb/referral): 哪些网站在给目标网站导流（Incoming），目标网站又把访客送去了哪里（Outgoing）。找外链、找合作、看懂商业关系都靠它。
+  - [Similarweb 社交流量 Social](/similarweb/social): 网站从哪些社交平台获得访问、各平台占比多少、趋势如何。判断一个产品"靠内容传播"还是"靠搜索"。
+  - [Similarweb 展示广告与变现 Display & Monetization](/similarweb/display-ads): 竞品有没有投展示广告、花了多少钱、投在哪些媒体上；它自己又靠哪些广告网络变现。
+  - [Similarweb 网站技术栈 Website technologies](/similarweb/technologies): 竞品网站装了哪些广告像素、分析工具、A/B 测试、客服系统，以及它们是什么时候装上的。
+  - [Similarweb 网站对比 Compare](/similarweb/compare): 把最多 5 个网站放进同一份报告里比较。竞品分析最常用、也最省时间的功能。
+
+  - **排名与 AI**
+  - [Similarweb 网站排行榜 Website rankings](/similarweb/website-rankings): 选一个行业，看谁是头部、谁在上升、谁是新进入者。找赛道、找对标、找增长最快的网站都从这里开始。
+  - [Similarweb AI 流量 AI traffic](/similarweb/ai-traffic): ChatGPT、Gemini、Perplexity、Claude 等 AI 产品给一个网站带来了多少访问、趋势如何、落到了哪些页面。
+
+  - **SEO 关键词研究**
+  - [Similarweb 关键词研究总览 Keyword research](/similarweb/keyword-research): SEO intelligence 模块里最常用的 Keyword research：两条找词路径、每个子报告是干什么的。
+  - [Similarweb 站点关键词 Website explorer › Keywords](/similarweb/website-keywords): 把竞品的关键词表完整扒下来：每个词带来多少点击、排名难度、搜索量、CPC、零点击率、落到哪个页面。
+  - [Similarweb 落地页 Landing pages（New Clicks 找新词）](/similarweb/landing-pages): 用 Landing pages + New Clicks，从 vercel.app 这样的托管平台里找出最近一个月才开始有搜索流量的新站和新词。
+  - [Similarweb 拓词 Keyword generator](/similarweb/keyword-generator): 输入一个种子词，拓展出成千上万个相关关键词，并用全年趋势一眼发现正在爆发的词。
+  - [Similarweb 关键词概览 Keyword overview](/similarweb/keyword-overview): 决定做不做一个词之前的体检：搜索量、点击量、零点击、SERP 构成、自然难度、付费竞争、CPC，以及谁在拿这个词的流量。
+
+  - **实战**
+  - [实战：30 分钟完整拆解一个竞品](/similarweb/case-competitor): 把前面学到的报告串成一套固定流程，以 remove.bg 为例产出一份竞品分析结论。
+  - [实战：从托管平台和排行榜里挖新词](/similarweb/case-new-keywords): 用 Landing pages + New Clicks 扫托管平台、用排行榜找上升网站，再用关键词报告层层验证，得到一份可以动手做的新词清单。
+
+  - **附录**
+  - [指标词典与菜单中英对照](/similarweb/glossary): Similarweb 常见指标的中文含义和使用注意，以及菜单名称的中英对照。
+  - [常见问题](/similarweb/faq): 数据为什么对不上、小网站为什么没数据、时间和国家为什么选不了、截图为什么和你看到的不一样。
+- Semrush 教程: 关键词、排名与外链
+
+  - **入门**
+  - [Semrush 教程](/semrush): 从界面导览到实战验证新词，一步一图，带你把 Semrush 的关键词、排名和外链用明白。
+  - [Semrush 简介](/semrush/intro): Semrush 是什么、能回答哪些问题、关键词和流量数据怎么估算、准不准，以及它和 Similarweb 的分工。
+  - [Semrush 界面导览与通用控件](/semrush/interface): 先认路：左侧的工具箱和 SEO 菜单、顶部搜索框，以及每个报告都有的数据库、设备、日期控件。
+
+  - **竞品分析 Competitive Analysis**
+  - [Semrush 域名概览 Domain Overview](/semrush/domain-overview): 分析一个网站的第一站：权威度、自然流量、关键词、品牌词占比、竞品、外链和 AI 可见度，一页看完。
+  - [Semrush 自然排名 Organic Rankings](/semrush/organic-rankings): 一个网站在谷歌上排在哪些词、第几名、每个词带来多少流量，以及最近新排上和掉出的词。
+  - [Semrush 热门页面 Top Pages](/semrush/top-pages): 一个网站哪些页面带来的自然流量最多、每个页面靠哪个词、最近新增了哪些页面，以及哪些页面被 AI 引用。
+  - [Semrush 关键词差距 Keyword Gap](/semrush/keyword-gap): 把自己和最多 4 个竞品放在一起比，找出竞品有排名而你没有的词——最直接的找词方法之一。
+
+  - **关键词研究 Keyword Research**
+  - [Semrush 关键词概览 Keyword Overview](/semrush/keyword-overview): 决定做不做一个词之前的体检：搜索量、全球分布、难度、意图、趋势、CPC，以及谷歌前十名都是谁。
+  - [Semrush 拓词 Keyword Magic Tool](/semrush/keyword-magic-tool): 输入一个种子词，拓出几万个相关词，再用匹配方式、分组和筛选，把可以做的长尾词挑出来。
+  - [Semrush 关键词难度 KD 与新站选词](/semrush/keyword-difficulty): KD% 怎么算、六个难度档位分别意味着什么，以及为什么只看 KD 不够，还要看 SERP 里的对手。
+
+  - **外链与 AI**
+  - [Semrush 外链分析 Backlinks](/semrush/backlinks): 一个网站有多少外链、来自多少个网站、质量如何、最近新增和丢失了哪些——以及怎么从中找到值得争取的链接。
+  - [Semrush 外链差距 Backlink Gap](/semrush/backlink-gap): 找出链接了竞品、却没有链接你的网站——这份名单就是现成的外链拓展清单。
+  - [Semrush AI 可见度 AI Visibility](/semrush/ai-visibility): 品牌在 ChatGPT、谷歌 AI 概览、AI Mode、Gemini 的回答里被提到多少次、被引用了哪些页面，以及用户会怎么问 AI。
+
+  - **实战**
+  - [实战：验证一个新词值不值得做](/semrush/case-validate-keyword): 拿一个刚冒出来的长尾词，按搜索量、趋势、难度、前十名、长尾、AI 六个维度走一遍完整的验证流程。
+  - [实战：30 分钟拆解竞品的 SEO](/semrush/case-competitor): 按固定顺序走一遍 Domain Overview → Organic Rankings → Top Pages → Keyword Gap → Backlinks，产出一张竞品 SEO 拆解表。
+
+  - **附录**
+  - [Semrush 指标词典](/semrush/glossary): 本教程里出现的 Semrush 指标和术语，中英对照，一句话解释。
+  - [Semrush 常见问题](/semrush/faq): 数据对不上、数据库怎么选、KD 多少能做、报告次数用完了、工具打不开……新手最常遇到的问题。

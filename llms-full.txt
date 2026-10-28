@@ -1,0 +1,3400 @@
+# Semrush AI 可见度 AI Visibility (/semrush/ai-visibility)
+
+<Goals>
+- 看懂 AI Visibility、Mentions、Citations、Cited Pages 四个指标
+- 知道品牌在各个 AI 平台和国家的曝光分布
+- 用 Prompt Research 看用户在 AI 里怎么问一个话题、AI 会推荐哪些品牌
+</Goals>
+
+打开方式：左侧工具箱 AI → AI Analysis → <UI zh="可见度概览">Visibility Overview</UI>，输入域名。AI Visibility 是单独的工具箱，需要单独开通。
+
+## Visibility Overview：品牌在 AI 里的曝光 [#visibility-overview品牌在-ai-里的曝光]
+
+<Shot id="sm-ai" caption="AI Visibility › Visibility Overview：remove.bg（Worldwide，All AI platforms）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="platforms" shape="rect">All AI platforms：可以只看 ChatGPT、AI Overview、AI Mode 或 Gemini。</Mark>
+  <Mark n={2} box="gauge" shape="rect">
+    **AI Visibility 38/100（Medium）**："偶尔在 AI 回答里被提到，还有提升空间"。这是综合提及次数和位置算出的分数。
+  </Mark>
+  <Mark n={3} box="mentions" shape="rect">**Mentions 1.64 万**（+19.3%）：AI 回答里提到 remove.bg 的次数。</Mark>
+  <Mark n={4} box="citations" shape="rect">**Citations 1.16 万**（+33.6%）：AI 回答把 remove.bg 的页面列为引用来源的次数。</Mark>
+  <Mark n={5} box="citedPages" shape="rect">**Cited Pages 3,400**（-27.5%）：被引用过的页面数在减少，引用越来越集中在少数页面上。</Mark>
+  <Mark n={6} box="aiOverview" shape="rect" label="46.9% 来自谷歌 AI 概览" at="right" dx={-330}>
+    Distribution by LLM：提及次数里，谷歌 AI Overview 占 46.9%，Gemini 22.4%，AI Mode 21.6%，ChatGPT 只有 9.1%。
+  </Mark>
+  <Mark n={7} box="usRow" shape="rect">Mentions by Country：美国占 30.1%，巴西 6.5%，西班牙 4.4%。</Mark>
+</Shot>
+
+<Callout title="和 Similarweb 的 AI 流量一起看">
+  Semrush 统计的是**AI 回答里提到了你几次**，Similarweb 的 [AI 流量](/similarweb/ai-traffic) 统计的是**用户从 AI 点过来了多少次**。提及多但点击少，说明 AI 只是顺带提了一句；两个都在涨，才说明 AI 正在成为真实的获客渠道。
+</Callout>
+
+## Prompt Research：用户在 AI 里怎么问 [#prompt-research用户在-ai-里怎么问]
+
+在 AI 工具箱里，顶部搜索框输入关键词，会打开 Prompt Research：
+
+<Shot id="sm-ai-prompts" caption="Prompt Research：remove background from gif（US）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="aiVolume" shape="rect">Related Topics AI Volume 850 万：和这个词相关的话题，在 AI 里每月被问的估算次数。</Mark>
+  <Mark n={2} box="topicsPrompts" shape="rect">1,000 个相关话题、4.91 万条提示词（prompt）。</Mark>
+  <Mark n={3} box="intent" shape="rect">
+    Intent：除了熟悉的四种，还多了 **Task（任务型，8%）**——用户让 AI 直接帮他完成某件事。
+  </Mark>
+  <Mark n={4} box="brands" shape="rect" label="AI 最常推荐的品牌" at="right" dx={10}>
+    Brands Mentioned：回答里提到了 9,000 个品牌，最多的是 giphy、canva、tenor。remove.bg 不在前三，说明在 GIF 这个场景里它不是 AI 的首选。
+  </Mark>
+  <Mark n={5} box="sources" shape="rect">TOP Sources：AI 引用最多的来源是 youtube.com、adobe.com、giphy.com——视频教程在 AI 回答里很有分量。</Mark>
+  <Mark n={6} box="tPrompts" shape="rect">切到 Prompts 能看到具体的提问原文，是写 FAQ 和教程的好素材。</Mark>
+  <Mark n={7} box="vol44" shape="rect">GIMP Background Removal and Transparency：AI 里每月 4.45 万次，比"透明 GIF"本身还多。</Mark>
+</Shot>
+
+<Callout type="warn" title="AI 数据是抽样估算">
+  Semrush 用一批固定的提示词去问各个 AI 平台，再统计回答里的品牌和来源。AI 的回答每次都可能不同，所以这些数字适合看**趋势和相对高低**，不要当成精确的次数。
+</Callout>
+
+<Practice>
+1. 打开 photoroom.com 的 Visibility Overview，比较它和 remove.bg 的 AI Visibility 和 Mentions。
+2. 在 Prompt Research 里查 `background remover`，看看 AI 最常推荐的 3 个品牌是谁。
+3. 切到 Prompts 标签，挑 3 条真实提问，想一想你的网站能不能写出比现有回答更好的内容。
+</Practice>
+
+
+# Semrush 外链差距 Backlink Gap (/semrush/backlink-gap)
+
+<Goals>
+- 会设置 Backlink Gap 的对比
+- 看懂 Best、Weak、Strong、Shared、Unique 几个分类
+- 从结果里挑出值得争取的外链来源
+</Goals>
+
+打开方式：SEO 菜单 → Competitive Analysis → <UI zh="外链差距">Backlink Gap</UI>，填入自己的网站和最多 4 个竞品，点 Find prospects。
+
+<Shot id="sm-bg" caption="Backlink Gap：remove.bg 对比 photoroom.com、pixelcut.ai（Best）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="you" shape="rect">第一个框是你的网站。</Mark>
+  <Mark n={2} box={["photoroom", "pixelcut"]} shape="rect">竞品，和 Keyword Gap 一样最多 4 个。</Mark>
+  <Mark n={3} box="prospectsFor" shape="rect">Prospects for：为哪个网站找机会，默认是"你"。</Mark>
+  <Mark n={4} box="tBest" shape="rect">
+    Best：链接了**所有**竞品、但没有链接你的网站。Weak 是链接你比链接竞品少的，Strong 相反，Shared 是都链接了的，Unique 是只链接了某一家的。
+  </Mark>
+  <Mark n={5} box="count" shape="rect">一共 11,892 个机会网站。</Mark>
+  <Mark n={6} box="colMatches" shape="rect">Matches 2/3：三个网站里有两个被它链接了（两个竞品）。</Mark>
+  <Mark n={7} box="colRemove" shape="rect">remove.bg 列是 0：这个网站没有链接 remove.bg。</Mark>
+  <Mark n={8} box="wix" shape="rect" label="建站平台" at="right" dx={-470}>
+    wix.com（AS 81）给 photoroom 25 条链接：很可能是 Wix 的应用市场或帮助文档里推荐了这些工具。
+  </Mark>
+  <Mark n={9} box="prnewswire" shape="rect" label="新闻稿平台" at="right" dx={-470}>
+    prnewswire.com：说明竞品发过新闻稿。
+  </Mark>
+</Shot>
+
+## 怎么从结果里挑 [#怎么从结果里挑]
+
+| 类型 | 例子 | 怎么争取 |
+| --- | --- | --- |
+| 平台的应用市场 / 集成页 | wix.com、hostinger.com | 做插件或集成，申请上架 |
+| 软件下载站 / 工具目录 | apkmirror.com、getintopc.com、g2.com | 提交产品、发布 App、收集评价 |
+| 新闻稿 / 媒体 | prnewswire.com | 有新功能时发新闻稿、联系媒体 |
+| 搜索引擎自家服务 | yandex.com.tr、ya.ru | 一般是搜索结果页或工具收录，不用刻意争取 |
+
+<Callout type="warn" title="先看链接是怎么来的">
+  点每一行竞品列里的数字，可以看到这个网站具体链接竞品的是哪个页面。先看清楚是"推荐文章""目录收录"还是"付费广告位"，再决定值不值得争取。AS 很高但和你的领域毫无关系的网站，通常不值得花时间。
+</Callout>
+
+<Practice>
+1. 在 Backlink Gap 里筛选 Authority Score 大于 30，记录前 10 个机会网站和它们的类型。
+2. 点其中一个网站在 photoroom.com 列的数字，看看它链接的是 photoroom 的哪个页面。
+</Practice>
+
+
+# Semrush 外链分析 Backlinks (/semrush/backlinks)
+
+<Goals>
+- 看懂 Backlink Analytics 的概览指标：引荐域名、外链、Authority Score
+- 会用 Referring Domains 列表判断外链质量
+- 知道为什么"引荐域名数"比"外链总数"更重要
+</Goals>
+
+打开方式：SEO 菜单 → Link Building → <UI zh="外链">Backlinks</UI>，输入域名点 Analyze。
+
+## Overview：外链概况 [#overview外链概况]
+
+<Shot id="sm-bl-overview" caption="Backlink Analytics › Overview：remove.bg（Root Domain）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="live" shape="rect">Live Update：今天新发现了 99+ 条外链，外链数据是持续更新的。</Mark>
+  <Mark n={2} box="tabs" shape="rect">
+    子报告：Backlinks（外链明细）、Network Graph（链接网络图）、Anchors（锚文本）、Indexed Pages（被链接的页面）、Outbound Domains（它链出去的网站）、Bulk Analysis（批量查询）；Referring Domains 在 ••• 里。
+  </Mark>
+  <Mark n={3} box="compareRow" shape="rect">可以直接加最多 3 个竞品，在同一页对比外链。</Mark>
+  <Mark n={4} box="rd" shape="rect">**Referring Domains 3.56 万**：有多少个不同的网站链接过来，比上月多 6%。</Mark>
+  <Mark n={5} box="bl" shape="rect">**Backlinks 190 万**：外链总条数。一个网站可能在每个页面的页脚都放一个链接，所以总条数会被放大很多倍。</Mark>
+  <Mark n={6} box="tox" shape="rect">Overall Toxicity Score：有害外链评分，要先在 Backlink Audit 里给**自己的网站**建项目才能看。</Mark>
+  <Mark n={7} box="asValue" shape="rect" label="Authority Score 90" at="right" dx={10}>
+    雷达图的三个维度：Link Power（外链的数量和质量）、Organic Traffic（自然流量）、Natural Profile（外链是否自然、有没有刷链接的痕迹）。
+  </Mark>
+  <Mark n={8} box="reputable" shape="rect" label="链接网络健康" at="right" dx={10}>
+    Network Graph：把它和引荐域名画成网络图。Reputable 表示链接网络正常；如果大量来自互相链接的站群，会被标成可疑。
+  </Mark>
+</Shot>
+
+## Referring Domains：链接从哪些网站来 [#referring-domains链接从哪些网站来]
+
+<Shot id="sm-bl-rd" caption="Referring Domains：remove.bg 的 35,641 个引荐域名（按外链数排序）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="status" shape="rect">All / Active / New / Lost：New 是最近新增的引荐域名，Lost 是丢失的。看竞品最近从哪里拿到链接，就点 New。</Mark>
+  <Mark n={2} box="followToggle" shape="rect">Follow / Nofollow：只有 follow 链接传递权重。</Mark>
+  <Mark n={3} box="colAs" shape="rect">AS：引荐域名自己的 Authority Score。</Mark>
+  <Mark n={4} box="topRows" shape="rect" label="AS 2–7 的导航站" at="top" dy={-4}>
+    按外链数排序，排在最前面的是 hory-ai.com、coders-junction.com 这类 AS 只有 2–7 的网站，每个给了十几万到二十几万条链接——典型的全站链接、导航站或采集站，几乎没有价值。
+  </Mark>
+  <Mark n={5} box="nofollowTag" shape="rect">Nofollow 标签：这个网站给的链接是 nofollow。</Mark>
+  <Mark n={6} box="newTag" shape="rect">New 标签：最近新增的引荐域名，First Seen 是 Semrush 第一次发现它的日期。</Mark>
+  <Mark n={7} box="yahooAs" shape="rect" label="AS 100 的雅虎" at="right" dx={10}>
+    yahoo.com（AS 100）也链接了 remove.bg：真正有价值的是这种高权威网站的链接。
+  </Mark>
+</Shot>
+
+<Callout type="idea" title="怎么读一个网站的外链">
+  1. **看引荐域名，不看外链总数**：1 个网站给 20 万条链接，价值远不如 100 个不同网站各给 1 条
+  2. **按 AS 排序**：点 AS 表头从高到低排，先看最有分量的链接来自哪里
+  3. **看 New**：竞品最近新拿到的链接，往往说明它在做某种推广（媒体报道、榜单、目录站、合作）
+  4. **看锚文本**：Anchors 里品牌词占多数是正常的；大量完全匹配的关键词锚文本，可能是刷出来的
+</Callout>
+
+<Practice>
+1. 打开 remove.bg 的 Referring Domains，点 AS 表头按权威度排序，记录 AS 最高的 10 个网站分别是什么类型（媒体、工具目录、教育机构……）。
+2. 切到 New，看看它最近新增的引荐域名里有没有你也能争取到的。
+3. 对 photoroom.com 做同样的分析，比较两家外链来源的差别。
+</Practice>
+
+
+# 实战：30 分钟拆解竞品的 SEO (/semrush/case-competitor)
+
+<Goals>
+- 用固定顺序把一个竞品的 SEO 拆清楚，不漏项
+- 每一步都知道要记下什么数字、得出什么结论
+- 最后产出一张可以直接用于决策的竞品拆解表
+</Goals>
+
+前面各章已经把 remove.bg 的每个报告都看了一遍。这一章把它们串起来，变成一套以后拆任何竞品都能照着走的流程。
+
+<Steps>
+<Step>
+### 规模和基本盘：Domain Overview [#规模和基本盘domain-overview]
+
+记下：Authority Score、Organic Traffic 和趋势、Organic Keywords、Ref.Domains、Branded 占比、流量最大的国家。
+
+remove.bg：AS 90、全球自然流量 3,600 万（近一个月 -8.6%）、17.7 万个排名词、3.56 万个引荐域名、**品牌词占 71.6%**、**印度流量最多**。→ [域名概览](/semrush/domain-overview)
+</Step>
+<Step>
+### 靠哪些词：Organic Rankings [#靠哪些词organic-rankings]
+
+在主要国家的数据库里，记下流量最大的 10 个词、非品牌词里流量最大的 5 个、Position Changes 里最近新排上的词。
+
+remove.bg（US）：前五个词全是品牌词和核心词，都排第 1；新排上的多是拼写错误的变体。→ [自然排名](/semrush/organic-rankings)
+</Step>
+<Step>
+### 靠哪些页面：Top Pages [#靠哪些页面top-pages]
+
+记下流量占比最高的页面、Traffic Diff 增长最多的页面、New 里新增的页面。
+
+remove.bg：首页占 93.41%；西班牙语首页 `/es` 和功能页 `/f/transparent-background` 是第二梯队。→ [热门页面](/semrush/top-pages)
+</Step>
+<Step>
+### 它没做什么：Keyword Gap [#它没做什么keyword-gap]
+
+把它和 2–3 个竞品比，看它的 Missing 和 Untapped。
+
+remove.bg 缺的是 image resizer、image upscaler、image enhancer、unblur image——竞品已经在做的其他图片功能。→ [关键词差距](/semrush/keyword-gap)
+</Step>
+<Step>
+### 外链从哪来：Backlinks 和 Backlink Gap [#外链从哪来backlinks-和-backlink-gap]
+
+记下引荐域名数、AS 最高的引荐域名类型、最近新增的引荐域名，以及 Backlink Gap 里 AS 高的机会网站。
+
+remove.bg：3.56 万个引荐域名，大量低质量导航站，也有 yahoo.com 这样的高权威链接；竞品在 wix.com、hostinger.com、prnewswire.com 上有它没有的链接。→ [外链分析](/semrush/backlinks)、[外链差距](/semrush/backlink-gap)
+</Step>
+<Step>
+### AI 里的表现：AI Visibility [#ai-里的表现ai-visibility]
+
+记下 AI Visibility、Mentions 趋势、哪个 AI 平台提到最多。
+
+remove.bg：AI Visibility 38（Medium），提及主要来自谷歌 AI 概览。→ [AI 可见度](/semrush/ai-visibility)
+</Step>
+</Steps>
+
+## 竞品 SEO 拆解表 [#竞品-seo-拆解表]
+
+| 项目 | remove.bg | 你的竞品 |
+| --- | --- | --- |
+| Authority Score | 90 | |
+| 自然流量（全球 / 主要国家） | 3,600 万 / 美国 320 万 | |
+| 流量最大的国家 | 印度 | |
+| 品牌词流量占比 | 71.6% | |
+| 流量最大的页面类型 | 首页（93%） | |
+| 第二增长点 | 多语言首页、功能落地页 | |
+| 它缺的方向（Keyword Gap） | resizer、upscaler、enhancer | |
+| 引荐域名数 / 外链质量 | 3.56 万 / 高低混杂 | |
+| 值得争取的外链来源 | 建站平台、软件目录、新闻稿 | |
+| 有没有投广告 | 没有 | |
+| AI 可见度 | 38，主要在谷歌 AI 概览 | |
+
+<Callout type="idea" title="拆完之后做什么">
+  remove.bg 这种品牌词流量占七成的头部站，正面抢它的核心词几乎不可能。拆解的价值在于找到它**没做的**（Keyword Gap 里的功能）和**做得一般的**（非品牌词、多语言、长尾），再用 [关键词难度](/semrush/keyword-difficulty) 和 [实战：验证新词](/semrush/case-validate-keyword) 的方法挑出能做的词。
+</Callout>
+
+<Practice>
+1. 挑一个你所在领域的竞品，按本章 6 步走一遍，填满上面的拆解表。
+2. 根据拆解结果，写下你最想切入的 3 个关键词和理由。
+</Practice>
+
+
+# 实战：验证一个新词值不值得做 (/semrush/case-validate-keyword)
+
+<Goals>
+- 把前面学的 Keyword Overview、Keyword Magic Tool、SERP Analysis、Prompt Research 串成一套流程
+- 学会识别"新冒出来的词"的典型特征
+- 最后给出一个明确的结论：做、观察、还是放弃
+</Goals>
+
+在 Similarweb 教程的 [从托管平台和排行榜里挖新词](/similarweb/case-new-keywords) 里，我们找到了一批候选词。这一章换个来源：在 [Keyword Magic Tool](/semrush/keyword-magic-tool) 里用 KD 30–49 筛 remove background 的长尾词时，**remove background from gif** 排在前面——月搜索 3.31 万、难度 37。它值得做吗？
+
+## 第一步：Keyword Overview 体检 [#第一步keyword-overview-体检]
+
+<Shot id="sm-case-ko" caption="Keyword Overview：remove background from gif（United States，2026-10-28）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="vol" shape="rect">**Volume 3.31 万**：美国月均搜索量。</Mark>
+  <Mark n={2} box="kd" shape="rect">
+    **KD 37%（Possible）**："需要结构清晰、内容独特的页面"。对比主词 remove background 的 100%，难度低得多。
+  </Mark>
+  <Mark n={3} box="gvRows" shape="rect">
+    Global Volume 5.07 万，其中美国就占了 3.31 万——和主词（印度最多）不同，这个词的需求集中在美国，英文页面就能覆盖大部分。
+  </Mark>
+  <Mark n={4} box="intent" shape="rect">Intent 显示 n/a：Semrush 还没给它分类，新词经常这样。</Mark>
+  <Mark n={5} box="trendSpike" shape="rect" label="5 个月前才冒出来" at="left" dx={-10}>
+    Trend：前 6 个月几乎为 0，最近 5 个月突然起量。**这是新需求的典型曲线**，也解释了为什么 Intent 还没分类。注意 12 个月平均值 3.31 万被前面几个月拉低了，最近几个月的真实搜索量更高。
+  </Mark>
+  <Mark n={6} box="cpc" shape="rect">CPC $1.73：有一定商业价值。</Mark>
+  <Mark n={7} box="cd" shape="rect">Competitive Density 0.04、没有广告：还没有人投广告抢这个词。</Mark>
+</Shot>
+
+## 第二步：看前十名 [#第二步看前十名]
+
+新词的 SERP Analysis 经常显示 n/a（Semrush 还没抓取完整的前十名）。这时直接在谷歌搜一下这个词，逐个看前十名：
+
+- 有没有**专门做这件事的工具页**？如果前十名都是泛泛的"去背景工具"首页，说明还没人专门做 GIF
+- 排在前面的页面能不能真的处理 GIF 动图（很多去背景工具只支持静态图片）
+- 把前十名的域名放进 [Domain Overview](/semrush/domain-overview) 看 Authority Score，有没有 40 以下的小站
+
+## 第三步：看长尾有多大 [#第三步看长尾有多大]
+
+在 Keyword Overview 下方的 Keyword ideas 里，这个词有 **119 个变体（合计 3.71 万搜索）**、39 个问题词：remove background from a gif（880，KD 47）、remove background from animated gif（590，KD 49）、remove white background from gif（590，KD 40）、how to remove background from gif（320，KD 36）……
+
+长尾不多，说明这是一个**很具体的需求**：一个页面就能覆盖，适合做成单独的工具页，而不是一个大网站。
+
+## 第四步：看 AI 怎么回答 [#第四步看-ai-怎么回答]
+
+在 AI 工具箱的 [Prompt Research](/semrush/ai-visibility) 里查同一个词：AI 里相关话题每月被问 850 万次，回答里最常提到的是 giphy、canva、tenor，引用最多的来源是 youtube.com。说明用户在 AI 里也在问这件事，而 AI 目前推荐的大多不是专门的 GIF 去背景工具——**AI 和谷歌里都还有空位**。
+
+## 第五步：下结论 [#第五步下结论]
+
+| 维度 | 标准 | remove background from gif | 结论 |
+| --- | --- | --- | --- |
+| 搜索量 | 每月几千以上 | 美国 3.31 万（近几个月更高） | ✓ |
+| 趋势 | 稳定或上升 | 5 个月前突然起量 | ✓ 新需求 |
+| 难度 | 新站 KD 50% 以下 | 37%（Possible） | ✓ |
+| 前十名 | 有弱页面或没有专门页面 | 需要手动检查 | 待确认 |
+| 长尾 | 有一批相关词 | 119 个变体，需求集中 | 适合单页工具 |
+| 商业价值 | CPC、意图 | CPC $1.73，没有广告竞争 | 一般 |
+
+**结论：值得做一个专门的 GIF 去背景工具页**，前提是谷歌前十名里确实没有专门处理 GIF 的强页面。上线后用 [Organic Rankings](/semrush/organic-rankings) 或 Position Tracking 跟踪排名。
+
+<Callout type="warn" title="新词的风险">
+  突然起量的词也可能是一次性热点（某个短视频、某个节日带起来的）。上线前再观察一两个月的 Trend；如果曲线回落到 0，就说明需求不持续。
+</Callout>
+
+<Practice>
+1. 在 Keyword Magic Tool 里用 KD 30–49 筛选你自己领域的种子词，找出一个 Trend 最近起量的词。
+2. 按本章的五步走一遍，把结论填进上面的表格。
+</Practice>
+
+
+# Semrush 域名概览 Domain Overview (/semrush/domain-overview)
+
+<Goals>
+- 用 Domain Overview 在几分钟内看清一个网站的 SEO 基本盘
+- 看懂 Authority Score、Organic Traffic、Traffic Share 这几个核心指标
+- 学会从品牌词占比、关键词趋势、竞品气泡图里读出结论
+</Goals>
+
+打开方式：顶部搜索框输入域名回车，或 SEO 菜单 → Competitive Analysis → <UI zh="域名概览">Domain Overview</UI>。
+
+## 核心指标卡 [#核心指标卡]
+
+<Shot id="sm-do-top" caption="Domain Overview：remove.bg（Worldwide，2026-10-28）" space={[0, 0, 60, 16]}>
+  <Mark n={1} box="db" shape="rect">
+    数据库：Domain Overview 默认 **Worldwide**，把所有国家数据库加在一起。点 US、UK 等按钮看单个国家。
+  </Mark>
+  <Mark n={2} box="aiVis" shape="rect">
+    **AI Visibility 38**：AI 搜索可见度（0–100），Mentions 是 AI 回答里提到 remove.bg 的次数（1.64 万），Cited Pages 是被 AI 引用为来源的页面数（3,400）。详见 [AI 可见度](/semrush/ai-visibility)。
+  </Mark>
+  <Mark n={3} box="aiPlat" shape="rect">
+    按 AI 平台拆开：谷歌 AI Overview 提到 7,700 次，远多于 ChatGPT 的 1,500 次。
+  </Mark>
+  <Mark n={4} box="as" shape="rect">
+    **Authority Score 90（Very good）**：Semrush 综合外链质量、自然流量和链接自然程度打的权威分，0–100。新站一般在 10 以下，能到 50 就算有一定权威。
+  </Mark>
+  <Mark n={5} box="orgTraffic" shape="rect">
+    **Organic Traffic 3,600 万**：估算的谷歌自然搜索月流量，比上月下降 8.6%。
+  </Mark>
+  <Mark n={6} box="paid" shape="rect">**Paid Traffic 0**：没有投谷歌搜索广告。</Mark>
+  <Mark n={7} box="rd" shape="rect">
+    **Ref.Domains 3.56 万**：有多少个不同的网站链接到 remove.bg。比外链总数更能说明外链实力。
+  </Mark>
+  <Mark n={8} box="share" shape="rect" label="美国同行里占 81%" at="bottom-left" dy={26}>
+    Traffic Share：在 US 数据库里，remove.bg 的自然流量占它和主要竞品总流量的 81%，是这个细分领域的绝对头部。
+  </Mark>
+  <Mark n={9} box="orgKw" shape="rect" label="17.7 万个排名词" at="bottom" dy={26}>
+    Organic Keywords：在谷歌前 100 名有排名的关键词数（所有国家合计），比上月少 0.9%。
+  </Mark>
+  <Mark n={10} box="bl" shape="rect" label="190 万条外链" at="bottom" dy={26} />
+</Shot>
+
+## 流量分布与趋势 [#流量分布与趋势]
+
+卡片下方先选 <UI zh="谷歌搜索">Google Search</UI>（默认是 AI Search），就能看到自然流量按国家的分布和近一年的趋势。
+
+<Shot id="sm-do-trend" caption="Google Search 视角：国家分布、品牌词占比、流量与关键词趋势（1Y）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="toggle" shape="rect">AI Search / Google Search：切换左侧两张表的数据来源，先选 Google Search。</Mark>
+  <Mark n={2} box="inRow" shape="rect">
+    **印度流量 970 万，比美国（320 万）多三倍**。工具站的流量大头经常不在美国，做多语言和低价市场前先看这里。
+  </Mark>
+  <Mark n={3} box="branded" shape="rect">
+    **Branded 71.6%**：七成多的自然流量来自品牌词（remove bg、removebg 这类）。品牌词流量越高，说明用户是"冲着它来的"，竞品很难抢。
+  </Mark>
+  <Mark n={4} box="serpDist" shape="rect">
+    Google SERP Positions Distribution：它的排名里 84.4% 是普通自然结果，13.6% 出现在谷歌的 AI Overviews 里。
+  </Mark>
+  <Mark n={5} box="period" shape="rect">时间范围：1M / 6M / 1Y / 2Y / All time。</Mark>
+  <Mark n={6} box="trafficChart" shape="rect">
+    Traffic：深色是自然流量，浅紫色是品牌词流量。两条线几乎同步，再次说明流量主要靠品牌。
+  </Mark>
+  <Mark n={7} box="kwDrop" shape="rect" label="排名词数大幅下滑" at="top" dy={-10}>
+    Keywords：按排名区间（Top 3、4–10、11–20…）堆叠的关键词数。2026 年 4–8 月，排名词从 50 多万降到 14 万左右，但流量基本没变——掉的都是排在后面、几乎没流量的长尾词。
+  </Mark>
+  <Mark n={8} box="markers" shape="rect">
+    图表底部的小图标是备注：G 是谷歌算法更新，红旗是 Semrush 记录的数据变化。曲线突然跳变时，先看是不是撞上了更新。
+  </Mark>
+</Shot>
+
+## 自然搜索：关键词、主题、意图 [#自然搜索关键词主题意图]
+
+<Shot id="sm-do-organic" caption="Organic Research（US 数据库）：Top Organic Keywords、Key Topics、Keywords by Intent、排名分布" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="headUs" shape="rect" label="这部分只看 US" at="right" dx={10}>
+    页面上半部分是 Worldwide，从 Organic Research 开始是单个国家（默认 US）的数据。
+  </Mark>
+  <Mark n={2} box="r1" shape="rect">
+    流量最大的词：background remover（月搜索 100 万，排第 1，带来 24.88% 的流量）。前五个词全是品牌词或核心词，而且都排第 1。
+  </Mark>
+  <Mark n={3} box="intentCol" shape="rect">
+    Intent 搜索意图：N 导航型、I 信息型、C 商业型、T 交易型。一个词可能同时有两种意图。
+  </Mark>
+  <Mark n={4} box="tree" shape="rect">
+    Key Topics：Semrush 用 AI 把它的关键词归成主题，面积越大流量越多。Background Removal 一个主题就有 44.7 万流量。
+  </Mark>
+  <Mark n={5} box="iNav" shape="rect">
+    **导航型词只占 6.1%，却带来 200 万流量**，比占 83.7% 的信息型词还多——品牌词的力量。
+  </Mark>
+  <Mark n={6} box="bars13" shape="rect" label="前 3 名" at="top" dy={-8} />
+  <Mark n={7} box="bars2100" shape="rect" label="21–100 名的词最多" at="top" dy={-8}>
+    Organic Position Distribution：大部分词排在 21–100 名，这些词几乎没有流量，但说明谷歌认为页面和这些词相关，是可以优化的储备。
+  </Mark>
+</Shot>
+
+## 竞品和广告 [#竞品和广告]
+
+<Shot id="sm-do-comp" caption="Main Organic Competitors、Competitive Positioning Map 与 Advertising Research（US）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="photoroom" shape="rect">
+    Main Organic Competitors：和它抢同一批关键词的网站，按竞争程度排序。头号竞品是 photoroom.com。
+  </Mark>
+  <Mark n={2} box="comLevel" shape="rect">Com. Level：竞争程度，共同关键词越多、占比越高，条越长。</Mark>
+  <Mark n={3} box="comKw" shape="rect">Com. Keywords：两站都有排名的共同关键词数。photoroom 和 remove.bg 有 6,842 个共同词。</Mark>
+  <Mark n={4} box="seKw" shape="rect">SE Keywords：竞品自己的排名词总数。photoroom 有 4.27 万个，比 remove.bg（US 2.9 万）还多。</Mark>
+  <Mark n={5} box="bRemove" shape="rect" label="词不多，流量最大" at="left" dx={-10}>
+    Competitive Positioning Map：横轴是关键词数，纵轴是自然流量，气泡越大流量越大。remove.bg 在 3 万个词的位置拿到了 300 多万流量。
+  </Mark>
+  <Mark n={6} box="bPhotoroom" shape="rect" label="词最多，流量小" at="top" dy={-6}>
+    photoroom 排名词最多，但流量只有 remove.bg 的十分之一左右——词多不等于流量大，关键看有没有占住大词的前几名。
+  </Mark>
+  <Tag box="adHead" text="没有投搜索广告" at="right" dx={10} />
+</Shot>
+
+页面再往下是 **Backlinks** 外链概况：
+
+<Shot id="sm-do-backlinks" caption="Backlinks（Worldwide，All time）：外链列表、Follow vs Nofollow、外链类型、锚文本、引荐域名" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="spam" shape="rect">
+    最新抓到的外链里，大量来自"小舅子导航"这类批量生成的导航页，而且是 nofollow。大站的外链里混着垃圾链接很正常。
+  </Mark>
+  <Mark n={2} box="a16z" shape="rect">a16z 的"Top 100 Gen AI Consumer Apps"榜单给了 follow 链接，这才是有价值的外链。</Mark>
+  <Mark n={3} box="followNums" shape="rect">Follow 104 万 / Nofollow 89 万：只有 follow 链接会传递权重。</Mark>
+  <Mark n={4} box="brandAnchors" shape="rect">
+    Top Anchors：锚文本里有 remove、消除图片背景、免费在线抠图——说明它在中文站点上也有大量外链。
+  </Mark>
+  <Mark n={5} box="rdRows" shape="rect">Referring Domains：链接最多的引荐域名，完整分析见 [外链分析](/semrush/backlinks)。</Mark>
+</Shot>
+
+<Callout type="idea" title="5 分钟读懂一个网站">
+  | 看哪里 | 回答什么问题 |
+  | --- | --- |
+  | Authority Score、Ref.Domains | 这个站的外链实力有多强，新站能不能正面竞争 |
+  | Organic Traffic + 趋势 | 规模多大，在涨还是在跌 |
+  | Distribution by Country | 流量主要来自哪些国家 |
+  | Branded / Non-Branded | 靠品牌还是靠 SEO 拿流量；非品牌流量越高，越值得研究它的关键词 |
+  | Main Organic Competitors | 同赛道还有谁，下一步该拆谁 |
+  | Paid Traffic / Advertising Research | 有没有投广告 |
+</Callout>
+
+<Practice>
+1. 打开 photoroom.com 的 Domain Overview，记录它的 Authority Score、Organic Traffic 和 Branded 占比，和 remove.bg 对比。
+2. 把数据库切到 IN（印度），看看 remove.bg 在印度排名第一的词是什么。
+3. 在 Main Organic Competitors 里挑一个你没听说过的竞品，打开它的 Domain Overview。
+</Practice>
+
+
+# Semrush 常见问题 (/semrush/faq)
+
+<Accordions>
+<Accordion title="Semrush 的流量和 Similarweb、Google Search Console 为什么对不上？">
+  三者口径完全不同：Semrush 的 Organic Traffic 只算**谷歌自然搜索**，而且只算它数据库里有排名的词；Similarweb 算的是**所有渠道的总访问**；Search Console 是网站自己的**真实点击**。Semrush 通常比 Search Console 低，因为长尾词和新词覆盖不全。比较时只在同一个工具里比，看相对高低和趋势。
+</Accordion>
+<Accordion title="数据库选 Worldwide 还是 US？">
+  看整体规模用 Worldwide（只有 Domain Overview 等少数报告支持）；分析具体关键词、排名、难度，一定要选单个国家，通常先看 US，再看流量最大的那个国家。**比较两个网站、两个词时，必须用同一个数据库。**
+</Accordion>
+<Accordion title="搜索量是这个月的，还是平均值？">
+  Volume 是过去 12 个月的月均搜索量。季节性强的词旺季会远高于这个数；突然起量的新词，最近几个月的真实搜索量也会比平均值高。看 Trend 柱状图判断。
+</Accordion>
+<Accordion title="KD 多少算能做？">
+  新站优先 KD 50% 以下，最好是 30% 以下；但 KD 只是前十名的平均难度，一定要再看 SERP Analysis 里有没有 Page AS 低、引荐域名少的页面。详见 [关键词难度](/semrush/keyword-difficulty)。
+</Accordion>
+<Accordion title="同一个网站，不同报告里的关键词数为什么不一样？">
+  统计范围不同：Domain Overview 顶部是所有国家合计，Organic Rankings 是单个国家；Keyword Gap 只统计参与对比的数据；有的报告包含 SERP 特性里的排名，有的不包含；日期也可能不同。看同一个报告里的变化即可。
+</Accordion>
+<Accordion title="提示 “Reports per day are limited” 怎么办？">
+  每个套餐都有每日报告数上限，打开报告、翻页、换筛选、导出都会消耗，第二天恢复。多人共用一个账号时更容易用完：先把要查的网站和词整理好再集中查，少翻页、不导出。
+</Accordion>
+<Accordion title="Topic Research 一直显示 Collecting content ideas？">
+  Topic Research 要先在后台收集选题卡片，网络或账号环境不好时会一直停在加载状态。可以换个时间再试，或者先用 Keyword Overview 的 Questions、Keyword Strategy 和 AI 工具箱的 Prompt Research 找选题。
+</Accordion>
+<Accordion title="Site Audit、Position Tracking 这些工具怎么用？">
+  它们要先创建 Project（项目），填写自己的网站，适合管理**自己的**网站：Site Audit 定期体检技术问题，Position Tracking 每天追踪指定关键词的排名。项目会保存在账号里，多人共用的账号里别人也能看到。
+</Accordion>
+<Accordion title="Traffic & Market 和 Similarweb 有什么区别？">
+  Semrush 的 Traffic & Market 工具箱（Traffic Analytics 等）也能看网站的总访问、渠道和受众，功能上和 Similarweb 接近，但需要单独订阅。本教程的总流量部分用 Similarweb 讲解，见 [Similarweb 教程](/similarweb)。
+</Accordion>
+<Accordion title="免费账号能做什么？">
+  免费账号每天只能查少量报告，表格只显示前几行，适合偶尔查一个网站或一个词的概览。要系统地拓词、做差距分析，需要付费套餐。
+</Accordion>
+</Accordions>
+
+
+# Semrush 指标词典 (/semrush/glossary)
+
+## 网站指标 [#网站指标]
+
+| 指标 | 中文 | 解释 |
+| --- | --- | --- |
+| Authority Score (AS) | 权威分 | 综合外链质量、自然流量、链接自然程度的分数，0–100 |
+| Page AS | 页面权威分 | 单个页面的权威分 |
+| Organic Traffic | 自然流量 | 估算的谷歌自然搜索月流量 = 排名 × 点击率 × 搜索量，加总 |
+| Paid Traffic | 付费流量 | 估算的谷歌搜索广告月流量 |
+| Traffic Cost | 流量价值 | 这些自然流量如果用谷歌广告买，每月要花多少钱 |
+| Traffic Share | 流量份额 | 在它和主要竞品的自然流量里所占的比例 |
+| Organic Keywords | 自然排名词 | 在谷歌前 100 名有排名的关键词数 |
+| Branded / Non-Branded Traffic | 品牌 / 非品牌流量 | 来自品牌词（含品牌名的词）和其他词的流量 |
+| Organic Pages | 自然流量页面数 | 有自然流量的页面数 |
+| Cited Pages | 被 AI 引用的页面 | 被 AI 回答列为来源的页面数 |
+
+## 关键词指标 [#关键词指标]
+
+| 指标 | 中文 | 解释 |
+| --- | --- | --- |
+| Volume | 搜索量 | 所选国家过去 12 个月的月均搜索次数 |
+| Global Volume | 全球搜索量 | 所有国家数据库的搜索量之和 |
+| KD % (Keyword Difficulty) | 关键词难度 | 进入谷歌前十的难度，0–100%，分 Very easy 到 Very hard 六档 |
+| Intent | 搜索意图 | I 信息型、N 导航型、C 商业型、T 交易型 |
+| CPC | 单次点击价格 | 投谷歌广告时每次点击的平均价格（美元） |
+| Competitive Density (Com.) | 广告竞争度 | 有多少广告主在投这个词，0–1 |
+| Trend | 趋势 | 过去 12 个月每月的搜索量 |
+| SERP Features (SF) | 搜索特性 | 结果页上除普通结果以外的模块：AI 概览、图片、视频、问答、评分等 |
+| AI Overview | AI 概览 | 谷歌在结果页顶部给出的 AI 答案 |
+| Results | 结果数 | 谷歌返回的搜索结果总数 |
+| Position | 排名 | 在谷歌结果里的位置 |
+| Traffic % | 流量占比 | 这个词带来的流量占全站自然流量的比例 |
+
+## 匹配方式与差距分类 [#匹配方式与差距分类]
+
+| 术语 | 解释 |
+| --- | --- |
+| Broad Match | 包含种子词的每个单词，顺序不限，含变形 |
+| Phrase Match | 包含完整短语，顺序不变 |
+| Exact Match | 包含完全相同的短语 |
+| Related | 语义相关的词 |
+| New / Lost | 新进入 / 掉出前 100 名的词（或新增 / 丢失的页面、引荐域名） |
+| Improved / Declined | 排名上升 / 下降的词 |
+| Shared | 所有对比网站都有排名的词 |
+| Missing | 竞品都有、你没有的词 |
+| Weak | 你有排名但比所有竞品都低的词 |
+| Strong | 你排名比所有竞品都高的词 |
+| Untapped | 至少一个竞品有、你没有的词 |
+| Unique | 只有你有排名的词 |
+| Best（Backlink Gap） | 链接了所有竞品、没链接你的网站 |
+
+## 外链指标 [#外链指标]
+
+| 指标 | 中文 | 解释 |
+| --- | --- | --- |
+| Backlinks | 外链 | 指向这个网站的链接总条数 |
+| Referring Domains | 引荐域名 | 有多少个不同的网站链接过来 |
+| Follow / Nofollow | 传递 / 不传递权重 | nofollow 链接告诉搜索引擎不要传递权重 |
+| Anchor | 锚文本 | 链接上显示的文字 |
+| Outbound Domains | 链出域名 | 这个网站链接出去的网站数 |
+| Toxicity Score | 有害外链评分 | 外链里可疑链接的程度，需要在 Backlink Audit 里给自己的网站建项目 |
+| Network Graph | 链接网络图 | 把网站和引荐域名画成网络，判断是否有站群 |
+
+## AI 指标 [#ai-指标]
+
+| 指标 | 中文 | 解释 |
+| --- | --- | --- |
+| AI Visibility | AI 可见度 | 品牌在 AI 回答里的综合曝光分，0–100 |
+| Mentions | 提及次数 | AI 回答里提到品牌的次数 |
+| Citations | 引用次数 | AI 回答把品牌页面列为来源的次数 |
+| Prompts | 提示词 | 用户向 AI 提问的原文 |
+| AI Volume | AI 搜索量 | 某个话题在 AI 里每月被问的估算次数 |
+| Task | 任务型意图 | 用户让 AI 直接完成某件事 |
+
+
+# Semrush 教程 (/semrush)
+
+Semrush 是一款**搜索营销工具**：输入一个域名，能看到它在谷歌上靠哪些关键词拿到流量、排在第几、竞品是谁、有多少外链；输入一个关键词，能看到它每月多少人搜、难不难做、谷歌前十都是谁。
+
+如果说 [Similarweb](/similarweb) 回答的是"这个网站有多少流量、流量从哪来"，Semrush 回答的就是"它靠哪些词拿到搜索流量、这些词我能不能做"。两个工具配合，才是完整的找词与竞品分析流程。
+
+<Goals>
+- 看懂 Semrush 的核心报告：域名概览、自然排名、热门页面、关键词差距、关键词概览、拓词、外链、AI 可见度
+- 学会用它做三件事：**拆解竞品的 SEO**、**从种子词拓出长尾词**、**判断一个词值不值得做**
+- 知道 Semrush 的数据怎么估算出来、和 Similarweb 对不上时该信谁
+</Goals>
+
+## 谁适合阅读本教程？ [#谁适合阅读本教程]
+
+- 想做出海网站、工具站，需要验证"这个词有没有人搜、新站能不能排上去"的独立开发者
+- 做 SEO / 内容的运营，需要研究竞品的关键词和外链
+- 学完了 Similarweb 教程，想把"找到的词"进一步验证的人
+
+## 需要具备的基础 [#需要具备的基础]
+
+- 能登录 Semrush（本教程截图基于 **Semrush Guru** 套餐的 SEO 工具箱和 AI Visibility）
+- 知道什么是关键词、排名、外链即可，其他指标在教程里和[指标词典](/semrush/glossary)里都有解释
+
+<Callout title="没有付费账号也能先学">
+  Semrush 的免费账号每天能查少量报告，Domain Overview、Keyword Overview 的概览部分都能看到。本教程前几章在免费账号里也能跟着操作，拓词、差距分析、完整排名表需要付费套餐。
+</Callout>
+
+## 怎么看本教程的截图 [#怎么看本教程的截图]
+
+标注规则和 Similarweb 教程完全一样：
+
+| 标注 | 含义 |
+| --- | --- |
+| 蓝色圆形数字 ① ② ③ | 看图顺序，图下方的「步骤说明」按同样的序号详细解释 |
+| 红色圈 / 红色框 | 要点击或要看的位置 |
+| 浅蓝色标签 | 这一步做什么 |
+| 红色实心标签 | 这个位置的关键数字 / 结论 |
+
+点击任意截图可以放大查看；手机上图里只显示序号，文字说明看图下方的步骤列表。
+
+<Callout type="warn" title="关于数据日期">
+  截图采集于 2026 年 10 月，示例网站用 **remove.bg**，竞品用 photoroom.com 和 pixelcut.ai，示例关键词用 remove background。除特别说明外，数据库都是 **United States（美国）**。你实际操作时看到的数字会不同，重要的是学会在哪里看、怎么判断。
+</Callout>
+
+## 学习路线 [#学习路线]
+
+<Steps>
+<Step>
+### 入门 [#入门]
+
+[Semrush 简介](/semrush/intro)：它是什么、数据怎么估算、和 Similarweb 怎么分工；[界面导览](/semrush/interface)：左侧工具箱、顶部搜索框和每个报告都有的数据库、设备、日期控件。
+</Step>
+<Step>
+### 竞品分析 [#竞品分析]
+
+以 remove.bg 为例：[域名概览](/semrush/domain-overview) → [自然排名](/semrush/organic-rankings) → [热门页面](/semrush/top-pages) → [关键词差距](/semrush/keyword-gap)。
+</Step>
+<Step>
+### 关键词研究 [#关键词研究]
+
+[关键词概览](/semrush/keyword-overview)：给一个词做体检；[Keyword Magic Tool 拓词](/semrush/keyword-magic-tool)：从种子词拓出几万个长尾词；[关键词难度](/semrush/keyword-difficulty)：判断新站能不能做。
+</Step>
+<Step>
+### 外链与 AI [#外链与-ai]
+
+[外链分析](/semrush/backlinks)、[外链差距](/semrush/backlink-gap)：竞品的外链从哪来、你还缺哪些；[AI 可见度](/semrush/ai-visibility)：品牌在 ChatGPT、谷歌 AI 概览里被提到多少次。
+</Step>
+<Step>
+### 实战 [#实战]
+
+[验证一个新词值不值得做](/semrush/case-validate-keyword)、[30 分钟拆解竞品的 SEO](/semrush/case-competitor)。遇到问题先查 [指标词典](/semrush/glossary) 和 [常见问题](/semrush/faq)。
+</Step>
+</Steps>
+
+
+# Semrush 界面导览与通用控件 (/semrush/interface)
+
+<Goals>
+- 认识左侧的工具箱导航，知道 SEO 菜单里每一组工具解决什么问题
+- 会用顶部搜索框打开任意域名或关键词的报告
+- 掌握报告顶部的通用控件：数据库（国家）、设备、日期、子报告标签
+</Goals>
+
+登录后看到的是 Semrush 首页。不管查什么，操作路径都是同一个套路：
+
+> 顶部搜索框输入域名或关键词 → 进入对应报告 → 用报告顶部的控件换国家、设备、日期 → 在左侧菜单里切换到相关报告
+
+## 左侧导航：工具箱和 SEO 菜单 [#左侧导航工具箱和-seo-菜单]
+
+左侧最窄的一列是**工具箱**，鼠标移到某个图标上，会弹出这个工具箱的菜单。本教程主要用 SEO 工具箱。
+
+<Shot id="sm-ui-nav" caption="左侧工具箱导航，鼠标移到 SEO 上弹出的菜单" space={[0, 250, 0, 16]}>
+  <Mark n={1} box="seoNav" shape="rect">
+    SEO 工具箱：本教程 90% 的报告都在这里。进入某个报告后，左侧会展开同样的二级菜单。
+  </Mark>
+  <Mark n={2} box="gSite" shape="rect" label="要先建项目" at="right">
+    Site Performance：Site Audit（网站体检）、Position Tracking（每天追踪排名）。这两个工具要先创建项目、填写自己的网站，适合管理自己的站，本教程不展开。
+  </Mark>
+  <Mark n={3} box="gComp" shape="rect" label="竞品分析" at="right">
+    Competitive Analysis：Domain Overview、Organic Rankings、Top Pages、Compare Domains、Keyword Gap、Backlink Gap。**分析任何一个网站都从这里开始。**
+  </Mark>
+  <Mark n={4} box="gKw" shape="rect" label="关键词研究" at="right">
+    Keyword Research：Keyword Overview 给一个词做体检，Keyword Magic Tool 拓词，Keyword Strategy Builder 把词自动分组成内容规划，Saved Keywords 是收藏夹。
+  </Mark>
+  <Mark n={5} box="gCi" shape="rect" label="内容选题" at="right">
+    Content Ideas：Topic Research 按主题找选题和问题，SEO Writing Assistant 在写作时检查关键词覆盖。
+  </Mark>
+  <Mark n={6} box="gLb" shape="rect" label="外链" at="right">
+    Link Building：Backlinks、Referring Domains 查任意网站的外链；Backlink Audit 检查自己网站的有害外链（要建项目）。
+  </Mark>
+  <Mark n={7} box="otherNav" shape="rect">
+    其他工具箱：AI（AI 可见度）、Traffic & Market（网站流量，和 Similarweb 类似）、Ad（广告研究）、Local（本地商家）、Content、AI PR、Social、Reports、Apps。没有开通的工具箱打开后会显示升级提示。
+  </Mark>
+</Shot>
+
+<Callout title="菜单名称会变">
+  Semrush 经常调整菜单。比如以前叫 Organic Research 的报告，现在叫 **Organic Rankings**；Keyword Manager 改名成了 Keyword Strategy Builder。找不到某个报告时，直接在顶部搜索框旁的 "Go to tool..." 里搜报告名。
+</Callout>
+
+## 顶部搜索框和报告通用控件 [#顶部搜索框和报告通用控件]
+
+打开任意一个报告（下图是 remove.bg 的 Domain Overview），顶部这几排控件在大部分报告里都一样：
+
+<Shot id="sm-ui-controls" caption="顶部搜索框和报告控件：Domain Overview › remove.bg" space={[50, 0, 70, 16]}>
+  <Mark n={1} box="search" shape="rect" label="输入域名或关键词" at="top">
+    输入域名（如 `remove.bg`）回车打开 Domain Overview；输入关键词（如 `remove background`）回车打开 Keyword Overview。在 AI 工具箱里输入关键词，会打开 AI 的 Prompt Research。
+  </Mark>
+  <Mark n={2} box="searchType" shape="rect" label="分析范围" at="top">
+    Root Domain 统计整个根域名（含所有子域名）；也可以选 Subdomain、Subfolder（如 `remove.bg/es/`）或 Exact URL（单个页面）。
+  </Mark>
+  <Mark n={3} box="db" shape="rect" label="数据库 = 国家" at="bottom" dy={58}>
+    关键词和排名数据按国家分库。Domain Overview 默认 Worldwide（全球汇总），其他报告默认 US。**比较两个网站时一定要用同一个数据库。**
+  </Mark>
+  <Mark n={4} box="device" shape="rect" label="设备" at="bottom" dy={58}>
+    Desktop / Mobile：谷歌桌面和移动端的排名不同，移动端占比高的网站要切到 Mobile 再看一次。
+  </Mark>
+  <Mark n={5} box="date" shape="rect" label="数据日期" at="bottom" dy={58}>
+    默认是最新数据，可以选过去的日期，看某个时间点的排名快照（需要有历史数据的套餐）。
+  </Mark>
+  <Mark n={6} box="tabs" shape="rect">子报告标签：同一个报告的不同视角，比如 Domain Overview 的 Growth report（增长报告）、Compare by countries（按国家对比）。</Mark>
+  <Mark n={7} box="manual" shape="rect">User manual：这个报告的官方说明，看不懂某个指标时最快的查法。</Mark>
+  <Mark n={8} box="pdf" shape="rect">Export to PDF：导出报告。会消耗额度，多人共用的账号尽量不要导出。</Mark>
+</Shot>
+
+## 常用报告怎么打开 [#常用报告怎么打开]
+
+| 想看什么 | 打开方式 |
+| --- | --- |
+| 一个网站的整体情况 | 搜索框输入域名 → Domain Overview |
+| 一个网站排在哪些词上 | SEO 菜单 → Organic Rankings → Positions |
+| 一个网站哪些页面流量最大 | SEO 菜单 → Top Pages |
+| 几个网站的关键词差距 | SEO 菜单 → Keyword Gap，填入 2–5 个域名 |
+| 一个词的搜索量和难度 | 搜索框输入关键词 → Keyword Overview |
+| 围绕一个词拓词 | SEO 菜单 → Keyword Magic Tool |
+| 一个网站的外链 | SEO 菜单 → Backlinks |
+
+<Callout type="warn" title="不要在别人能看到的地方建项目">
+  Site Audit、Position Tracking、Backlink Audit、On Page SEO Checker 这类工具要先建 **Project（项目）**，项目和收藏的关键词清单会保存在账号里。如果你用的是多人共用的账号，别人也能看到；而且首页、搜索框下拉里出现的"最近查询"，也可能是别人查过的网站。
+</Callout>
+
+<Practice>
+1. 把鼠标移到左侧的 SEO 图标上，依次找到 Domain Overview、Keyword Magic Tool、Backlinks 三个报告。
+2. 打开 remove.bg 的 Domain Overview，把数据库从 Worldwide 切到 US，记下 Organic Traffic 前后的变化。
+</Practice>
+
+
+# Semrush 简介 (/semrush/intro)
+
+<Goals>
+- 知道 Semrush 能回答哪些问题、不能回答哪些问题
+- 理解搜索量、自然流量这些数字是怎么估算出来的，知道什么时候可信
+- 分清 Semrush 和 Similarweb 各自擅长什么
+</Goals>
+
+## Semrush 是什么 [#semrush-是什么]
+
+Semrush 是一套**搜索营销工具**，核心是一个按国家划分的关键词数据库：它持续抓取谷歌的搜索结果，记录每个关键词每月大概有多少人搜、前 100 名分别是哪些网页。有了这份数据，就能反过来查任意一个网站排在哪些词上、大概能拿到多少搜索流量。
+
+它能回答的典型问题：
+
+| 问题 | 去哪看 |
+| --- | --- |
+| 这个网站在谷歌上有多少自然流量？在涨还是跌？ | [域名概览](/semrush/domain-overview) |
+| 它靠哪些关键词拿流量？最近新排上了哪些词？ | [自然排名](/semrush/organic-rankings) |
+| 它哪些页面带来的流量最多？ | [热门页面](/semrush/top-pages) |
+| 竞品有排名、我没有的词有哪些？ | [关键词差距](/semrush/keyword-gap) |
+| 一个词每月多少人搜？难不难做？前十名是谁？ | [关键词概览](/semrush/keyword-overview) |
+| 围绕一个种子词，还有哪些长尾词？ | [Keyword Magic Tool](/semrush/keyword-magic-tool) |
+| 它有多少外链、从哪些网站来？我还缺哪些？ | [外链分析](/semrush/backlinks)、[外链差距](/semrush/backlink-gap) |
+| AI 回答里提到它多少次？ | [AI 可见度](/semrush/ai-visibility) |
+
+## 数据从哪来、怎么估算 [#数据从哪来怎么估算]
+
+| 数据 | 来源和算法 | 注意 |
+| --- | --- | --- |
+| 搜索量 Volume | 第三方点击流数据 + 模型，得出**过去 12 个月的月均搜索量** | 季节性强的词，旺季的实际搜索量会比月均高很多 |
+| 排名 Position | Semrush 自己抓取谷歌搜索结果，记录前 100 名 | 每个词的更新频率不同，表格里的 Updated 列写着最后更新时间 |
+| 自然流量 Traffic | 排名 × 该位置的点击率 × 搜索量，把一个网站所有词加起来 | 只统计数据库里有的词；长尾词、新词覆盖不全，所以通常比真实值低 |
+| 外链 Backlinks | Semrush 的爬虫抓取全网网页上的链接 | 只能看到被抓到的链接，新链接要过几天才出现 |
+| AI 可见度 | 用一组提示词去问 ChatGPT、谷歌 AI 概览等，统计回答里提到哪些品牌 | 是抽样估算，看趋势和相对高低，不要当成精确次数 |
+
+<Callout type="warn" title="数据准不准？">
+  - **自然流量是估算出来的**：它只算谷歌自然搜索，而且只算 Semrush 数据库里有的词。和网站自己 Google Search Console 里的点击数对不上是常态，Semrush 通常偏低
+  - **大词准、小词偏差大**：月搜索几千以上的词比较可靠；只有几十次的词，搜索量、难度都可能不准
+  - **看相对值比看绝对值更有用**：同一工具、同一数据库里，A 站比 B 站多、这个月比上个月多，比单个数字更值得相信
+  - **数据库要选对**：同一个网站在 US 数据库和 Worldwide 下的数字差别很大，比较时一定用同一个数据库
+</Callout>
+
+## 套餐和工具箱 [#套餐和工具箱]
+
+Semrush 的功能按"工具箱"拆开卖：SEO 工具箱（本教程的重点，套餐分 Pro、Guru、Business）、AI Visibility、Traffic & Market（网站流量，类似 Similarweb）、Content、Local、Social、Advertising 等。不同工具箱需要单独订阅，没开通的会显示升级提示。
+
+| 套餐 | 适合 | 和本教程有关的区别 |
+| --- | --- | --- |
+| 免费账号 | 偶尔查一下 | 每天只能查少量报告，表格只显示前几行 |
+| Pro | 个人站长 | 大部分 SEO 报告可用，没有历史数据和内容工具 |
+| Guru | 本教程截图使用的套餐 | 有历史数据、Topic Research、更多项目和每日报告数 |
+| Business | 团队、机构 | 更多额度，支持 API 等 |
+
+每个套餐都有**每日报告数上限**，打开一个报告、换一次筛选都会消耗。达到上限后报告页会提示 "Reports per day are limited"，第二天恢复。
+
+## Semrush 和 Similarweb 怎么分工 [#semrush-和-similarweb-怎么分工]
+
+| | Semrush | Similarweb |
+| --- | --- | --- |
+| 核心视角 | **搜索引擎**：关键词、排名、外链 | 网站的**全部流量**：直接访问、搜索、社交、引荐、广告、AI |
+| 流量数字 | 只算谷歌自然搜索（和付费搜索） | 所有渠道的总访问 |
+| 关键词 | 数据库大，有难度 KD、搜索意图、SERP 分析、拓词 | 能看到真实点击、零点击、新出现的词（New Clicks） |
+| 外链 | 强项：外链列表、锚文本、外链差距 | 只有引荐流量，没有外链数据 |
+| 适合的问题 | "这个词能不能做、怎么做" | "这个方向有没有流量、流量从哪来" |
+
+一个常见的组合用法：先在 Similarweb 里看一个网站或行业的流量规模、找到新冒出来的词（[实战：从托管平台和排行榜里挖新词](/similarweb/case-new-keywords)），再把这些词拿到 Semrush 里查搜索量、难度和前十名（[实战：验证一个新词值不值得做](/semrush/case-validate-keyword)）。
+
+<Practice>
+1. 用免费或付费账号登录 Semrush，在顶部搜索框输入 `remove.bg`，看看打开的是哪个报告。
+2. 再输入 `remove background`，对比一下：输入域名和输入关键词，分别跳到了哪里？
+</Practice>
+
+
+# Semrush 关键词难度 KD 与新站选词 (/semrush/keyword-difficulty)
+
+<Goals>
+- 看懂 KD% 的六个档位，知道新站应该从哪一档做起
+- 学会用 SERP Analysis 判断"难度高但有弱页面"的词
+- 掌握一套判断一个词能不能做的检查清单
+</Goals>
+
+## KD% 的六个档位 [#kd-的六个档位]
+
+KD%（Keyword Difficulty）是 Semrush 根据**谷歌前十名页面的权威度、外链数量和质量**算出来的排名难度，0–100%。在 Keyword Magic Tool、Organic Rankings 等表格的 KD % 筛选里能看到完整的档位：
+
+<Shot id="sm-kmt-kd" caption="KD % 筛选下拉：六个难度档位和自定义区间" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="kdBtn" shape="rect">KD % 筛选。</Mark>
+  <Mark n={2} box="hardRows" shape="rect" label="新站别碰" at="right" dx={10}>
+    Very hard 85–100%、Hard 70–84%、Difficult 50–69%：需要大量高质量外链，新站一年内都很难排进前十。
+  </Mark>
+  <Mark n={3} box="easyRows" shape="rect" label="新站从这里开始" at="right" dx={10}>
+    Possible 30–49%、Easy 15–29%、Very easy 0–14%：内容写好、做好站内优化，就有机会排上去。
+  </Mark>
+  <Mark n={4} box="custom" shape="rect">Custom range：自定义区间，比如 0–40。</Mark>
+  <Mark n={5} box="kd39" shape="rect" label="黄点 = Possible" at="left" dx={-10}>
+    表格里 KD 数字旁的颜色点和档位对应：深红、红是 Hard 以上，橙色是 Difficult，黄色是 Possible，绿色是 Easy 及以下。
+  </Mark>
+</Shot>
+
+| 档位 | KD% | 对新站意味着什么 |
+| --- | --- | --- |
+| Very easy | 0–14 | 写一篇好内容就可能排上去，但通常搜索量也小 |
+| Easy | 15–29 | 新站的主战场 |
+| Possible | 30–49 | 需要结构清晰、内容独特的页面，加少量外链 |
+| Difficult | 50–69 | 需要一定外链和权威度，适合有基础的站 |
+| Hard | 70–84 | 需要大量高质量外链 |
+| Very hard | 85–100 | 大站和品牌的地盘 |
+
+## 只看 KD 不够：还要看前十名是谁 [#只看-kd-不够还要看前十名是谁]
+
+KD% 是前十名的平均难度。平均值高，不代表每个位置都难。回到上一章 remove background（KD 100%）的 SERP Analysis：
+
+<Shot id="sm-ko-serp" caption="remove background 的前 10 名：看 Page AS 和 Ref. Domains" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="colAs" shape="rect">Page AS：页面权威度（0–100），比域名的 Authority Score 更能说明这个页面本身有多强。</Mark>
+  <Mark n={2} box="colRd" shape="rect">Ref. Domains：链接到这个页面的网站数。</Mark>
+  <Mark n={3} box="removebg" shape="rect">第 2 名 remove.bg：Page AS 84、2.01 万个引荐域名——打不动。</Mark>
+  <Mark n={4} box="photiu" shape="rect" label="只有 91 个引荐域名" at="bottom" dy={4}>
+    第 6 名 photiu.ai：Page AS 31、91 个引荐域名。说明这个位置上，内容和用户体验比外链更重要。
+  </Mark>
+  <Mark n={5} box="google" shape="rect">第 10 名是谷歌应用商店里的一个 App，Page AS 30。</Mark>
+</Shot>
+
+<Callout type="idea" title="判断一个词能不能做的 5 步">
+  1. **搜索量够不够**：Volume 每月几百以上，Trend 稳定或在涨（季节性词看旺季）
+  2. **难度在不在射程内**：新站优先 KD 50% 以下
+  3. **前十名有没有弱页面**：SERP Analysis 里有没有 Page AS 低于 40、引荐域名不到 100 的页面
+  4. **意图和你的页面类型是否匹配**：前十名都是工具页，你就做工具页；都是教程，你就写教程
+  5. **有没有商业价值**：CPC 高、Commercial / Transactional 意图，说明有人愿意为它付费
+</Callout>
+
+<Practice>
+1. 在 Keyword Magic Tool 里用 `remove background` 拓词，筛选 KD 15–29%（Easy），挑出搜索量最高的 3 个词。
+2. 逐个打开它们的 SERP Analysis，按上面 5 步打分，选出你最想做的一个。
+</Practice>
+
+
+# Semrush 关键词差距 Keyword Gap (/semrush/keyword-gap)
+
+<Goals>
+- 会设置 Keyword Gap 的对比：自己 + 最多 4 个竞品
+- 看懂 Shared、Missing、Weak、Strong、Untapped、Unique 六种分类
+- 从 Missing 和 Untapped 里挑出可以做的词和产品方向
+</Goals>
+
+打开方式：SEO 菜单 → Competitive Analysis → <UI zh="关键词差距">Keyword Gap</UI>。
+
+## 第一步：填写对比的域名 [#第一步填写对比的域名]
+
+<Shot id="sm-kg-setup" caption="Keyword Gap：remove.bg 对比 photoroom.com、pixelcut.ai" space={[0, 0, 0, 0]}>
+  <Mark n={1} box="you" shape="rect" label="你的网站" at="top" dy={-4}>第一行固定是"你"，这里填 remove.bg。</Mark>
+  <Mark n={2} box={["comp1", "comp2"]} shape="rect">竞品：最多再填 4 个。可以先用 Domain Overview 里的 Main Organic Competitors 挑。</Mark>
+  <Mark n={3} box="rdCol" shape="rect">每个域名可以单独选范围：Root domain、Subdomain、Subfolder、URL。</Mark>
+  <Mark n={4} box="typeCol" shape="rect">关键词类型：Organic（自然）、Paid（付费广告）、PLA（购物广告），可以混着比。</Mark>
+  <Mark n={5} box="db" shape="rect">数据库（国家）。</Mark>
+  <Mark n={6} box="compare" shape="rect" label="开始对比" at="top" dy={-4} />
+</Shot>
+
+## 第二步：看机会词和重叠关系 [#第二步看机会词和重叠关系]
+
+<Shot id="sm-kg-top" caption="Keyword Gap 结果：Top Opportunities、Keyword Overlap 和六种分类" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="kwTypes" shape="rect">可以随时切换比较自然词、付费词或购物广告词。</Mark>
+  <Mark n={2} box="missWeak" shape="rect">Top Opportunities：Semrush 先挑出的机会词，Missing 是你没有、竞品都有的；Weak 是你排名比竞品都低的。</Mark>
+  <Mark n={3} box="resizer" shape="rect" label="月搜索 183 万" at="right" dx={10}>
+    第一个机会词是 image resizer（调整图片尺寸）——remove.bg 只做抠图，竞品已经在做更多图片工具。
+  </Mark>
+  <Mark n={4} box="vennCenter" shape="rect" label="三家共有的词" at="right" dx={130}>
+    Keyword Overlap：三个圆分别是三个网站的关键词，重叠部分是共同词。photoroom 的圆最大（2.62 万个词）。
+  </Mark>
+  <Mark n={5} box="tMissing" shape="rect">Missing 4.7K：竞品都有排名、你完全没有的词。</Mark>
+  <Mark n={6} box="tUntapped" shape="rect">Untapped 27.4K：至少有一个竞品排名、你没有的词，范围比 Missing 大得多。</Mark>
+</Shot>
+
+| 分类 | 含义 | 怎么用 |
+| --- | --- | --- |
+| Shared | 所有网站都有排名的词 | 了解这个赛道的"基本盘" |
+| **Missing** | 竞品**都有**、你**没有**的词 | 优先补的词：大家都在做，说明需求确定 |
+| Weak | 你有排名，但比所有竞品都低 | 优化已有页面 |
+| Strong | 你排名比所有竞品都高 | 你的护城河，注意守住 |
+| **Untapped** | **至少一个**竞品有、你没有的词 | 范围更大的机会池 |
+| Unique | 只有你有排名的词 | 看看自己的独特优势 |
+
+## 第三步：在 Missing 里挑词 [#第三步在-missing-里挑词]
+
+<Shot id="sm-kg-missing" caption="All keyword details › Missing：竞品都有排名、remove.bg 没有的词（按搜索量排序）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="colRemove" shape="rect">remove.bg 列全是 0：没有排名。</Mark>
+  <Mark n={2} box={["colPhotoroom", "colPixelcut"]} shape="rect">两个竞品的排名，绿色底色表示几家里排名最好的那个。</Mark>
+  <Mark n={3} box="upscaler3" shape="rect" label="pixelcut 排第 3" at="right" dx={10}>
+    image upscaler（图片放大）月搜索 4.95 万，pixelcut 已经排到第 3。
+  </Mark>
+  <Mark n={4} box="kd68" shape="rect" label="难度只有 68" at="right" dx={10}>
+    unblur image（去模糊）难度 68，是这批词里最低的，两个竞品都只排在 15–17 名——还没有人做透。
+  </Mark>
+  <Mark n={5} box="colKd" shape="rect">KD%：这批词难度普遍在 75–92，正面竞争很难，适合找它们的长尾词（见 [Keyword Magic Tool](/semrush/keyword-magic-tool)）。</Mark>
+</Shot>
+
+<Callout type="idea" title="Keyword Gap 不只是找词，也是找产品方向">
+  Missing 里排在前面的 image resizer、image upscaler、image enhancer、unblur image，全是 remove.bg **没有做的图片功能**。对做工具站的人来说，这张表就是一份"竞品已经验证过需求的功能清单"：挑一个难度相对低、竞品排名不靠前的功能，做成单独的工具页。
+</Callout>
+
+<Practice>
+1. 用 Keyword Gap 对比 photoroom.com 和 remove.bg、pixelcut.ai，看看 photoroom 的 Missing 里有哪些词。
+2. 在 remove.bg 的 Untapped 里筛选 KD 小于 50、Volume 大于 1,000，记录 5 个词。
+3. 把 Keyword type 切成 Paid keywords，看看这三家有没有投搜索广告。
+</Practice>
+
+
+# Semrush 拓词 Keyword Magic Tool (/semrush/keyword-magic-tool)
+
+<Goals>
+- 用 Keyword Magic Tool 从一个种子词拓出全部相关词
+- 分清 Broad、Phrase、Exact、Related 四种匹配方式
+- 用左侧分组和 KD、Include、Exclude 筛选，把几万个词缩小到可以做的几十个
+</Goals>
+
+打开方式：SEO 菜单 → Keyword Research → <UI zh="拓词魔法工具">Keyword Magic Tool</UI>，输入种子词；或在 Keyword Overview 的 Keyword Variations 里点 View all。
+
+## 界面一览 [#界面一览]
+
+<Shot id="sm-kmt" caption="Keyword Magic Tool：remove background（US，All Keywords，按 Volume 排序）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="allQ" shape="rect">All / Questions：Questions 只看问题词（how、what、can…）。</Mark>
+  <Mark n={2} box="matchTypes" shape="rect" label="匹配方式" at="top" dy={-6}>
+    All Keywords、Broad Match、Phrase Match、Exact Match、Related，区别见下表。
+  </Mark>
+  <Mark n={3} box="languages" shape="rect">Languages：只看某种语言的词。</Mark>
+  <Mark n={4} box="fKd" shape="rect">筛选：Volume、KD %、Intent、CPC、Include keywords（必须包含）、Exclude keywords（排除）、Advanced filters。</Mark>
+  <Mark n={5} box="groupsList" shape="rect">
+    Groups：Semrush 按词里的单词自动分组，比如 remove（4.85 万个词）、images、photoshop、free、video……点一个组，右边只显示这个组的词。**拓词最快的读法是先扫一遍分组。**
+  </Mark>
+  <Mark n={6} box="summary" shape="rect">一共 51,716 个词，合计月搜索 801 万，平均难度 61%。</Mark>
+  <Mark n={7} box="rGimp" shape="rect">how to remove background in gimp：13.5 万搜索、难度 39，按搜索量排第 6，是前面唯一的黄点。</Mark>
+  <Mark n={8} box="colTrend" shape="rect">Trend：12 个月的搜索量走势，鼓起来的是最近在涨的词。</Mark>
+  <Mark n={9} box="colSerp" shape="rect">SERP Features：结果页上的特性图标。</Mark>
+  <Mark n={10} box="colRes" shape="rect">Results：谷歌的搜索结果数（百万），竞争程度的粗略参考。</Mark>
+</Shot>
+
+| 匹配方式 | 返回什么 | remove background 的例子 |
+| --- | --- | --- |
+| Broad Match | 包含种子词里的每个单词，顺序不限，含单复数等变形 | background remover、remove bg from image |
+| Phrase Match | 包含完整短语，顺序不变 | how to remove background in canva |
+| Exact Match | 包含完整短语，顺序和形式都不变 | remove background free |
+| Related | 语义相关、但不一定包含这些单词的词 | transparent background、cutout image |
+| All Keywords | 以上全部 | — |
+
+## 筛出低难度的长尾词 [#筛出低难度的长尾词]
+
+在 KD % 筛选里选 Possible（30–49%）或填自定义区间，结果如下：
+
+<Shot id="sm-kmt-lowkd" caption="KD 30–49（Possible）的筛选结果：1,437 个词" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="chip" shape="rect">生效的筛选会显示成一个小标签，点 × 取消。</Mark>
+  <Mark n={2} box="avgKd" shape="rect" label="平均难度降到 38%" at="right" dx={10}>
+    剩下 1,437 个词，合计月搜索 80 万。
+  </Mark>
+  <Mark n={3} box="gCanvas" shape="rect">分组也跟着变：canvas、photoshop、transparent 这些"工具名 + 去背景"的组冒了出来。</Mark>
+  <Mark n={4} box="rGif" shape="rect">remove background from gif：3.31 万搜索、难度 37。下一章和实战章会继续分析这个词。</Mark>
+  <Mark n={5} box="rNair" shape="rect">
+    nair hair removal（脱毛膏）也混进来了：Broad Match 会把 removal 这样的变形也算进去。用 **Exclude keywords** 排除 hair、eye 这类无关词。
+  </Mark>
+  <Mark n={6} box="rBackround" shape="rect">backround：拼写错误的词，难度只有 30，同样有 1.81 万搜索。</Mark>
+  <Mark n={7} box="include" shape="rect">Include keywords：比如只看包含 video、gif、png 的词。</Mark>
+</Shot>
+
+<Callout type="idea" title="一个够用的拓词流程">
+  1. 种子词用最短的核心词（remove background、background remover），匹配方式先选 All Keywords
+  2. 先扫左侧 Groups，记下和你产品相关的组（video、gif、canva、photoshop……）
+  3. KD % 选 Possible 及以下，Volume 设 500 以上
+  4. 用 Exclude keywords 排除无关词，用 Include keywords 聚焦某个功能
+  5. 把剩下的词逐个丢进 [Keyword Overview](/semrush/keyword-overview) 看 SERP，确认前十名里有弱页面
+</Callout>
+
+<Callout type="warn" title="少用 Export 和翻页">
+  Keyword Magic Tool 一页 100 个词，每翻一页、每换一次筛选都会消耗报告次数。先用筛选把范围缩小，再翻页；多人共用的账号尽量不要导出整张表。
+</Callout>
+
+<Practice>
+1. 用 `background remover` 当种子词，选 Phrase Match，对比结果数量和 All Keywords 的差别。
+2. 点左侧的 video 组，筛选 KD 低于 50，记录 5 个和视频去背景有关的词。
+3. 切到 Questions，找出搜索量最高的 3 个问题词。
+</Practice>
+
+
+# Semrush 关键词概览 Keyword Overview (/semrush/keyword-overview)
+
+<Goals>
+- 用 Keyword Overview 给一个关键词做完整体检
+- 看懂 Volume、KD%、Intent、CPC、Competitive Density 这几个"值不值得做"的指标
+- 用 SERP Analysis 看清前十名的实力，判断新站有没有机会
+</Goals>
+
+打开方式：顶部搜索框输入关键词回车，或 SEO 菜单 → Keyword Research → <UI zh="关键词概览">Keyword Overview</UI>。在其他报告里点任意一个关键词，也会跳到这里。
+
+## 关键词体检卡片 [#关键词体检卡片]
+
+<Shot id="sm-ko-top" caption="Keyword Overview：remove background（United States，2026-10-28）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="db" shape="rect">数据库：搜索量、难度、前十名都按国家计算，默认 United States。</Mark>
+  <Mark n={2} box="vol" shape="rect">**Volume 82.3 万**：美国每月平均搜索量（过去 12 个月的平均）。</Mark>
+  <Mark n={3} box="kd" shape="rect">
+    **Keyword Difficulty 100%（Very hard）**：Semrush 根据前十名网站的权威度和外链算出的排名难度，0–100%。100% 是最难的一档，提示写着"需要大量站内优化、外链和推广"。
+  </Mark>
+  <Mark n={4} box="gvIN" shape="rect">
+    **Global Volume 820 万**，其中印度 340 万、美国只有 82.3 万。做这个词不能只看美国。
+  </Mark>
+  <Mark n={5} box="intent" shape="rect">Intent：Informational（信息型）。Semrush 按搜索结果页的内容判断用户想干什么。</Mark>
+  <Mark n={6} box="trendPeak" shape="rect" label="近期搜索量走高" at="left" dx={-10}>
+    Trend：过去 12 个月每月的搜索量，近半年明显走高，但最后一个月回落。
+  </Mark>
+  <Mark n={7} box="cpc" shape="rect">**CPC $2.65**：投谷歌广告时每次点击的平均价格，越高说明这个词越值钱。</Mark>
+  <Mark n={8} box="cd" shape="rect">
+    **Competitive Density 0.05**：广告竞争程度（0–1），几乎没人投这个词的广告。PLA、Ads 是 n/a：搜索结果里没有购物广告和文字广告。
+  </Mark>
+</Shot>
+
+<Callout type="idea" title="和 Similarweb 交叉验证">
+  Similarweb 的 [关键词概览](/similarweb/keyword-overview) 给 remove background 的月搜索是 330 万（全球、近 28 天），Semrush 是全球 820 万（12 个月平均）。两边口径不同、量级也不同，**不要拿一个工具的数字去否定另一个**；但两个工具都显示这是一个百万级、难度极高的词，结论就是可信的。
+</Callout>
+
+## 关键词扩展：变体、问题、主题 [#关键词扩展变体问题主题]
+
+<Shot id="sm-ko-ideas" caption="Keyword ideas：Keyword Variations、Questions、Keyword Strategy" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="varHead" shape="rect" label="4.67 万个变体" at="right" dx={10}>
+    Keyword Variations：包含 remove background 的所有词，合计月搜索 430 万。点下方 View all 进入 [Keyword Magic Tool](/semrush/keyword-magic-tool)。
+  </Mark>
+  <Mark n={2} box="gimpRow" shape="rect">
+    how to remove background in gimp：月搜索 13.5 万，难度只有 39（黄色）。教程类的长尾词难度低得多。
+  </Mark>
+  <Mark n={3} box="qHead" shape="rect" label="1.25 万个问题" at="right" dx={10}>
+    Questions：以 how、what、why 等开头的问题词，适合写教程、做 FAQ。
+  </Mark>
+  <Mark n={4} box="kd29" shape="rect" label="难度 29" at="left" dx={-10}>
+    how to remove background in canva：月搜索 6.05 万，难度 29（绿色，Easy）。
+  </Mark>
+  <Mark n={5} box="tree" shape="rect">
+    Keyword Strategy：Semrush 自动把相关词分成"主题 + 子页面"，比如 erase image background、transparent background。点 View all clusters 进入 Keyword Strategy Builder。
+  </Mark>
+</Shot>
+
+## 谁占着这个词：SERP Analysis [#谁占着这个词serp-analysis]
+
+<Shot id="sm-ko-serp" caption="SERP Analysis（URL 视图）：remove background 的谷歌前 10 名（US）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="toggle" shape="rect">Domain / URL：按网站还是按具体页面显示。</Mark>
+  <Mark n={2} box="serpF" shape="rect">SERP Features：这个词的结果页上有 AI 概览、评分、图片、视频。</Mark>
+  <Mark n={3} box="pages" shape="rect">1-10、11-20……：翻看前 100 名。</Mark>
+  <Mark n={4} box="aioRow" shape="rect">第一行是 AI Overview：谷歌在所有自然结果上方先给出 AI 答案。</Mark>
+  <Mark n={5} box="adobeAs" shape="rect">
+    第 1 名是 Adobe Firefly 的去背景页面，Page AS 是 0、外链 0——这是新页面，Semrush 还没算出它的权威度，它靠的是 adobe.com 整个域名的实力。
+  </Mark>
+  <Mark n={6} box="colRd" shape="rect">Ref. Domains：链接到这个页面的网站数。remove.bg 首页有 2.01 万个。</Mark>
+  <Mark n={7} box="photiuAs" shape="rect" label="AS 31 也能排第 6" at="left" dx={-10}>
+    photiu.ai 页面权威度只有 31、91 个引荐域名，却排在第 6。**难度 100 的词，前十名里也可能有弱页面**，这就是新站的机会。
+  </Mark>
+  <Mark n={8} box="colTraffic" shape="rect">Search Traffic：这个页面从所有词上拿到的自然流量。</Mark>
+</Shot>
+
+<Callout type="warn" title="一家独大的词别硬碰">
+  前十名里同时有 Adobe、Canva、Picsart 这样的大站，第 2 名的 remove.bg 首页有 2 万多个引荐域名，意图又是品牌导航为主。这种词对新站来说只能"顺带"排，不能当主攻目标。更现实的做法见 [关键词难度](/semrush/keyword-difficulty)。
+</Callout>
+
+<Practice>
+1. 在 Keyword Overview 里分别查 `remove background from gif`、`transparent background maker`、`unblur image`，记录三者的 Volume、KD% 和 CPC。
+2. 打开它们的 SERP Analysis，数一数前十名里有几个 Page AS 低于 40 的页面。
+3. 把同一个词放到 Similarweb 的 Keyword overview 里，对比两边的搜索量。
+</Practice>
+
+
+# Semrush 自然排名 Organic Rankings (/semrush/organic-rankings)
+
+<Goals>
+- 用 Organic Rankings 查出一个网站的全部排名词
+- 看懂 Positions 表格里的每一列，会用筛选找出"快赢词"
+- 用 Position Changes 发现竞品最近新排上的词
+</Goals>
+
+打开方式：SEO 菜单 → Competitive Analysis → <UI zh="自然排名">Organic Rankings</UI>（旧版叫 Organic Research），或在 Domain Overview 里点 Organic Research 区块的 View details。
+
+## Overview：排名概况 [#overview排名概况]
+
+<Shot id="sm-or-overview" caption="Organic Rankings › Overview：remove.bg（US，Desktop）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="db" shape="rect">
+    国家数据库：按钮上直接显示每个国家的排名词数。remove.bg 在美国有 2.92 万个排名词，在印尼、巴西各 1.18 万个。**这个报告不能选 Worldwide**，要一个国家一个国家看。
+  </Mark>
+  <Mark n={2} box="tabs" shape="rect">
+    子报告：Positions（完整排名表）、Position Changes（排名变化）、Competitors（竞品）、Topics（主题）、Subdomains（子域名）。
+  </Mark>
+  <Mark n={3} box="kw" shape="rect">Keywords 2.92 万：美国数据库里的排名词数，比上月少 6.25%。</Mark>
+  <Mark n={4} box="traffic" shape="rect">Traffic 320 万：美国的月自然流量估算，基本持平（+0.57%）。</Mark>
+  <Mark n={5} box="cost" shape="rect">
+    **Traffic Cost 300 万美元**：如果这些流量都靠谷歌广告买，每月要花多少钱。用来衡量 SEO 流量的商业价值。
+  </Mark>
+  <Mark n={6} box="nonb" shape="rect" label="非品牌流量涨了 27.6%" at="bottom-left" dy={6}>
+    Branded 250 万 / Non-Branded 76 万：品牌词流量在降，非品牌流量在涨，说明它在品牌以外的词上有进展。
+  </Mark>
+  <Mark n={7} box="peak" shape="rect" label="2025 年初最高" at="top" dy={-6}>
+    Organic Keywords Trend（All time）：从 2017 年开始有数据，2025 年初排名词最多，之后回落。
+  </Mark>
+  <Mark n={8} box="dbGrowth" shape="rect">
+    图里的竖虚线是 Semrush 自己的数据变化，比如 Database growth（数据库扩容）、SERP features（开始统计搜索特性）。这些时间点的跳变不是网站本身的变化。
+  </Mark>
+</Shot>
+
+## 排名变化：最近新排上了哪些词 [#排名变化最近新排上了哪些词]
+
+Overview 再往下，有最重要的两张卡片：
+
+<Shot id="sm-or-changes" caption="Top Keywords 与 Top Position Changes（remove.bg，US）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="tkToggle" shape="rect">All Positions / Organic / SERP Features：只看普通自然排名，还是只看图片、视频等搜索特性里的排名。</Mark>
+  <Mark n={2} box="posCol" shape="rect">Position：排名。前面的链接图标表示这个结果在谷歌里带有站内链接（sitelinks）。</Mark>
+  <Mark n={3} box="sfCol" shape="rect">SF：这个词的搜索结果页上有几种 SERP 特性（AI 概览、图片、视频、问答等）。</Mark>
+  <Mark n={4} box="chToggle" shape="rect" label="新排上 / 掉出 / 上升 / 下降" at="right" dx={10}>
+    Top Position Changes in Organic：New 是新进入前 100 名的词，Lost 是掉出前 100 名的词，Improved、Declined 是排名上升、下降的词。
+  </Mark>
+  <Mark n={5} box="newRows" shape="rect">
+    新排上的词：bgremove（第 3）、change background（第 14）、bg remoive（第 18）……很多是**拼写错误的变体**，这类词竞争小，靠首页就能顺带排上去。
+  </Mark>
+  <Mark n={6} box="prevCol" shape="rect">Previous 是灰点，表示上一次统计时还没有排名。</Mark>
+  <Mark n={7} box="aioRow" shape="rect">
+    Top Position Changes in SERP Features：make background transperent 新出现在谷歌 AI 概览（✦ 图标）里。AI 概览里的位置越来越重要。
+  </Mark>
+</Shot>
+
+<Callout type="idea" title="盯竞品的 New 关键词">
+  竞品新排上的词，往往对应它刚上线的新页面或新功能。每个月看一次竞品的 Position Changes › New，按搜索量排序，是发现新需求最省力的办法——和 Similarweb 的 New Clicks 思路一样。
+</Callout>
+
+## Positions：完整排名表 [#positions完整排名表]
+
+切到 <UI zh="排名">Positions</UI> 标签，就是这个网站全部排名词的表格。表格上面先是一排筛选：
+
+<Shot id="sm-or-filters" caption="Positions 标签的筛选栏" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="tPos" shape="rect">Positions 标签。</Mark>
+  <Mark n={2} box="toggle" shape="rect">All Positions / Organic / SERP Features：和 Overview 里的同名切换一样。</Mark>
+  <Mark n={3} box="dPos" shape="rect">Positions：按排名区间筛选，比如只看第 4–20 名。</Mark>
+  <Mark n={4} box="dVol" shape="rect">Volume：按搜索量筛选。</Mark>
+  <Mark n={5} box="dKd" shape="rect">KD：按关键词难度筛选。</Mark>
+  <Mark n={6} box="dIntent" shape="rect">Intent：按搜索意图筛选，比如只看 Commercial、Transactional。</Mark>
+  <Mark n={7} box="dSerp" shape="rect">SERP Features：只看出现了某种搜索特性的词，比如 AI Overview、视频。</Mark>
+  <Mark n={8} box="dAdv" shape="rect">Advanced filters：组合条件，比如"URL 包含 /tools/"、"关键词不包含品牌词"。</Mark>
+</Shot>
+
+<Shot id="sm-or-table" caption="Organic Search Positions：remove.bg 的 29,170 个排名词（按 Traffic % 排序）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="title" shape="rect">一共 29,170 个排名词。</Mark>
+  <Mark n={2} box="expand" shape="rect">展开箭头：查看这个词的搜索结果页快照和排名历史。</Mark>
+  <Mark n={3} box="colIntent" shape="rect">Intent：搜索意图。</Mark>
+  <Mark n={4} box="colPos" shape="rect">Position：当前排名。</Mark>
+  <Mark n={5} box="colSF" shape="rect">SF：搜索结果页上的特性，亮色图标表示这个网站占了该特性（比如在图片结果里也出现了）。</Mark>
+  <Mark n={6} box="colPct" shape="rect">Traffic %：这个词带来的流量占全站的百分比，默认按它排序。</Mark>
+  <Mark n={7} box="colKd" shape="rect">KD %：关键词难度，红点越多越难。remove.bg 排第 1 的词几乎都是 90 以上。</Mark>
+  <Mark n={8} box="colUrl" shape="rect">URL：排名的具体页面。remove.bg 绝大多数词都排在首页。</Mark>
+  <Mark n={9} box="tbm" shape="rect">transparent background maker：难度 54，月搜索 2.22 万，是表里少有的中等难度词。</Mark>
+</Shot>
+
+## 用筛选找"快赢词" [#用筛选找快赢词]
+
+| 想找什么 | 筛选条件 | 为什么 |
+| --- | --- | --- |
+| 快赢词 | Positions 4–20，Volume > 500 | 已经在第一、二页，稍微优化就可能进前三 |
+| 竞品的商业词 | Intent = Commercial / Transactional | 这些词离付费最近 |
+| 非品牌词 | Advanced filters → Keyword 不包含 `remove bg`、`removebg` | 排除品牌词，才能看出 SEO 真实能力 |
+| 某个功能的词 | Advanced filters → URL 包含 `/f/` | 只看某一类页面带来的词 |
+| 新兴需求 | Position Changes › New，按 Volume 排序 | 竞品最近排上的词 |
+
+<Practice>
+1. 在 remove.bg 的 Positions 里筛选 Positions 4–20、Volume 大于 1,000，看看还有哪些词有机会冲进前三。
+2. 用 Advanced filters 排除品牌词，找出 remove.bg 流量最大的 5 个非品牌词。
+3. 打开 photoroom.com 的 Position Changes，看看它最近新排上了哪些词。
+</Practice>
+
+
+# Semrush 热门页面 Top Pages (/semrush/top-pages)
+
+<Goals>
+- 用 Top Pages 找出竞品流量最大的页面
+- 看懂 Traffic Diff、Keywords、LLM Prompts、Ref. Domains 这几列
+- 学会用 New 筛选和 Traffic Diff 排序，发现竞品正在起量的页面
+</Goals>
+
+打开方式：SEO 菜单 → Competitive Analysis → <UI zh="热门页面">Top Pages</UI>。
+
+<Shot id="sm-tp" caption="Top Pages：remove.bg（US，2026-10-27）" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="orgTraffic" shape="rect">Organic Traffic 320 万：美国数据库的月自然流量估算。</Mark>
+  <Mark n={2} box="orgPages" shape="rect">Organic Pages 889：有自然流量的页面数，比上月多 2.89%。</Mark>
+  <Mark n={3} box="cited" shape="rect" label="被 AI 引用的页面少了三成" at="right" dx={10}>
+    Cited Pages 220：被 AI 回答引用为来源的页面数，下降了 32.31%。
+  </Mark>
+  <Mark n={4} box="citedLine" shape="rect">紫色线是 Cited Pages 的趋势：从年初开始一路下滑，而自然流量（深色线）在 5 月后反而上涨。</Mark>
+  <Mark n={5} box="urlToggle" shape="rect" label="只看新页面" at="bottom" dy={4}>
+    All URLs / New / Lost：New 是最近新出现流量的页面，Lost 是失去流量的页面。
+  </Mark>
+  <Mark n={6} box="row1" shape="rect">
+    首页一个页面就拿走了 **93.41%** 的流量（300 万），排名词 1.01 万个，2.01 万个引荐域名链接到它。单页工具站的典型结构。
+  </Mark>
+  <Mark n={7} box="rowEs" shape="rect">
+    第二名是西班牙语首页 `/es`，靠 quitar fondo（西语"去背景"）拿到 3.6 万流量。**多语言页面是工具站的第二增长点。**
+  </Mark>
+  <Mark n={8} box="rowTb" shape="rect">
+    `/f/transparent-background` 这类功能落地页，单页流量 3.28 万，比上月多 7,800。
+  </Mark>
+  <Mark n={9} box="colDiff" shape="rect">Traffic Diff：和上一期相比流量变化了多少，点表头按它排序，最先看到的就是正在起量的页面。</Mark>
+  <Mark n={10} box="colLlm" shape="rect">LLM Prompts：有多少条 AI 提示词的回答引用了这个页面。</Mark>
+</Shot>
+
+## 怎么用 Top Pages [#怎么用-top-pages]
+
+| 目的 | 操作 |
+| --- | --- |
+| 看竞品的流量结构 | 默认按 Traffic 排序，前几个页面占了多少流量 |
+| 找竞品正在起量的页面 | 按 Traffic Diff 从高到低排序 |
+| 找竞品新上线的页面 | 点 New |
+| 看一个页面靠什么词拿流量 | 点这一行的 Keywords 数字，跳到这个 URL 的排名词列表 |
+| 找可以模仿的页面类型 | 用 Filter by URL 过滤 `/tools/`、`/blog/` 等目录 |
+
+<Callout type="idea" title="和 Similarweb 的落地页报告一起看">
+  Similarweb 的 [落地页](/similarweb/landing-pages) 统计的是**所有搜索点击**（包括它数据库里的新词），Semrush 的 Top Pages 只统计**它数据库里有排名的词**。两边都排在前面的页面，基本可以确定是竞品的核心流量页。
+</Callout>
+
+<Practice>
+1. 打开 photoroom.com 的 Top Pages，按 Traffic Diff 排序，记录最近流量增长最多的 3 个页面。
+2. 点 New，看看 photoroom 最近新增了哪些有流量的页面，它们对应什么功能。
+</Practice>
+
+
+# Similarweb AI 流量 AI traffic (/similarweb/ai-traffic)
+
+<Goals>
+- 看懂 AI traffic 报告：AI 引荐流量总量、各 AI 平台占比、逐月趋势
+- 知道 AI 流量在整个渠道结构里的位置，以及它和传统搜索的关系
+</Goals>
+
+用户越来越多地在 ChatGPT、Gemini 里直接问"有什么好用的抠图工具"，AI 的回答里如果推荐了你的网站，用户点进来就是 **AI 引荐流量**。Similarweb 把它单独做成了 AI search intelligence 模块里的 <UI zh="AI 流量">AI traffic</UI> 报告。
+
+打开方式：左侧主导航 AI search intelligence → AI traffic，输入网站。这个报告默认看最近 6 个月。
+
+<Shot id="sw-ai" caption="AI traffic：remove.bg 的 AI 引荐流量（Apr–Sep 2026）">
+  <Mark n={1} box="ttv" shape="rect" label="6 个月 AI 流量 280 万" at="right" dx={30} />
+  <Mark n={2} box="ttShare" shape="rect" label="只占总流量 1%，且下降 27%" at="bottom" dy={10}>
+    和自然搜索的 55% 比，AI 流量还很小，但它是唯一一个"新冒出来"的渠道，值得持续跟踪。
+  </Mark>
+  <Mark n={3} box="splitBar" shape="rect" label="ChatGPT 46% + Gemini 40%" at="bottom" dy={50}>
+    Traffic split：各 AI 平台的占比。两家合计超过八成。
+  </Mark>
+  <Mark n={4} box="chart" shape="rect" label="逐月趋势（堆叠）" at="top" dy={-8}>
+    最深色是 ChatGPT，其次是 Gemini。可以看到 Gemini 的份额在 7–8 月明显扩大。
+  </Mark>
+  <Mark n={5} box="platformList" shape="rect" label="勾选要显示的平台" at="left" dx={-20}>
+    右侧列出所有 AI 平台的月均流量：ChatGPT 21.58 万、Gemini 18.65 万、Perplexity 9,900、Claude 1,500、Copilot 702……
+  </Mark>
+  <Mark n={6} box="excel" shape="rect">导出 Excel。</Mark>
+</Shot>
+
+页面往下还有 **URL** 列表：哪些页面拿到了 AI 引荐流量（remove.bg 有 98 个）。如果你的网站有 AI 流量，这里能看出 AI 最常推荐你的哪个页面。
+
+## AI 流量和其他报告的关系 [#ai-流量和其他报告的关系]
+
+| 你在哪看到 | 内容 |
+| --- | --- |
+| 网站概览 › AI insights | 一句话结论，例如"Gemini 带来了大部分 AI 流量" |
+| 营销渠道 › Gen AI | AI 流量占总流量的比例（remove.bg 是 0.85%，口径是 3 个月） |
+| 营销渠道 › Traffic sources | gemini.google.com、chatgpt.com 等作为具体来源 |
+| AI traffic（本章） | 各 AI 平台的完整趋势和落地页 |
+| AI brand visibility | 品牌在 AI 回答里被提到的情况（需要建立追踪项目） |
+
+<Callout type="idea" title="为什么要关注 AI 流量">
+  - AI 回答里推荐的工具往往集中在少数几个，**被推荐 = 拿到了一个新的分发入口**
+  - 对比竞品的 AI traffic，可以看出谁在 AI 回答里更有存在感
+  - 如果某个 AI 平台的流量突然上涨，通常是那家 AI 的回答开始引用你（或竞品）的页面了
+</Callout>
+
+<Practice>
+1. 打开 photoroom.com 的 AI traffic，比较它和 remove.bg 在 ChatGPT、Gemini 上的流量。
+2. 在 remove.bg 的 URL 列表里，找出拿到 AI 流量最多的 3 个页面，想想 AI 为什么会推荐这些页面。
+</Practice>
+
+
+# Similarweb 受众画像 Audience (/similarweb/audience)
+
+<Goals>
+- 用 Geography 找到网站的主要市场和**正在增长的市场**
+- 用 Demographics 看访客的性别、年龄结构
+- 用 Audience Interests 找到"访客还常去的网站"——这是发现竞品和合作对象最快的方法
+- 用 Audience Overlap 判断和竞品抢的是不是同一批用户
+</Goals>
+
+打开方式：二级菜单点 <UI zh="受众">Audience</UI>。页面顶部有 4 个标签页，本章按顺序讲。
+
+## Geography 地域 [#geography-地域]
+
+第一个标签页是地图加国家明细表。地图和[网站概览](/similarweb/website-performance)里的 Top countries 一样，真正有用的是下面这张 121 个国家的完整表：
+
+<Shot id="sw-au-geo" caption="Geography：121 个国家的流量占比、变化、受众占比和国家排名" space={[0, 0, 0, 200]}>
+  <Mark n={1} box="india" shape="rect" label="印度：流量占比第一" at="left" />
+  <Mark n={2} box="changeCol" shape="rect" label="大部分国家在下滑" at="top" dy={-4}>
+    Change 是该国流量的环比变化。前五大市场全部是红色（下降）。
+  </Mark>
+  <Mark n={3} box={["vietnamChange", "peruChange", "malaysiaChange"]} shape="rect" label="逆势增长的市场" at={[-150, 1050]}>
+    越南 +4.68%、秘鲁 +5.56%、马来西亚 +3.19%，以及墨西哥、泰国小幅增长。整体下滑时，这些"逆势增长"的国家值得单独研究。
+  </Mark>
+  <Mark n={4} box="idAud" shape="rect">
+    **受众占比 > 流量占比。**
+    Audience Share 是"人数"占比。印尼流量占 13.99%，人数却占 15.68%：说明印尼用户人多、但每人访问次数偏少。
+  </Mark>
+  <Mark n={5} box={["usRank", "phRank"]} shape="rect">
+    **在当地的排名。**
+    Country rank 是 remove.bg 在该国所有网站里的排名：菲律宾 #202、美国 #2,842。排名越靠前，说明在当地越"主流"。
+  </Mark>
+</Shot>
+
+<Callout type="idea" title="出海选市场的思路">
+  把表格按 Change 排序，找**流量占比不低、又在增长**的国家；再结合 Country rank 判断竞争程度。比如越南：占比 1.61%、还在增长，而且非品牌热词里就有越南语"tách nền""cắt nền"——做越南语落地页是一个很具体的机会。
+</Callout>
+
+## Demographics 人口属性 [#demographics-人口属性]
+
+<Shot id="sw-au-demo" caption="Demographics：性别、年龄，以及按人群拆分的互动指标">
+  <Mark n={1} box="male" shape="rect" label="男性 57.94%" at="right" dx={10} />
+  <Mark n={2} box="female" shape="rect" label="女性 42.06%" at="right" dx={10} />
+  <Mark n={3} box="a1824+a2534" shape="rect" label="18–34 岁占近六成" at="top" dy={-8}>
+    18–24 岁 29.86%，25–34 岁 28.06%，年轻用户为主。
+  </Mark>
+  <Mark n={4} box="filters" shape="rect" label="选一个人群" at="right" dx={10}>
+    Traffic and engagement by audience：在两个下拉框里选性别和年龄段，下面的表格就只统计这部分人。
+  </Mark>
+  <Mark n={5} box="aud+br" shape="rect" label="18–24 岁女性的数据" at="bottom" dy={8}>
+    这群人占受众的 11.4%，平均访问 3 分 12 秒、2.99 页、跳出率 28.79%——都比整体平均（2:51、2.87 页、33.05%）更好。
+  </Mark>
+</Shot>
+
+<Callout type="warn" title="人口属性是估算值">
+  性别和年龄是 Similarweb 根据样本用户推算的，小网站误差更大。用来判断"大致是什么人群"没问题，不要把百分比精确到小数点去做决策。
+</Callout>
+
+## Audience Interests 兴趣与交叉访问 [#audience-interests-兴趣与交叉访问]
+
+<Shot id="sw-au-interests" caption="Audience Interests：访客的浏览习惯，以及他们还常去的网站">
+  <Mark n={1} box="indTable" shape="rect" label="访客常逛的行业" at="top" dy={-4}>
+    Industry distribution：remove.bg 的访客在其他网站上的浏览，按行业分布。游戏、政府网站排在前面——可以推测不少用户和"做游戏头像、办证件照"这类场景有关，这类推测需要再用关键词数据验证。
+  </Mark>
+  <Mark n={2} box="topics" shape="rect" label="话题词云" at="top" dy={-4}>
+    字越大，访客越常浏览这个话题。
+  </Mark>
+  <Mark n={3} box="canva" shape="rect" label="30.77% 的访客也去 Canva" at="top" dy={-10}>
+    下面的表列出 15,277 个"访客也会去"的网站。Cross-visitation（交叉访问率）= 也访问该网站的访客比例。
+  </Mark>
+  <Mark n={4} box={["photoroom", "iloveimg"]} shape="rect">
+    **直接竞品也在前几名：**
+    photoroom.com、iloveimg.com 是功能重叠的图片工具。
+  </Mark>
+  <Mark n={5} box="relCol" shape="rect" label="相关度" at="top" dy={-10}>
+    Relevance score（0–100）综合了交叉访问率和网站规模，越高表示受众越相似。找竞品时按它排序比按交叉访问率排序更准。
+  </Mark>
+</Shot>
+
+<Callout type="idea" title="用交叉访问找竞品和合作对象">
+  - **找竞品**：在 Industry 列筛选和自己同一行业的网站，排在前面的就是"抢同一批用户"的竞品
+  - **找合作 / 投放渠道**：不同行业、但交叉访问率高的网站（比如 Canva），是做内容合作、广告投放的好对象
+  - **找新需求**：访客常去、但你没想到的网站类别，往往对应着新的使用场景
+</Callout>
+
+## Audience Overlap 受众重合 [#audience-overlap-受众重合]
+
+<Shot id="sw-au-overlap" caption="Audience Overlap：remove.bg 与 photoroom.com、pixelcut.ai 的访客重合">
+  <Mark n={1} box="compareBtn" shape="rect" label="加入要对比的网站" at="bottom" dy={8}>
+    这个标签页需要对比对象。没有手动添加时，Similarweb 会自动选两个竞品（这里是 photoroom.com 和 pixelcut.ai）。
+  </Mark>
+  <Mark n={2} box="overlapArea" shape="rect" label="圆圈重叠部分 = 共同访客" at="left" dx={-10}>
+    把鼠标移到圆圈上可以看到具体人数。注意：圆圈大小只是示意，不严格代表网站规模。
+  </Mark>
+  <Mark n={3} box="legend" shape="rect" label="各自的月均独立访客" at="bottom" dy={8}>
+    remove.bg 2234 万、photoroom.com 555 万、pixelcut.ai 431 万，三家去重后合计 2910 万。
+  </Mark>
+  <Mark n={4} box="primaryTabs" shape="rect" label="切换主网站" at="top" dy={-8}>
+    下面的表格从主网站的视角计算：共同访客占比、主网站独有访客、对方有但主网站还没覆盖到的访客（Unreached potential visitors）。
+  </Mark>
+</Shot>
+
+表格的数据（以 remove.bg 为主网站）：
+
+| 对比对象 | 共同访客占比 | 共同访客数 | remove.bg 独有访客 | 还没覆盖到的潜在访客 |
+| --- | --- | --- | --- | --- |
+| photoroom.com | 1.1% | 约 23.6 万 | 1981 万 | 676 万 |
+| pixelcut.ai | 4.2% | 约 94.9 万 | 2139 万 | 336 万 |
+
+<Callout title="怎么解读">
+  重合率很低（1%~4%），说明这几个工具虽然功能相似，**用户群却基本不重叠**——每家都有自己的获客入口。对新进入者来说，这意味着市场还没有被一家垄断，从新的关键词、新的语言市场切入是有空间的。
+</Callout>
+
+## 本章小结 [#本章小结]
+
+| 标签页 | 回答的问题 | 最有用的操作 |
+| --- | --- | --- |
+| Geography | 用户在哪？哪里在增长？ | 按 Change 排序找增长市场 |
+| Demographics | 用户是谁？ | 选性别 + 年龄看细分人群的互动 |
+| Audience Interests | 用户还去哪？ | 按 Relevance score 找竞品和合作对象 |
+| Audience Overlap | 和竞品抢的是同一批人吗？ | 加入 2~4 个竞品看重合率 |
+
+<Practice>
+1. 在 Geography 表里按 Change 降序排列，找出 remove.bg 增长最快的 5 个国家。
+2. 在 Audience Interests 里把行业筛选成 Computers Electronics and Technology，列出前 10 个相关网站，看看哪些是你没听过的竞品。
+3. 在 Audience Overlap 里点 compare 加入 `canva.com`，看看它和 remove.bg 的用户重合率有多高。
+</Practice>
+
+
+# 实战：30 分钟完整拆解一个竞品 (/similarweb/case-competitor)
+
+<Goals>
+- 掌握一套可复用的竞品拆解顺序：规模 → 质量 → 市场 → 渠道 → 关键词 → 生态 → 对比
+- 每一步只看最关键的 1~2 个数字，最后写成一页结论
+</Goals>
+
+这一章不讲新功能，而是把前面的报告**按固定顺序**过一遍。每一步都给出"看哪里、记什么"，截图都在对应章节里。
+
+## 拆解流程 [#拆解流程]
+
+<Steps>
+<Step>
+### 规模：它有多大、在涨还是跌 [#规模它有多大在涨还是跌]
+
+打开 [网站概览](/similarweb/website-performance)，时间选 Last 3 Months。记下：月均访问、环比、全球排名。
+
+> remove.bg：月均约 5862 万次访问，连续 3 个月下滑（最后一个月 -8.63%），全球排名 #960。
+</Step>
+<Step>
+### 质量：用户粘不粘 [#质量用户粘不粘]
+
+看 [流量与互动](/similarweb/traffic-engagement) 的互动指标。记下：访问时长、每次访问页数、跳出率、每人每月访问次数。
+
+> 2 分 51 秒、2.87 页、跳出率 33%，每人每月约 2.6 次——对单功能工具来说很健康。
+</Step>
+<Step>
+### 市场：用户在哪 [#市场用户在哪]
+
+看 [受众画像](/similarweb/audience) › Geography，按 Change 排序。记下：前 5 大市场、逆势增长的国家。
+
+> 印度 20%、印尼 14%、美国 9%、菲律宾 7%、巴西 7%；越南、秘鲁、马来西亚在增长。
+</Step>
+<Step>
+### 渠道：靠什么获客 [#渠道靠什么获客]
+
+看 [营销渠道](/similarweb/marketing-channels)。记下：前两大渠道占比、PoP 热力表里拖累 / 拉动增长的渠道。
+
+> 自然搜索 55% + 直接访问 37%，几乎不投广告；下滑主要来自这两个核心渠道。
+</Step>
+<Step>
+### 关键词：靠哪些词 [#关键词靠哪些词]
+
+看 [搜索流量](/similarweb/search-overview) 和 [站点关键词](/similarweb/website-keywords)。记下：品牌词占比、前 5 个非品牌词、多语言词的情况。
+
+> 97% 是品牌词；非品牌词全是各国语言的"去背景"，每个主要市场都有独立语言页面承接。
+</Step>
+<Step>
+### 生态：谁在推荐它、它在推荐谁 [#生态谁在推荐它它在推荐谁]
+
+看 [引荐流量](/similarweb/referral) 的 Incoming 和 Outgoing。
+
+> 被导航站（toolify.ai）、开发者社区（github）、Shopify 后台引荐；出站流量 65% 流向母公司 Canva。
+</Step>
+<Step>
+### 对比：和谁比 [#对比和谁比]
+
+用 [网站对比](/similarweb/compare) 加入 2~4 个竞品，至少看一遍规模、设备结构和互动指标。
+
+> photoroom.com 用户更粘（每人每月 3.57 次）、几乎全在桌面端；pixelcut.ai 移动端占比高、停留更久。
+</Step>
+</Steps>
+
+## 把结论写成一页 [#把结论写成一页]
+
+拆解完，用下面的模板写结论（以 remove.bg 为例）：
+
+| 维度 | 结论 |
+| --- | --- |
+| 一句话定位 | 全球最大的在线抠图工具之一，被 Canva 收购后成为 Canva 的导流入口 |
+| 规模与趋势 | 月均约 5900 万访问，近期持续下滑 |
+| 核心用户 | 新兴市场（印度、东南亚、拉美）的年轻用户，桌面为主 |
+| 增长引擎 | SEO（多语言"去背景"关键词）+ 品牌直接访问 |
+| 弱点 / 机会 | 核心渠道整体下滑；越南、秘鲁、马来西亚等市场在增长；"视频去背景"等细分需求独立存在 |
+| 对新进入者的启示 | 正面抢 remove background 这类大词不现实（KD 84）；从细分需求和小语种市场切入 |
+
+<Callout type="idea" title="把流程固定下来">
+  每次分析新竞品都按同样的 7 步、记同样的数字，几次之后你就能在 30 分钟内完成一份对比表，而且不同竞品之间可以直接横向比较。
+</Callout>
+
+<Practice>
+按本章 7 步拆解 `photoroom.com`，并用上面的模板写一页结论，和 remove.bg 的结论放在一起对比。
+</Practice>
+
+
+# 实战：从托管平台和排行榜里挖新词 (/similarweb/case-new-keywords)
+
+<Goals>
+- 掌握"发现 → 筛选 → 验证"的找新词完整流程
+- 知道每一步用哪个报告、看哪个指标、怎么淘汰
+- 养成每月固定扫描一次的习惯
+</Goals>
+
+## 整体流程 [#整体流程]
+
+<Shot id="sw-lp-new" caption="第一步的结果：vercel.app 本月新冒出的 17,873 个页面">
+  <Mark n={1} box="chip" shape="rect" label="Organic Pages + New Clicks" at="top" dy={-8} />
+  <Mark n={2} box="r1+r5" shape="rect" label="逐个看前 50 行" at="bottom" dy={8}>
+    每一行都是一个刚开始有搜索流量的子域名，Top keyword 就是它背后的需求。
+  </Mark>
+</Shot>
+
+<Steps>
+<Step>
+### 发现：从两个入口拿候选 [#发现从两个入口拿候选]
+
+- **托管平台**：按[落地页](/similarweb/landing-pages)一章，在 `vercel.app`、`netlify.app`、`pages.dev` 等平台的 Landing pages 里筛 New Clicks，记录前 50 个页面的 Top keyword。
+- **排行榜**：在[网站排行榜](/similarweb/website-rankings)里看你关注的行业的 Top climbers 和 New entrants，打开它们的[站点关键词](/similarweb/website-keywords)，按 Clicks change 排序，记录增长最快的非品牌词。
+</Step>
+<Step>
+### 筛选：先排除不能做的 [#筛选先排除不能做的]
+
+| 排除 | 原因 |
+| --- | --- |
+| 纯品牌词（如某个新站的名字） | 用户就是在找那个网站，你抢不到 |
+| 侵权、成人、赌博、灰产 | 不可持续，也有法律风险 |
+| 一次性热点（只有一根趋势尖峰） | 流量来得快去得也快 |
+| 你完全做不了的需求 | 比如需要大量版权内容或硬件 |
+</Step>
+<Step>
+### 验证：一个词过三关 [#验证一个词过三关]
+
+把剩下的词逐个丢进 [关键词概览](/similarweb/keyword-overview)：
+
+1. **量**：月搜索量至少几千，并用 [拓词](/similarweb/keyword-generator) 看它是否有一组相关词（需求够宽）
+2. **难度**：Organic difficulty 越低越好；看 Top players 是不是被大站垄断
+3. **价值**：CPC 不为 0，说明有人愿意为它付钱
+</Step>
+<Step>
+### 交叉验证：换一个工具再看一遍 [#交叉验证换一个工具再看一遍]
+
+用 Semrush 的 [Keyword Overview](/semrush/keyword-overview) 再查一遍搜索量、KD 和 CPC（完整流程见 [实战：验证一个新词值不值得做](/semrush/case-validate-keyword)）。两个工具的数字不必一致，但**趋势和量级应该一致**。都通过的词，才进入"可以做"的清单。
+</Step>
+</Steps>
+
+## 新词评估表 [#新词评估表]
+
+每个候选词填一行，最后按"综合判断"排序：
+
+| 关键词 | 来源 | 月搜索量 | 趋势 | 难度 | CPC | Top players | 综合判断 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| background remove | remove.bg 词表 | 280 万（平均 63.8 万） | 爆发 | 高（91） | $0.25 | remove.bg 一家独大 | 观望，量大但难 |
+| video background remover | 拓词 | 约 10 万 | 稳定 | 待查 | 待查 | 待查 | 值得验证，细分需求 |
+| quitar fondo | remove.bg 词表 | 150 万 | 稳定 | 中（63） | $0.21 | remove.bg/es | 小语种机会 |
+
+<Callout type="idea" title="固定节奏">
+  新词的价值在于"早"。建议每月月初（Similarweb 更新上个月数据后）固定扫一遍同一批平台和行业，把结果追加到同一张表里，持续几个月，你会看到哪些需求在稳定增长、哪些只是昙花一现。
+</Callout>
+
+<Callout type="warn" title="多人共用账号的配额">
+  批量查词会消耗大量查询次数。如果你用的是多人共享的账号，优先把候选词整理好再集中查，避免反复翻页和导出。
+</Callout>
+
+<Practice>
+1. 本月扫一遍 `vercel.app` 和 `netlify.app` 的 New Clicks，各记录 20 个 Top keyword。
+2. 用本章的筛选规则淘汰掉不能做的词，剩下的填进评估表。
+3. 选出你认为最值得做的 1 个词，写下理由。
+</Practice>
+
+
+# Similarweb 网站对比 Compare (/similarweb/compare)
+
+<Goals>
+- 用 Add website to compare 把竞品加入对比
+- 看懂对比模式下的报告：每个指标都变成多列，最高值带奖杯
+- 知道对比模式对哪些报告有用
+</Goals>
+
+前面每一章都是"一次看一个网站"。实际做竞品分析时，你几乎总是想同时看几个网站——这就是对比模式。
+
+## 第一步：加入对比网站 [#第一步加入对比网站]
+
+<Shot id="sw-cmp-add" caption="点 Add website to compare，从相似网站里选，或者直接输入域名" space={[0, 230, 0, 14]}>
+  <Mark n={1} box="domain" shape="rect">当前网站 remove.bg。</Mark>
+  <Mark n={2} box="input" shape="rect" label="输入任意域名" at="right" dx={10}>
+    点顶部的 **+ Add website to compare** 后出现这个输入框，可以直接输入要对比的网站。
+  </Mark>
+  <Mark n={3} box="list" shape="rect" label="系统推荐的相似网站" at="right" dx={10}>
+    下拉里列出 Similar sites 报告里的相似网站，点一下就加入。可以连续添加，最多 4 个（加上当前网站共 5 个）。
+  </Mark>
+</Shot>
+
+<Steps>
+<Step>
+在任意报告顶部点 <UI zh="加入对比">+ Add website to compare</UI>。
+</Step>
+<Step>
+在下拉里点选 photoroom.com，再点选 pixelcut.ai（下拉会保持打开，方便连续添加）。
+</Step>
+<Step>
+点页面空白处关闭下拉，报告会重新加载成对比模式。
+</Step>
+</Steps>
+
+## 对比模式下的报告 [#对比模式下的报告]
+
+<Shot id="sw-cmp-top" caption="对比模式：顶部变成 remove.bg vs. photoroom.com vs. pixelcut.ai">
+  <Mark n={1} box="main+c2" shape="rect" label="参与对比的网站" at="bottom" dy={6}>
+    每个网站名旁边有一个彩色圆点（蓝、橙、绿），后面所有图表都用这个颜色代表它。点 × 可以移除。
+  </Mark>
+  <Mark n={2} box="add" shape="rect" label="继续添加" at="bottom" dy={6} />
+  <Mark n={3} box="save" shape="rect" label="保存成项目" at="bottom" dy={6}>
+    Save as project：把这组对比保存下来，以后在首页的 Your projects 里一键打开，适合长期跟踪的竞品组。
+  </Mark>
+  <Mark n={4} box="tvRows" shape="rect" label="总访问对比" at="top" dy={-30}>
+    remove.bg 1.758 亿、photoroom.com 5942 万、pixelcut.ai 2950 万。右上角 % / # 切换占比和绝对值。
+  </Mark>
+  <Mark n={5} box="ddCols" shape="rect" label="设备结构差异很大" at="top" dy={-30}>
+    photoroom.com 83.2% 来自桌面端，pixelcut.ai 有 42.3% 来自移动网页端——两家的用户场景明显不同。
+  </Mark>
+  <Mark n={6} box="ranks" shape="rect" label="在印度的排名" at="left" dx={-90}>
+    Rank by 可以切换成全球排名、国家排名或行业排名。
+  </Mark>
+</Shot>
+
+往下滚动，互动指标也变成了三列：
+
+<Shot id="sw-cmp-eng" caption="对比模式的 Engagement 表：奖杯标出每个指标的第一名">
+  <Mark n={1} box="tMv" label="规模第一：remove.bg" at="left" dx={-30} />
+  <Mark n={2} box="tVu" label="回访最高：photoroom.com" at="right" dx={10}>
+    Visits / unique visitors（每人每月访问次数）：photoroom.com 3.57 次，明显高于 remove.bg 的 2.62 次——它的用户更"粘"。
+  </Mark>
+  <Mark n={3} box="tVd" label="停留最久：pixelcut.ai" at="left" dx={-10}>
+    pixelcut.ai 平均访问时长 3 分 34 秒，三家里最长。
+  </Mark>
+</Shot>
+
+| 指标 | remove.bg | photoroom.com | pixelcut.ai |
+| --- | --- | --- | --- |
+| 月均访问 | **5862 万** | 1980 万 | 983 万 |
+| 月独立访客 | **2234 万** | 555 万 | 431 万 |
+| 每人每月访问次数 | 2.62 | **3.57** | 2.28 |
+| 去重受众 | **1860 万** | 470 万 | 363 万 |
+| 平均访问时长 | 2:51 | 3:26 | **3:34** |
+
+<Callout type="idea" title="对比时看'结构'，不只看'规模'">
+  remove.bg 在规模上全面领先，但 photoroom.com 用户回访更频繁、几乎全在桌面端——更像一个"专业卖家每天都用"的工具；pixelcut.ai 移动端占比高、停留时间长——更像"手机上做图"的场景。**规模告诉你谁大，结构告诉你谁的用户是谁。**
+</Callout>
+
+## 对比模式在哪些报告里最有用 [#对比模式在哪些报告里最有用]
+
+加好对比网站后，切换到其他报告继续看（如果某个报告没有保留对比状态，重新添加即可）。推荐依次看：
+
+1. **Marketing channels**：谁更依赖 SEO、谁在买量
+2. **Audience › Geography**：各自的主战场国家
+3. **Audience › Audience Overlap**：用户重合度（需要对比模式）
+4. **Search overview**：关键词数量、前三名占比、广告花费
+5. **Referral**：各自的引荐来源，找对方有、你没有的渠道
+
+<Practice>
+1. 把 remove.bg、photoroom.com、pixelcut.ai 加入对比，并保存成项目。
+2. 在对比模式下打开 Marketing channels，判断三家里谁的付费搜索占比最高。
+3. 换一组你感兴趣的赛道（比如 3 个 AI 写作工具）重复一遍，写下每家"规模"和"结构"上的特点。
+</Practice>
+
+
+# Similarweb 展示广告与变现 Display & Monetization (/similarweb/display-ads)
+
+<Goals>
+- 用 Advertiser overview 估算竞品的展示广告投放规模和趋势
+- 知道 Display 和 Monetization 下面 4 个报告分别看什么
+</Goals>
+
+二级菜单里有两组和广告有关的报告：
+
+| 菜单 | 报告 | 视角 | 回答的问题 |
+| --- | --- | --- | --- |
+| Display | <UI zh="广告主概览">Advertiser overview</UI> | 它作为**广告主** | 它投了多少展示广告？带来多少访问？ |
+| Display | <UI zh="媒体概览">Publisher overview</UI> | 它作为**媒体** | 它的网站上展示了哪些广告？ |
+| Monetization | <UI zh="广告主">Advertisers</UI> | 它作为媒体 | 哪些广告主在它的网站上投放？ |
+| Monetization | <UI zh="广告网络">Ad networks</UI> | 它作为媒体 | 它接入了哪些广告联盟（如 Google AdSense）？ |
+
+## Advertiser overview：竞品在投多少广告 [#advertiser-overview竞品在投多少广告]
+
+<Shot id="sw-display" caption="Display › Advertiser overview：remove.bg 的展示广告投放（Jul–Sep 2026）" space={[0, 0, 30, 0]}>
+  <Mark n={1} box="vv" shape="rect" label="展示广告带来 29.4 万次访问" at="bottom" dy={30}>
+    比上期增长 2.6%。相比 1.758 亿的总访问，展示广告只是很小的补充。
+  </Mark>
+  <Mark n={2} box="sv" shape="rect" label="估算花费 $50K–$250K" at="bottom" dy={30}>
+    Spend range 是 Similarweb 估算的投放区间，点 See spend estimate 看更细的估算。
+  </Mark>
+  <Mark n={3} box="pubs" shape="rect" label="投在 51 个媒体上" at="left" dx={-10}>
+    Publishers：它的广告出现在了多少个网站上。
+  </Mark>
+  <Mark n={4} box="legend" shape="rect" label="3 个月：花费 $151.5K、曝光 6.345 亿次" at="top" dy={-10}>
+    勾选 Visits / Spend / Impressions 切换要画的指标。
+  </Mark>
+  <Mark n={5} box="wm" shape="rect">按周（W）或按月（M）显示。</Mark>
+  <Mark n={6} box="dropEnd" shape="rect" label="最后一周不完整" at="left" dx={-10}>
+    9 月 30 日这一周只统计了部分天数，所以曲线骤降，不代表停投。
+  </Mark>
+</Shot>
+
+<Callout type="warn" title="广告花费是估算值">
+  Similarweb 根据曝光量和行业平均 CPM 推算花费，只能作为量级参考。用它判断"竞品有没有在投、投入大概是几万还是几百万美元、最近是加大还是收缩"，不要当成财务数据。
+</Callout>
+
+## 另外三个报告 [#另外三个报告]
+
+- **Publisher overview**：如果分析的是一个内容网站（博客、工具站也可能接广告），这里能看到它展示了哪些广告。
+- **Monetization › Advertisers**：哪些品牌在这个网站上投广告。想在某个网站上投广告之前，先看看同行有没有在投。
+- **Monetization › Ad networks**：它接入了哪些广告网络。判断一个工具站是靠广告还是靠订阅赚钱，看这里最快。
+
+<Practice>
+1. 打开 remove.bg 的 Advertiser overview，把粒度切到 M，看看哪个月投放最多。
+2. 打开一个你熟悉的免费工具站，查看它的 Monetization › Ad networks，判断它是否靠广告变现。
+</Practice>
+
+
+# 常见问题 (/similarweb/faq)
+
+<Accordions>
+<Accordion title="Similarweb 的访问量和网站后台（Google Analytics）对不上，哪个是对的？">
+后台数据是真实测量，Similarweb 是外部估算，两者有差距很正常。Similarweb 更适合做**同口径的横向比较**（A 站和 B 站谁大、谁在涨），而不是精确到个位数的统计。分析自己的网站请以后台为准。
+</Accordion>
+
+<Accordion title="为什么有些小网站没有数据？">
+Similarweb 依赖样本估算，网站太小时样本不足，就不显示数据或只显示部分指标。一般月访问在几万以下时数据就不太可靠。小站可以用 Semrush 的自然流量估算、Google Search Console（自己的站）或 Google Trends 辅助判断。
+</Accordion>
+
+<Accordion title="同一个指标在不同报告里数字不一样？">
+先检查三件事：**时间范围**（3 个月 / 28 天 / 单月）、**变化的口径**（环比 MoM 还是同比 YoY）、**流量类型**（全部 / 桌面 / 移动）。例如网站概览里搜索词显示下降，Search overview 里却显示上涨，就是因为前者是环比、后者是同比。
+</Accordion>
+
+<Accordion title="为什么 Last 12 Months、其他国家显示 UNLOCK？">
+这是套餐限制。本教程使用的套餐只开放 6 个月历史和 Worldwide。需要更长历史时，可以用 Google Trends 看长期趋势；需要国家数据时，可以先看各报告里的国家分布表。
+</Accordion>
+
+<Accordion title="Direct（直接访问）为什么这么高？">
+Similarweb 把无法识别来源的访问都算进 Direct：手动输入网址、书签、App 内跳转、聊天软件里的链接等。所以 Direct 高既可能是品牌强，也可能是大量"看不见来源"的流量。
+</Accordion>
+
+<Accordion title="Popular Pages 提示 Something went wrong 怎么办？">
+大网站在长时间范围下偶尔加载失败，按提示把时间改短（比如 Last 1 Month）再试。
+</Accordion>
+
+<Accordion title="用多人共享的账号要注意什么？">
+- 模块首页的 Recent Websites、Recently viewed 里会出现别人的查询记录，Dashboards、Projects 里也可能有别人建的项目，不要误删别人的东西
+- 共享账号通常有每日查询配额，批量导出、频繁翻页会很快用完，先整理好要查的网站和关键词再集中查
+- 不要修改账号设置
+</Accordion>
+
+<Accordion title="为什么我看到的界面和教程截图不一样？">
+Similarweb 经常更新界面，菜单位置和名称可能变化；不同套餐开放的报告也不同。本教程截图采集于 2026 年 10 月，如果找不到某个菜单，用左上角的 Quick search（Ctrl+K）搜报告名最快。
+</Accordion>
+</Accordions>
+
+
+# 指标词典与菜单中英对照 (/similarweb/glossary)
+
+## 流量与互动指标 [#流量与互动指标]
+
+| 英文 | 中文 | 含义 | 注意 |
+| --- | --- | --- | --- |
+| Visits / Total visits | 访问次数 | 会话数，停止操作超过 30 分钟算新的一次访问 | 不是人数 |
+| Monthly visits | 月均访问 | 所选时间范围内每月访问次数的平均值 | 3 个月总访问 ÷ 3 |
+| Unique visitors | 独立访客 | 按设备统计的访客数 | 一人多设备会重复计算 |
+| Deduplicated audience | 去重受众 | 跨设备去重后的人数（模型估算） | 最接近"真实用户数" |
+| New vs. Returning | 新老访客 | 新访客与回访访客的占比 | |
+| Visit duration | 平均访问时长 | 每次访问的平均停留时间 | |
+| Pages per visit | 每次访问页数 | 每次访问浏览的平均页面数 | |
+| Bounce rate | 跳出率 | 只看了一个页面就离开的访问占比 | 工具站偏高很正常 |
+| Page views | 页面浏览量 | 页面被浏览的总次数 | |
+| Engaged visits | 有效访问 | 去掉低互动访问后的口径 | 勾选后跳出率显示 N/A |
+| MoM / YoY | 环比 / 同比 | 比上个月 / 比去年同期 | 看变化先确认口径 |
+| PoP | 周期对比 | 与之前同长度周期比较 | |
+| MTD (Month-to-date) | 本月至今 | 包含当月不完整的天数 | 最后一段数据偏低 |
+
+## 渠道 [#渠道]
+
+| 英文 | 中文 |
+| --- | --- |
+| Direct | 直接访问（含无法识别来源的访问） |
+| Organic Search | 自然搜索 |
+| Paid Search | 付费搜索 |
+| Referrals | 引荐 |
+| Display Ads | 展示广告 |
+| Organic Social / Paid Social | 自然社交 / 付费社交 |
+| Gen AI | AI 引荐 |
+| Email | 邮件 |
+| Affiliates | 联盟营销 |
+
+## 关键词指标 [#关键词指标]
+
+| 英文 | 中文 | 含义 |
+| --- | --- | --- |
+| Volume | 搜索量 | 关键词在所选时间段的月搜索次数 |
+| Avg. volume | 平均搜索量 | 更长周期的平均月搜索量 |
+| Clicks | 点击 | 搜索后点进网站的次数 |
+| Zero-click | 零点击率 | 搜索后没有点击任何结果的比例 |
+| KD / Organic difficulty | 排名难度 | 0–100，越高越难进前排 |
+| Paid competition / Comp. | 付费竞争 | 投放搜索广告的竞争程度 |
+| CPC | 单次点击价格 | 搜索广告每次点击的价格，代表商业价值 |
+| Intent | 搜索意图 | NAV 导航、INFO 信息、COM 商业调研、TRANS 交易 |
+| Branded / Non-branded | 品牌词 / 非品牌词 | 是否包含品牌名 |
+| SERP features | 搜索结果特性 | 图片、视频、问答框等特殊展示位 |
+| Top URL | 主要落地页 | 关键词主要落到的页面 |
+
+## 排名与竞品 [#排名与竞品]
+
+| 英文 | 中文 | 含义 |
+| --- | --- | --- |
+| Global rank | 全球排名 | 在所有网站中的流量排名 |
+| Country rank | 国家排名 | 在某个国家的流量排名 |
+| Industry rank | 行业排名 | 在所属行业里的排名 |
+| Affinity | 相似度 | Similar sites 里的综合相似得分 |
+| Cross-visitation | 交叉访问率 | 访客中也访问另一网站的比例 |
+| Relevance score | 相关度 | 结合交叉访问和规模的受众相似度 |
+| Traffic share | 流量份额 | 在某个集合（行业、国家）里的流量占比 |
+
+## 菜单中英对照 [#菜单中英对照]
+
+| 英文菜单 | 中文 |
+| --- | --- |
+| Website research › Website analysis | 网站研究 › 网站分析 |
+| Overview › Website performance / Website content / Similar sites | 概览 › 网站概览 / 网站内容 / 相似网站 |
+| Traffic › Traffic & engagement / Marketing channels | 流量 › 流量与互动 / 营销渠道 |
+| Audience › Geography / Demographics / Audience Interests / Audience Overlap | 受众 › 地域 / 人口属性 / 兴趣 / 受众重合 |
+| Search / Referral / Social | 搜索 / 引荐 / 社交 |
+| Display › Advertiser overview / Publisher overview | 展示广告 › 广告主概览 / 媒体概览 |
+| Monetization › Advertisers / Ad networks | 变现 › 广告主 / 广告网络 |
+| Website technologies | 网站技术栈 |
+| Website rankings / Website segments | 网站排行榜 / 网站细分 |
+| SEO intelligence › Search tracking / Keyword research / Backlink analytics / Site audit | SEO 情报 › 排名追踪 / 关键词研究 / 外链分析 / 站点审计 |
+| Keyword explorer › Keyword generator / Overview / SERP players | 关键词探索 › 拓词 / 关键词概览 / SERP 玩家 |
+| Website explorer › Keywords / Landing pages / Search competitors | 网站探索 › 关键词 / 落地页 / 搜索竞品 |
+| AI search intelligence › AI brand visibility / AI traffic | AI 搜索情报 › AI 品牌可见度 / AI 流量 |
+| Ad intelligence / Market research | 广告情报 / 市场研究 |
+
+
+# Similarweb 教程 (/similarweb)
+
+Similarweb 是一款**网站流量情报工具**：输入任意一个域名，就能看到它每个月大概有多少访问、访客来自哪些国家、靠什么渠道获客、在和谁抢用户、靠哪些关键词拿到搜索流量。
+
+做出海网站、找关键词、分析竞品时，它通常是第一个打开的工具——先用 Similarweb 判断"这个方向有没有流量、流量从哪来"，再用 [Semrush](/semrush) 验证"关键词值不值得做"。
+
+<Goals>
+- 看懂 Similarweb 的每个核心报告：流量规模、互动质量、渠道结构、受众、竞品、关键词
+- 学会用它做三件事：**评估一个网站**、**找竞品和替代品**、**挖掘新出现的关键词**
+- 知道数据从哪来、什么时候可信、什么时候要打折看
+</Goals>
+
+## 谁适合阅读本教程？ [#谁适合阅读本教程]
+
+- 想做出海网站、工具站，需要判断一个方向值不值得做的独立开发者
+- 做 SEO / 内容 / 投放，需要研究竞品流量结构的运营
+- 想系统学会 Similarweb，而不是每次只会看"月访问量"那一个数字的人
+
+## 需要具备的基础 [#需要具备的基础]
+
+- 能登录 Similarweb 平台（本教程截图基于 **Similarweb PRO** 的 Web Intelligence 界面）
+- 知道什么是域名、访问量、跳出率即可，其他指标教程里都会讲
+
+<Callout title="没有付费账号也能先学">
+  免费版（similarweb.com 官网的网站查询页）能看到月访问量、国家分布、渠道占比等概览数据。本教程的前几章在免费版里也能跟着操作，后面的关键词研究、落地页分析等功能需要付费版。
+</Callout>
+
+## 怎么看本教程的截图 [#怎么看本教程的截图]
+
+每张截图都按操作顺序做了标注，规则和你在论坛、群聊里常见的教程图一致：
+
+| 标注 | 含义 |
+| --- | --- |
+| 蓝色圆形数字 ① ② ③ | 操作步骤顺序，图下方的「步骤说明」按同样的序号详细解释 |
+| 红色圈 / 红色框 | 要点击或要看的位置 |
+| 浅蓝色标签 | 这一步做什么 |
+| 红色实心标签 | 这个位置的关键数字 / 结论 |
+| 红色箭头 | 从说明指向具体按钮 |
+
+点击任意截图可以放大查看；手机上图里只显示序号，文字说明看图下方的步骤列表。
+
+<Callout type="warn" title="关于数据日期">
+  截图采集于 2026 年 10 月，示例网站主要用 **remove.bg**（经典的出海工具站）。你实际操作时看到的数字会不同，这很正常——重要的是学会在哪里看、怎么判断。
+</Callout>
+
+## 学习路线 [#学习路线]
+
+<Steps>
+<Step>
+### 入门 [#入门]
+
+[Similarweb 简介](/similarweb/intro)：它是什么、数据从哪来、准不准；[界面导览](/similarweb/interface)：主导航、二级菜单和所有报告通用的日期、国家、对比控件。
+</Step>
+<Step>
+### 网站分析 [#网站分析]
+
+以 remove.bg 为例逐个拆解 Website analysis：[网站概览](/similarweb/website-performance) → [流量与互动](/similarweb/traffic-engagement) → [营销渠道](/similarweb/marketing-channels) → [受众画像](/similarweb/audience) → [相似网站](/similarweb/similar-sites) → [网站内容](/similarweb/website-content) → [搜索流量](/similarweb/search-overview) → [引荐流量](/similarweb/referral) → [社交](/similarweb/social) → [展示广告与变现](/similarweb/display-ads) → [技术栈](/similarweb/technologies) → [网站对比](/similarweb/compare)。
+</Step>
+<Step>
+### 排名与 AI [#排名与-ai]
+
+[网站排行榜](/similarweb/website-rankings)：按行业找头部和上升最快的网站；[AI 流量](/similarweb/ai-traffic)：ChatGPT、Gemini 带来了多少访问。
+</Step>
+<Step>
+### 关键词研究 [#关键词研究]
+
+[总览](/similarweb/keyword-research) → [站点关键词](/similarweb/website-keywords) → [落地页（New Clicks 找新词）](/similarweb/landing-pages) → [拓词](/similarweb/keyword-generator) → [关键词概览](/similarweb/keyword-overview)。
+</Step>
+<Step>
+### 实战 [#实战]
+
+[30 分钟拆解一个竞品](/similarweb/case-competitor)、[从托管平台和排行榜里挖新词](/similarweb/case-new-keywords)。遇到问题先查 [指标词典](/similarweb/glossary) 和 [常见问题](/similarweb/faq)。
+</Step>
+</Steps>
+
+
+# Similarweb 界面导览与通用控件 (/similarweb/interface)
+
+<Goals>
+- 认识左侧主导航的五大模块，知道每个模块回答什么问题
+- 会进入一个模块、搜索网站、在二级菜单里切换报告
+- 掌握所有报告通用的顶部控件：换网站、加对比、时间范围、国家/地区
+</Goals>
+
+登录 Similarweb 后看到的平台叫 **Web Intelligence**。不管你要查什么，操作路径都是同一个套路：
+
+> 左侧主导航选模块 → 输入网站或关键词 → 在二级菜单里切换报告 → 用顶部控件调时间和国家
+
+## 左侧主导航：五大模块 [#左侧主导航五大模块]
+
+<Shot id="sw-ui-nav" caption="Web Intelligence 的左侧主导航" space={[0, 250, 0, 0]}>
+  <Mark n={1} box="quick" shape="rect" label="快速搜索 Ctrl+K" at="right">
+    在任何页面按界面上提示的 <kbd>Ctrl</kbd> + <kbd>K</kbd>（或直接点这个框），就能搜网站、关键词或报告名，是最快的跳转方式。
+  </Mark>
+  <Mark n={2} box="homeDash" shape="rect" label="首页 / 自定义看板" at="right">
+    Home 是账号首页；Dashboards 可以把常看的图表拼成自己的看板。
+  </Mark>
+  <Mark n={3} box="gWeb" shape="rect" label="网站研究（本教程重点）" at="right">
+    Website research：分析任意网站的流量、渠道、受众、竞品。**新手 80% 的时间都在这里。**
+  </Mark>
+  <Mark n={4} box="gSeo" shape="rect" label="SEO 情报" at="right">
+    SEO intelligence：关键词研究、排名追踪、外链分析、站点审计。
+  </Mark>
+  <Mark n={5} box="gAi" shape="rect" label="AI 搜索情报" at="right">
+    AI search intelligence：品牌在 ChatGPT、Gemini 等 AI 回答里的曝光，以及 AI 带来的引荐流量。
+  </Mark>
+  <Mark n={6} box="gAd" shape="rect" label="广告情报" at="right">
+    Ad intelligence：竞品在投哪些展示广告、出现在哪些媒体上。
+  </Mark>
+  <Mark n={7} box="gMk" shape="rect" label="市场研究" at="right">
+    Market research：按行业看市场份额、需求趋势和转化。
+  </Mark>
+</Shot>
+
+每个模块回答的问题不同，可以先记住这张对照表：
+
+| 模块 | 中文 | 回答的问题 | 本教程章节 |
+| --- | --- | --- | --- |
+| <UI>Website analysis</UI> | 网站分析 | 这个网站有多少流量？从哪来？谁在访问？ | [网站概览](/similarweb/website-performance) 起的多个章节 |
+| <UI>Website rankings</UI> | 网站排行 | 某个行业、某个国家流量最大 / 增长最快的是谁？ | 网站排行榜 |
+| <UI>Keyword research</UI> | 关键词研究 | 这个网站靠哪些词拿流量？某个词谁在抢？ | 关键词研究系列 |
+| <UI>AI traffic</UI> | AI 流量 | ChatGPT、Gemini 等给网站带来了多少访问？ | AI 流量 |
+| <UI>Market analysis</UI> | 市场分析 | 整个赛道有多大、在涨还是在跌？ | 市场分析 |
+
+<Callout title="提示">
+  主导航在进入具体报告后会自动收起成一列图标，鼠标移上去会重新展开，不用记图标长什么样。
+</Callout>
+
+## 进入模块：二级菜单和搜索框 [#进入模块二级菜单和搜索框]
+
+以最常用的 <UI zh="网站分析">Website analysis</UI> 为例。点左侧主导航里的 Website analysis，进入模块首页：
+
+<Shot id="sw-ui-module" caption="Website analysis 模块首页" space={[0, 0, 0, 16]}>
+  <Mark n={1} box="mainNav" shape="rect">主导航已经收起成图标列，当前模块（地球图标）高亮。</Mark>
+  <Mark n={2} box="subnav" shape="rect" label="二级菜单：模块里的全部报告" at="right" dx={10} dy={150}>
+    Overview（概览）、Traffic（流量）、Audience（受众）、Search（搜索）、Referral（引荐）、Display（展示广告）、Social（社交）、Monetization（变现）、Website technologies（技术栈）。后面的章节会逐个讲。
+  </Mark>
+  <Mark n={3} box="search" shape="rect" label="输入域名" at="left">
+    输入 `remove.bg`，在下拉建议里点选同名网站，就会进入它的 Website performance 报告。只输入主域名即可，不要带 `https://` 和 `www`。
+  </Mark>
+  <Mark n={4} box={["recentTab", "savedTab"]} shape="rect" label="最近查看 / 已收藏" at="left">
+    Recent Websites 是最近查过的网站，Saved Websites 是你点过星标收藏的网站，点一下直接打开。
+  </Mark>
+</Shot>
+
+<Callout type="warn" title="多人共用账号要注意">
+  如果你用的是多人共用的账号，Recent Websites 里会出现别人查过的网站（上图已打码）。查到的数据没有问题，只是"最近记录"不是你自己的。
+</Callout>
+
+## 报告顶部的通用控件 [#报告顶部的通用控件]
+
+打开任意一个报告（下图是 remove.bg 的 Website performance），顶部这一排控件在所有报告里都一样：
+
+<Shot id="sw-wp-header" caption="报告页顶部的通用控件" space={[18, 0, 46, 0]}>
+  <Mark n={1} box="domain">当前分析的网站。点旁边的铅笔图标可以直接换成别的域名，停留在同一个报告。</Mark>
+  <Mark n={2} box="star">收藏到 Saved Websites，之后在模块首页一键打开。</Mark>
+  <Mark n={3} box="compare" label="加入对比" at="right">最多再加 4 个网站，同屏对比所有指标，详见「网站对比」一章。</Mark>
+  <Mark n={4} box="pdf">把当前报告导出成 PDF。</Mark>
+  <Mark n={5} box="date" label="时间范围" at="bottom">默认是最近 28 天，下面详细讲。</Mark>
+  <Mark n={6} box="country" label="国家/地区" at="bottom">Worldwide 是全球汇总，也可以只看某个国家。</Mark>
+  <Mark n={7} box="source" shape="rect">流量类型：全部 / 桌面端 / 移动网页端。部分报告不能切换，显示为灰色。</Mark>
+</Shot>
+
+### 时间范围 [#时间范围]
+
+点日期控件会展开下拉菜单：
+
+<Shot id="sw-ui-date" caption="时间范围下拉菜单" space={[0, 230, 0, 0]}>
+  <Mark n={1} box="o28" shape="rect" label="最近 28 天：按天滚动" at="right" dx={10}>
+    以截止日期往前推 28 天，适合看"最近怎么样"，但**不显示环比变化**，部分卡片也会提示要选按月的时间。
+  </Mark>
+  <Mark n={2} box="o1+o6" shape="rect" label="按自然月：1 / 2 / 3 / 6 个月" at="right" dx={10}>
+    以完整月份统计，能看到"比上个月涨跌多少"。本教程默认用 **Last 3 Months**。
+  </Mark>
+  <Tag box="unlock" text="需升级" at="right" dx={50} />
+  <Mark n={3} box="upsell" shape="rect" label="更长历史需要定制套餐" at="right" dx={10}>
+    Last 12 Months 显示 UNLOCK，说明当前套餐只开放 6 个月历史；定制套餐最长可看 37 个月。
+  </Mark>
+</Shot>
+
+<Callout type="idea" title="怎么选时间范围？">
+  - 判断网站**当前规模**：Last 1 Month（最近一个完整月）
+  - 判断**趋势**：Last 3 Months 或 Last 6 Months，避免被单月波动误导
+  - 判断**季节性**：需要 12 个月以上的数据，套餐不支持时可以用 Google Trends 补充
+</Callout>
+
+### 国家/地区 [#国家地区]
+
+点 Worldwide 会展开国家列表：
+
+<Shot id="sw-ui-country" caption="国家/地区选择" space={[0, 240, 0, 0]}>
+  <Mark n={1} box="search" shape="rect" label="输入国家名搜索" at="right" dx={12} />
+  <Mark n={2} box="ww" shape="rect" label="Worldwide 全球汇总" at="right" dx={12}>
+    默认选项，所有国家的数据加总。
+  </Mark>
+  <Tag box="unlock" text="当前套餐未开通" at="right" dx={12} />
+  <Mark n={3} box="devices" label="桌面 + 移动数据都有" at="bottom" dy={30} arrow>
+    国家名后面的小图标表示这个国家同时有桌面端和移动网页端数据。
+  </Mark>
+  <Mark n={4} box="sales" shape="rect" label="开通更多国家" at="right" dx={12}>
+    按国家筛选是付费附加项。没开通时也不影响你在报告里看到「Top countries 国家分布」，只是不能把整份报告切换成某个国家的视角。
+  </Mark>
+</Shot>
+
+## 小结 [#小结]
+
+| 控件 | 作用 | 新手建议 |
+| --- | --- | --- |
+| 快速搜索 Ctrl+K | 任意页面跳转网站 / 关键词 / 报告 | 熟练后几乎只用它 |
+| 二级菜单 | 在同一个网站的不同报告间切换 | 按本教程的章节顺序逐个看 |
+| 时间范围 | 决定所有数字的统计区间 | 默认改成 Last 3 Months |
+| 国家/地区 | 把整份报告切成某个国家的视角 | 没开通就看 Worldwide + 国家分布 |
+| 加入对比 | 同屏比较最多 5 个网站 | 分析竞品时必用 |
+
+<Practice>
+1. 按 Ctrl+K，搜索 `remove.bg`，打开它的 Website performance 报告。
+2. 把时间范围从 Last 28 days 改成 Last 3 Months，观察 Total visits 卡片多出了什么信息。
+3. 点铅笔图标把网站换成 `photoroom.com`，看看报告是否停留在同一页。
+</Practice>
+
+
+# Similarweb 简介 (/similarweb/intro)
+
+<Goals>
+- 知道 Similarweb 能回答哪些问题、不能回答哪些问题
+- 理解它的数据来源和误差，知道什么时候数字可信
+- 分清 Similarweb 和 Semrush 各自擅长什么
+</Goals>
+
+## Similarweb 是什么 [#similarweb-是什么]
+
+Similarweb 是一家做"数字市场情报"的公司，核心产品是 **Web Intelligence** 平台：对任意一个公开网站，估算它的访问量、流量来源、受众画像、关键词和竞品。你不需要拥有这个网站，也不需要对方授权。
+
+它能回答的典型问题：
+
+| 问题 | 去哪看 |
+| --- | --- |
+| 这个网站一个月多少访问？在涨还是跌？ | 网站概览、流量与互动 |
+| 它的用户从哪些国家来？是什么人？ | 受众画像 |
+| 它靠什么渠道获客？SEO、广告还是社交？ | 营销渠道 |
+| 它的竞品是谁？谁的用户和它重合？ | 相似网站、受众画像 › Audience Overlap |
+| 它靠哪些关键词拿流量？最近冒出了哪些新词？ | 关键词研究、落地页 |
+| 某个行业谁最大、谁在涨？ | 网站排行榜 |
+| AI 给它带来了多少流量？ | AI 流量 |
+
+## 数据从哪来 [#数据从哪来]
+
+Similarweb 不能直接看到别人网站的后台，它的数据是**多种来源 + 模型估算**：
+
+1. **用户行为样本**：通过合作的浏览器扩展、App 等收集匿名化的浏览行为样本
+2. **直接测量**：网站主主动连接 Google Analytics 等工具后提供的真实数据（也用来校准模型）
+3. **合作伙伴数据**：来自第三方数据合作方的流量数据
+4. **公开数据**：抓取公开网页、搜索结果等
+
+这些数据经过机器学习模型，推算出全网的流量估算值。
+
+<Callout type="warn" title="数据准不准？">
+  - **大网站相对准**：月访问几百万以上的网站，趋势和量级通常可信
+  - **小网站误差大**：月访问只有几万甚至更少时，数字可能偏差很大，太小的网站会直接显示没有数据
+  - **看趋势比看绝对值更可靠**：同一工具、同一口径下的涨跌和排序，比单个数字更有参考价值
+  - **不同工具口径不同**：Similarweb 的访问量和 Semrush、Google Analytics 对不上是正常的，不要混在一起比
+</Callout>
+
+## 账号与版本 [#账号与版本]
+
+| 方式 | 能看什么 | 适合 |
+| --- | --- | --- |
+| 官网免费查询（similarweb.com/website/域名） | 月访问、国家、渠道、相似网站等概览 | 偶尔查一下某个网站 |
+| 浏览器扩展 | 当前浏览网站的流量概览 | 浏览时随手看 |
+| 付费平台 Web Intelligence | 本教程讲的全部报告 | 系统做竞品分析和找词 |
+
+付费平台里，不同套餐开放的功能、历史长度和国家范围不同。本教程截图使用的套餐：**历史数据最长 6 个月、国家只开放 Worldwide**（见[界面导览](/similarweb/interface)里的时间和国家选择器）。
+
+## Similarweb 和 Semrush 怎么分工 [#similarweb-和-semrush-怎么分工]
+
+| | Similarweb | Semrush |
+| --- | --- | --- |
+| 核心视角 | 网站的**全部流量**：直接访问、搜索、社交、引荐、广告、AI | **搜索引擎**：关键词、排名、外链 |
+| 最擅长 | 流量规模、渠道结构、受众、竞品格局、市场份额 | 关键词搜索量与难度、排名追踪、外链分析、站内 SEO 审计 |
+| 找词时的角色 | 发现：哪些网站和页面在起量、它们靠什么词 | 验证：词的搜索量、难度、CPC、SERP 竞争 |
+
+<Callout type="idea" title="推荐组合">
+  **先用 Similarweb 发现，再用 Semrush 验证。** 比如：用 Similarweb 的 Landing pages + New Clicks 发现一批新词 → 用 Semrush 的 Keyword Overview 查搜索量、KD 和 CPC → 两边数据都支持，再动手做。
+</Callout>
+
+
+# Similarweb 拓词 Keyword generator (/similarweb/keyword-generator)
+
+<Goals>
+- 用 Keyword generator 从一个种子词拓展词表
+- 分清 4 种拓词方式：Phrase Match、Related、Trending、Questions
+- 用 Yearly trend 和两种搜索量的差距找到"正在变热"的词
+</Goals>
+
+打开方式：Keyword research → Keyword explorer → <UI zh="拓词">Keyword generator</UI>，输入种子词后回车。本章种子词用 `remove background`，时间为 Last 28 days。
+
+<Shot id="sw-kg-top" caption="Keyword generator：种子词 remove background" space={[0, 0, 30, 0]}>
+  <Mark n={1} box="kw" shape="rect" label="种子词" at="bottom" dy={6} />
+  <Mark n={2} box="engine" shape="rect" label="搜索引擎" at="bottom" dy={6}>
+    默认 Google，也可以切换成其他搜索引擎。
+  </Mark>
+  <Mark n={3} box="tPhrase" shape="rect" label="短语匹配 8,029 个" at="bottom" dy={30}>
+    **Phrase Match**：包含种子词的所有词（如 remove background free、remove background from image）。
+  </Mark>
+  <Mark n={4} box="tRel" shape="rect" label="相关词 17,120 个" at="bottom" dy={30}>
+    **Related Keywords**：不一定包含种子词、但搜索意图相近的词，用来发现同一需求的其他说法。
+  </Mark>
+  <Mark n={5} box="tTrend" shape="rect" label="趋势词" at="bottom" dy={30}>
+    **Trending Keywords**：最近搜索量增长最快的相关词。
+  </Mark>
+  <Mark n={6} box="tQ" shape="rect" label="问题词 1,324 个" at="bottom" dy={30}>
+    **Questions Queries**：疑问句形式的词（how to remove background…），适合写教程类内容。
+  </Mark>
+  <Mark n={7} box="totalVol" shape="rect" label="合计搜索量 1449 万" at="right" dx={10} />
+  <Mark n={8} box="actions" shape="rect">勾选词后可以加入关键词清单（Keyword list）或排名追踪（Search tracker）。</Mark>
+</Shot>
+
+## 词表：两种搜索量 + 全年趋势 [#词表两种搜索量--全年趋势]
+
+<Shot id="sw-kg-rows" caption="Phrase Match 词表：按近 28 天搜索量排序" space={[0, 0, 0, 170]}>
+  <Mark n={1} box="volCols" shape="rect" label="近 28 天 vs 平均搜索量" at="top" dy={-8}>
+    28 Days Volume 是最近 28 天的搜索量，Avg. volume 是长期平均。两者对比，能看出一个词是在升温还是降温。
+  </Mark>
+  <Mark n={2} box="r3" shape="rect" label="正在爆发的词" at="left">
+    **background remove：**
+    近 28 天 240 万次，平均只有 63.8 万次；全年趋势柱前面都很矮，最后两个月突然拉高。
+  </Mark>
+  <Mark n={3} box="r3Trend" shape="rect">它的全年趋势：最后两根柱子猛涨。</Mark>
+  <Mark n={4} box="trendCol" shape="rect">
+    **全年趋势。**
+    Yearly trend：过去 12 个月的搜索量柱状图。整排一样高 = 稳定需求；越来越高 = 上升期；只有一两根特别高 = 短期热点或季节性。
+  </Mark>
+  <Mark n={5} box="zcCol" shape="rect" label="零点击率" at="top" dy={-8} />
+  <Mark n={6} box="r9" shape="rect" label="细分需求" at="left">
+    video background remover 每月约 10 万次，说明"视频去背景"是一个独立的细分需求，可以单独做一个工具。
+  </Mark>
+</Shot>
+
+表格右侧还有 KD（难度）、Intent（意图）、CPC 和 **Leader**（这个词当前流量最大的网站）。
+
+## 拓词的实用技巧 [#拓词的实用技巧]
+
+| 目的 | 操作 |
+| --- | --- |
+| 找细分需求 | 在 Phrase Match 里看"种子词 + 修饰词"：free、png、video、online、app、for iphone… |
+| 找新说法 | 切到 Related Keywords，找不包含种子词的同义说法 |
+| 找内容选题 | 切到 Questions Queries，问题词就是现成的文章标题 |
+| 找爆发词 | 对比 28 Days Volume 和 Avg. volume，或直接看 Trending Keywords |
+| 排除干扰 | Include/Exclude Keywords 里排除品牌词（如 remove bg、canva） |
+
+<Callout type="warn" title="Last 28 days 的局限">
+  拓词默认看最近 28 天，单月波动会被放大。看到"爆发词"后，一定要用全年趋势和[关键词概览](/similarweb/keyword-overview)里的 Trend over time 再确认一次。
+</Callout>
+
+<Practice>
+1. 输入种子词 `remove background`，切到 Questions Queries，挑出 10 个可以写成教程文章的问题。
+2. 换一个你感兴趣的种子词（例如 `ai headshot`），在 Phrase Match 里找出 Yearly trend 明显上升的 5 个词。
+3. 勾选这些词，加入一个新的 Keyword list，方便以后追踪。
+</Practice>
+
+
+# Similarweb 关键词概览 Keyword overview (/similarweb/keyword-overview)
+
+<Goals>
+- 用 Keyword overview 给一个关键词做完整"体检"
+- 看懂难度、竞争、CPC 三个"值不值得做"的指标
+- 用 Top players 判断这个词被谁占着
+</Goals>
+
+打开方式：Keyword research → Keyword explorer → <UI zh="概览">Overview</UI>，输入关键词。在其他报告里点任意一个关键词的链接，也会跳到这里。
+
+## 关键词体检卡片 [#关键词体检卡片]
+
+<Shot id="sw-kwo" caption="Keyword overview：remove background（Last 28 days）" space={[0, 0, 30, 0]}>
+  <Mark n={1} box="vol" shape="rect" label="月搜索量 330 万" at="right" dx={40} />
+  <Mark n={2} box="clicks" shape="rect" label="实际点击 300 万" at="right" dx={40}>
+    Clicks：搜索后真正点进了某个网站的次数。
+  </Mark>
+  <Mark n={3} box="zc" shape="rect" label="17% 搜了不点" at="bottom" dy={6}>
+    Zero-Clicks Searches：搜索后没点任何结果的比例，环比上升了 3.28%。
+  </Mark>
+  <Mark n={4} box="classic" shape="rect" label="98% 是普通自然结果" at="bottom" dy={130}>
+    SERP composition：搜索结果页的构成。普通自然结果占比高，说明排名上去就能拿到点击；如果"SERP features"（图片、视频、问答框等）占比高，就要针对这些展示位优化。
+  </Mark>
+  <Mark n={5} box="od" shape="rect">
+    **自然难度 84（Difficult）**。Organic difficulty：做到自然搜索前排的难度，0–100。
+  </Mark>
+  <Mark n={6} box="pc" shape="rect">
+    **付费竞争 1（Easy），几乎没人投广告**。Paid competition：投这个词搜索广告的竞争程度。
+  </Mark>
+  <Mark n={7} box="cpc" shape="rect">
+    **CPC $0.01–$4.98**。CPC range：广告点击单价区间，下方小字是估算的总投放额。
+  </Mark>
+  <Mark n={8} box="gen" shape="rect">Generate keyword list：以这个词为种子一键生成关键词清单。</Mark>
+</Shot>
+
+<Callout type="idea" title="三个数字判断值不值得做">
+  | 指标 | 好做的信号 | 难做的信号 |
+  | --- | --- | --- |
+  | Organic difficulty | 低于 40 | 高于 70（remove background 是 84） |
+  | 搜索量 | 每月几千以上，且趋势稳定或上升 | 只有几十，或只是一次性尖峰 |
+  | CPC | 越高越说明有商业价值 | 接近 0，说明很难变现 |
+
+  remove background 搜索量巨大但难度 84，新站几乎不可能正面竞争——更现实的做法是去做它的**长尾词和多语言词**（见前两章）。
+</Callout>
+
+## 谁在拿这个词的流量：Top players [#谁在拿这个词的流量top-players]
+
+<Shot id="sw-kwo-players" caption="Top players：remove background 的流量被哪些网站和页面拿走">
+  <Mark n={1} box="tabs" shape="rect" label="全部 / 自然 / 付费" at="bottom" dy={4} />
+  <Mark n={2} box="s1" shape="rect" label="remove.bg 拿走 190 万次点击" at="right" dx={-400}>
+    左边按网站统计（Top websites），右边按具体页面统计（Top URL）。
+  </Mark>
+  <Mark n={3} box="s2" shape="rect" label="第二名只有 25 万" at="right" dx={-400} />
+  <Mark n={4} box="translateTrend" shape="rect" label="谷歌翻译突然冒出来" at="bottom" dy={8}>
+    translate.google 的趋势线在最后突然拉起——搜索引擎自己的工具开始抢这个词的流量，这是需要警惕的信号。
+  </Mark>
+  <Mark n={5} box="seePages" shape="rect">See pages / See SERP feature 查看完整的排名页面和搜索结果特性。</Mark>
+</Shot>
+
+页面再往下还有 **Intent**（搜索意图：这个词是 Navigational 导航型——大部分人搜它就是想找 remove.bg）、**Device distribution**（桌面 58% / 移动 42%）和 **Keyword ideas**（相关词推荐）。
+
+<Callout type="warn" title="一家独大的词别硬碰">
+  当 Top players 里第一名的点击是第二名的 7 倍以上（1.9M vs 249.7K），而且意图是 Navigational，说明用户搜这个词就是在找那个网站。这种词再大也不适合新站去抢。
+</Callout>
+
+<Practice>
+1. 在 Keyword overview 里分别查 `background remove`、`video background remover`、`quitar fondo`，记录三者的 Organic difficulty 和 Top players。
+2. 判断哪一个最适合新站切入，写下你的理由。
+3. 把这三个词再丢进 Semrush 的 [Keyword Overview](/semrush/keyword-overview) 交叉验证搜索量。
+</Practice>
+
+
+# Similarweb 关键词研究总览 Keyword research (/similarweb/keyword-research)
+
+<Goals>
+- 认识 Keyword research 的菜单结构
+- 分清"从网站出发"和"从关键词出发"两条找词路径
+- 知道接下来几章分别解决什么问题
+</Goals>
+
+前面的 Website analysis 回答"一个网站有多少流量"；**Keyword research 回答"这些流量来自哪些关键词"**。它在左侧主导航的 SEO intelligence 分组里。
+
+<Shot id="sw-kr-nav" caption="Keyword research 的二级菜单" space={[0, 300, 0, 0]}>
+  <Mark n={1} box="lists" shape="rect" label="关键词清单" at="right" dx={60}>
+    Keyword lists：把挑出来的词存成清单，之后可以批量追踪、对比。
+  </Mark>
+  <Mark n={2} box="keGroup" shape="rect" label="从关键词出发" at="right" dx={30}>
+    **Keyword explorer**：输入一个关键词，查它的搜索量、难度、谁在排名、相关词。包括 Keyword generator（拓词）、Overview（关键词概览）、SERP players（谁在抢这个词）、Pages（排名页面）、Search ads（广告）、SERP snapshot（搜索结果快照）。
+  </Mark>
+  <Mark n={3} box="weGroup" shape="rect" label="从网站出发" at="right" dx={30}>
+    **Website explorer**：输入一个网站，看它靠哪些词拿流量。包括 SEO overview、Keyword clusters（关键词聚类）、Keywords（关键词）、Landing pages（落地页）、Search competitors（搜索竞品）、Ranking distribution（排名分布）、Search ads。
+  </Mark>
+</Shot>
+
+## 两条找词路径 [#两条找词路径]
+
+| 路径 | 起点 | 适合什么时候 | 本教程章节 |
+| --- | --- | --- | --- |
+| 从网站出发 | 竞品网站（如 remove.bg） | 已经知道对手是谁，想把它的词表扒下来 | [站点关键词](/similarweb/website-keywords) |
+| 从网站出发（找新词） | 托管平台（如 vercel.app） | 想发现**最近才冒出来**的新站和新词 | [落地页](/similarweb/landing-pages) |
+| 从关键词出发 | 种子词（如 remove background） | 想围绕一个需求拓展出所有相关词 | [拓词](/similarweb/keyword-generator) |
+| 验证一个词 | 单个关键词 | 决定做不做之前，看搜索量、难度、CPC、竞争对手 | [关键词概览](/similarweb/keyword-overview) |
+
+<Callout type="idea" title="推荐的找词流程">
+  1. 用 Website explorer 扒竞品的词，或者用 Landing pages + New Clicks 找新出现的词；
+  2. 把感兴趣的词丢进 Keyword generator 拓展同类需求；
+  3. 用 Keyword overview 验证：搜索量够不够、难度高不高、有没有商业价值；
+  4. 最后用 Semrush 交叉验证（见 [实战：验证一个新词值不值得做](/semrush/case-validate-keyword)）。
+</Callout>
+
+<Callout type="warn" title="注意时间范围">
+  Keyword research 的报告默认是 **Last 28 days** 或单个月（例如 Landing pages 固定按月），和 Website analysis 里选的 3 个月不一样。看数字时先确认右上角的时间。
+</Callout>
+
+
+# Similarweb 落地页 Landing pages（New Clicks 找新词） (/similarweb/landing-pages)
+
+<Goals>
+- 看懂 Landing pages 报告：一个网站的哪些页面在吃搜索流量
+- 掌握找新词的经典 4 步：搜平台域名 → 进 Landing pages → 选 Organic Pages 筛 New Clicks → 展开 All keywords
+- 学会判断一个"新词"值不值得跟进
+</Goals>
+
+Landing pages（落地页）报告列出一个网站**每个页面**带来的搜索点击。对普通网站，它告诉你竞品靠哪些页面拿流量；对 **vercel.app、netlify.app、github.io 这种托管平台**，每个子域名就是一个独立的小网站——它就变成了一台"新站发现器"。
+
+本章用 `vercel.app` 演示。注意这个报告**按单个月统计**，这里是 September 2026。
+
+## 第 1 步：打开 vercel.app 的 Landing pages [#第-1-步打开-vercelapp-的-landing-pages]
+
+<Steps>
+<Step>
+Keyword research → Website explorer → <UI zh="落地页">Landing pages</UI>。
+</Step>
+<Step>
+点左上角域名旁的铅笔图标，输入 `vercel.app`，在下拉里选中它（类型为 Domain）。
+</Step>
+<Step>
+确认停留在 <UI zh="自然搜索页面">Organic Pages</UI> 标签。
+</Step>
+</Steps>
+
+## 第 2 步：筛选 New Clicks [#第-2-步筛选-new-clicks]
+
+<Shot id="sw-lp-filter" caption="Landing pages：vercel.app 在 2026 年 9 月有 117,920 个带来搜索流量的页面">
+  <Mark n={1} box="domain" shape="rect" label="搜 vercel.app" at="right" dx={200} />
+  <Mark n={2} box="tOrg" shape="rect" label="选 Organic Pages" at="bottom" dy={4}>
+    Organic Pages 是自然搜索带来的流量；Paid Pages 是搜索广告带来的。
+  </Mark>
+  <Mark n={3} box="chip" shape="rect" label="点 Clicks change" at="top" dy={-8} />
+  <Mark n={4} box="newc" shape="rect" label="选 New Clicks" at="right" dx={10}>
+    四个选项：**Trending**（点击在增长）、**De-trending**（在下降）、**Lost Clicks**（上个月有、这个月没了）、**New Clicks**（上个月没有、这个月**新出现**的点击）。找新站新词选 New Clicks。
+  </Mark>
+  <Mark n={5} box="kwCol" shape="rect">Keywords 列是这个页面有排名的关键词数量。</Mark>
+</Shot>
+
+## 第 3 步：看新冒出来的页面 [#第-3-步看新冒出来的页面]
+
+<Shot id="sw-lp-new" caption="筛选 New Clicks 后：17,873 个这个月才开始有搜索点击的页面">
+  <Mark n={1} box="chip" shape="rect" label="已筛 New Clicks" at="top" dy={-8} />
+  <Mark n={2} box="hUrl" shape="rect" label="17,873 个新页面" at="right" dx={40} />
+  <Mark n={3} box="r1" shape="rect">
+    **aethoflix.vercel.app：新增 2.06 万次点击。**排在最前面的就是本月新增点击最多的子域名。
+  </Mark>
+  <Mark n={4} box="changeCol" shape="rect">Change 列全部是 New。</Mark>
+  <Mark n={5} box="trendCol" shape="rect" label="趋势线：最近才起量" at="top" dy={-8}>
+    Clicks trend 的小折线前面一直贴着底部、最后突然拉起来，就是典型的新站曲线。
+  </Mark>
+</Shot>
+
+列表里能看到各种新站：streaming 类（aethoflix）、学生系统（kundalik-dun、srm student portal）、游戏（taipei-gta）、工具（human-atlas、sodapeak）……每一个都对应着一个**刚刚被搜索引擎收录、已经开始有人搜**的需求。
+
+## 第 4 步：展开 All keywords [#第-4-步展开-all-keywords]
+
+表格往右滚动，每一行都有 <UI zh="全部关键词">All keywords</UI> 按钮和 Top keyword（主要关键词）：
+
+<Shot id="sw-lp-allkw" caption="向右滚动：每个页面的关键词数量、All keywords 按钮和 Top keyword">
+  <Mark n={1} box="allKw1" shape="rect" label="点该行 All keywords" at="left" dx={-60} />
+  <Mark n={2} box="topKwCol" shape="rect" label="主要关键词" at="top" dy={-8}>
+    Top keyword 一眼就能看出这个新站是靠什么词起来的：aethoflix、emaktab、human atlas vercel、sodapeak……
+  </Mark>
+  <Mark n={3} box="counts" shape="rect">关键词数量：7、15、3、53……数量多的页面说明它覆盖了一组相关需求，更值得研究。</Mark>
+</Shot>
+
+<Shot id="sw-lp-expand" caption="展开 aethoflix.vercel.app：它的 7 个关键词">
+  <Mark n={1} box="rowHead" shape="rect" label="展开的页面" at="top" dy={-8} />
+  <Mark n={2} box="k1" shape="rect" label="主词 aethoflix：95.52% 的点击" at={[610, 617]} />
+  <Mark n={3} box="k1Vol" shape="rect" label="月搜索量 25.21 万" at="left" dx={-20} />
+  <Mark n={4} box="newCol" shape="rect" label="全部是 New" at="top" dy={-8} />
+  <Mark n={5} box="k4+k4Vol" shape="rect" label="拼写变体 aetho flix：4,900 搜索" at="bottom" dy={8}>
+    还有 aethoflix vercel、aesthoflix 等拼写变体。变体多，往往说明这是一个**用户口口相传、记不准名字**的新品牌。
+  </Mark>
+  <Mark n={6} box="full" shape="rect">See full view 打开这个页面的完整关键词报告；旁边的图标可以导出 Excel。</Mark>
+</Shot>
+
+## 怎么判断一个新词值不值得做 [#怎么判断一个新词值不值得做]
+
+拿到一批新词后，按下面的顺序筛：
+
+| 检查项 | 怎么看 | 淘汰信号 |
+| --- | --- | --- |
+| 是不是品牌词 | 词本身是不是某个网站 / 产品名（如 aethoflix） | 纯品牌词你抢不到，除非做"替代品 / 评测"类内容 |
+| 背后的需求 | Top keyword + 页面本身是做什么的 | 侵权、成人、灰产类需求直接放弃 |
+| 搜索量 | 展开后的 Volume，或丢进 Keyword overview | 太小（每月几十次）不值得单独做 |
+| 趋势 | Clicks trend 是持续上升还是一次性尖峰 | 只有一个尖峰的，多半是短暂热点 |
+| 竞争 | Keyword overview 里的 KD 和 Top players | 前几名都是大站，新站很难挤进去 |
+
+<Callout type="idea" title="为什么托管平台是找词宝库">
+  独立开发者做新工具，第一版通常直接部署在 vercel.app、netlify.app 这类免费平台上，还没来得及买域名。所以**一个需求刚被验证有搜索量时，最先出现的往往就是这些子域名**。定期（比如每月一次）用 New Clicks 扫一遍，就能比大多数人更早发现新需求。同样的方法还可以用在 `netlify.app`、`pages.dev`、`github.io`、`streamlit.app`、`hf.space` 等平台上。
+</Callout>
+
+<Callout type="warn" title="New 的含义">
+  New Clicks 是"上个月没有点击、这个月有"，并不等于"网站刚上线"——也可能是老页面这个月第一次排上了搜索结果。判断新站时，结合 Website analysis 里该子域名的流量历史一起看。
+</Callout>
+
+<Practice>
+1. 按本章 4 步，在 vercel.app 的 Landing pages 里筛出 New Clicks，记录前 20 个页面的 Top keyword。
+2. 从中挑 3 个你看得懂需求的词，丢进 [关键词概览](/similarweb/keyword-overview) 查搜索量和难度。
+3. 换成 `netlify.app` 再做一遍，看看两个平台上冒出来的新需求有什么不同。
+</Practice>
+
+
+# Similarweb 营销渠道 Marketing channels (/similarweb/marketing-channels)
+
+<Goals>
+- 看懂 10 个营销渠道的占比，判断网站的"增长引擎"
+- 用 PoP 对比表找出**哪个渠道在拉动（或拖累）增长**，并和竞品对比
+- 在 Traffic sources 明细里找到具体的来源：哪个搜索引擎、哪个社交平台、哪个 AI 产品
+</Goals>
+
+打开方式：二级菜单 <UI zh="流量">Traffic</UI> → <UI zh="营销渠道">Marketing channels</UI>。
+
+## 渠道占比 [#渠道占比]
+
+<Shot id="sw-mc-overview" caption="Marketing channels：10 个渠道的流量占比（Jul–Sep 2026）">
+  <Mark n={1} box="pctNum" shape="rect" label="% 占比 / # 访问量" at="bottom" dy={6}>
+    默认显示每个渠道占总流量的百分比，切到 # 显示具体访问次数。
+  </Mark>
+  <Mark n={2} box="bench" shape="rect" label="和行业平均比" at="right" dx={10}>
+    Benchmark to an industry：选一个行业后，每根柱子旁会出现行业平均水平，一眼看出这个网站哪个渠道比同行强、哪个弱。
+  </Mark>
+  <Mark n={3} box="org" shape="rect" label="自然搜索 55.02%" at="right" dx={10} />
+  <Mark n={4} box="direct" shape="rect">直接访问 37.13%，第二大来源。</Mark>
+  <Mark n={5} box="links" shape="rect" label="蓝色渠道名可点击，进入该渠道详细报告" at="bottom" dy={4} />
+  <Mark n={6} box="genai" shape="rect" label="AI 引荐 0.85%" at="top" dy={-30} />
+</Shot>
+
+### 用渠道结构判断"增长引擎" [#用渠道结构判断增长引擎]
+
+| 渠道结构特征 | 说明什么 | 你可以怎么做 |
+| --- | --- | --- |
+| Organic Search 占比最高 | 靠 SEO 获客，流量稳定、成本低 | 去 Search 和关键词研究里扒它的词 |
+| Direct 占比很高 | 品牌强、回访多，或者大量来自 App / 书签 | 新站很难复制，重点看它的拉新渠道 |
+| Paid Search / Display 占比高 | 靠买量增长，停投就会掉 | 看它投哪些词、哪些媒体（Ad intelligence 模块） |
+| Social 占比高 | 靠内容传播或网红带货 | 看是哪个平台，去平台上研究它的内容 |
+| Referrals 占比高 | 被大量网站推荐，或做了联盟、合作 | 在引荐报告里找合作机会 |
+| Gen AI 有可观占比 | AI 产品在回答里推荐它 | 研究它在 AI 回答里的曝光（AI 模块） |
+
+remove.bg 是典型的"SEO + 品牌"型：55% 自然搜索加 37% 直接访问，几乎不花钱买量。
+
+## 哪个渠道在拉动增长：PoP 对比表 [#哪个渠道在拉动增长pop-对比表]
+
+往下是两张热力表，比较的是 **Jun–Aug 2026 和 Jul–Sep 2026 两个周期**。三列分别是 remove.bg 和系统自动选的两个竞品，表头只显示网站图标：紫色 R 是 photoroom.com，橙色 P 是 pixelcut.ai（在「受众画像」的 Audience Overlap 里能看到对应关系）。
+
+<Shot id="sw-mc-growth" caption="两张 PoP 热力表：左边看绝对变化，右边看百分比变化">
+  <Mark n={1} box="period" shape="rect">对比的两个周期：Jun–Aug 2026 vs. Jul–Sep 2026。</Mark>
+  <Mark n={2} box="leftTotal" shape="rect" label="remove.bg 总共少了 400 万次访问" at="top" dy={-6}>
+    左表 Within each competitor：同一个网站内部，哪个渠道贡献的增减最多。颜色越深，影响越大。
+  </Mark>
+  <Mark n={3} box="leftDirect+leftOrg" shape="rect">下滑主要来自直接访问（-200 万）和自然搜索（-170 万）。</Mark>
+  <Mark n={4} box="rPaid" shape="rect" label="竞品付费搜索在增长" at="bottom" dy={30}>
+    绿色表示增长：photoroom.com 的付费搜索增加了 9.54 万次访问（右表显示是 +10%），说明它在加大搜索广告投放。
+  </Mark>
+  <Mark n={5} box="rightTotal" shape="rect" label="按百分比看：-2.24% / -0.69% / -8.53%" at="top" dy={-6}>
+    右表 Across competitors：横向比较几个网站同一渠道的增速，适合找"谁在哪个渠道发力"。
+  </Mark>
+  <Mark n={6} box="compare" shape="rect">点 Compare 可以把对比对象换成你关心的竞品。</Mark>
+</Shot>
+
+<Callout type="idea" title="读表技巧">
+  先看 **Total change** 这一行确定整体是涨是跌，再往下找颜色最深的格子。remove.bg 少掉的 400 万次访问里，直接访问 -200 万、自然搜索 -170 万，两者加起来占了九成——问题不在某个小渠道，而是核心流量在走弱。
+</Callout>
+
+## 渠道趋势：Channel traffic [#渠道趋势channel-traffic]
+
+<Shot id="sw-mc-trend" caption="Channel traffic：每个渠道按周的访问量走势">
+  <Mark n={1} box="mtd" shape="rect" label="已打开 Month-to-date" at="bottom" dy={6}>
+    打开后会把当前月份已经过去的天数也画出来，所以最后一段是虚线，而且会明显变低（不完整的一周）。看趋势时别把它当成"暴跌"。
+  </Mark>
+  <Mark n={2} box="dwm" shape="rect" label="当前按周（W）" at="bottom" dy={6} />
+  <Mark n={3} box="orgLine" shape="rect" label="自然搜索（橙线）" at="top" dy={-4} />
+  <Mark n={4} box="directLine" shape="rect" label="直接访问（深蓝线）" at="bottom" dy={4} />
+  <Mark n={5} box="legend" shape="rect" label="勾选要显示的渠道" at="left" dx={-10}>
+    右侧图例列出每个渠道在这段时间的访问总量，奖杯图标标出最大的渠道。取消勾选可以隐藏某条线。
+  </Mark>
+  <Mark n={6} box="mtdTail" shape="ellipse" label="不完整的当月数据" at="left" dx={-20} />
+</Shot>
+
+## 流量来源明细：Traffic sources [#流量来源明细traffic-sources]
+
+渠道只是大类。想知道"自然搜索具体来自哪个搜索引擎""社交具体是哪个平台"，看页面底部的 Traffic sources：
+
+<Shot id="sw-mc-sources" caption="Traffic sources：488 个具体来源，按流量占比排序" space={[0, 0, 0, 210]}>
+  <Mark n={1} box="filters" shape="rect" label="按行业 / 来源类型筛选" at="right" dx={10}>
+    All sources 下拉可以只看某一类，例如只看 Gen AI，或只看 Referrals。
+  </Mark>
+  <Mark n={2} box="search" shape="rect">输入网站名搜索某个来源，例如 `reddit`。</Mark>
+  <Mark n={3} box="export" shape="rect">导出 Excel / 自定义显示的列。</Mark>
+  <Mark n={4} box="google" shape="rect" label="Google 搜索 50.73%" at="left" />
+  <Mark n={5} box="youtube" shape="rect" label="YouTube：社交第一" at="left" />
+  <Mark n={6} box={["gemini", "chatgpt"]} shape="rect" label="AI 来源" at="left">
+    Source type 显示为 Gen AI。两者在这 3 个月里分别下降了 27% 和 37%。
+  </Mark>
+  <Mark n={7} box="coinw" shape="rect" label="意外的引荐来源" at="left" dy={18}>
+    coinw.com、gate.com 是加密货币交易所，却给 remove.bg 带来了引荐流量。这类"意外来源"值得点进去看看是什么页面在推荐它，常常能发现新的用户场景或合作机会。
+  </Mark>
+</Shot>
+
+<Callout type="warn" title="Direct 不全是'输入网址'">
+  Similarweb 把无法识别来源的访问都归到 Direct，比如从 App、聊天软件、PDF 文档里点进来的链接。所以 Direct 高不一定全是品牌认知，也可能是大量"看不到来源"的流量。
+</Callout>
+
+## 本章小结 [#本章小结]
+
+1. **渠道占比**回答"靠什么获客"，和行业平均比更有意义。
+2. **PoP 热力表**回答"什么在拉动增长"，先看 Total change，再找最深的格子。
+3. **Channel traffic** 看每个渠道的走势，注意 Month-to-date 带来的不完整数据。
+4. **Traffic sources** 落到具体来源，常常能发现意想不到的用户场景。
+
+<Practice>
+1. 打开 remove.bg 的 Marketing channels，在 Benchmark to an industry 里选它所属的行业，看哪些渠道高于行业平均。
+2. 在 Traffic sources 里把 All sources 切到 Gen AI，列出给它带来流量的所有 AI 产品。
+3. 点 Compare 把竞品换成 `photoroom.com`，看看两家在付费搜索上谁投入更多。
+</Practice>
+
+
+# Similarweb 引荐流量 Referral (/similarweb/referral)
+
+<Goals>
+- 用 Incoming Traffic 找出给网站导流的来源网站，并筛出**新出现**和**正在增长**的来源
+- 从引荐来源里识别：工具导航站、合作平台、母公司、意外的使用场景
+- 用 Outgoing Traffic 看网站把流量导向了哪里，读懂它背后的商业关系
+</Goals>
+
+打开方式：二级菜单点 <UI zh="引荐">Referral</UI>。页面有两个标签：**Incoming Traffic**（别人带来的流量）和 **Outgoing Traffic**（从它离开去了哪）。
+
+## Incoming Traffic：谁在给它导流 [#incoming-traffic谁在给它导流]
+
+<Shot id="sw-ref-top" caption="Incoming Traffic：引荐流量总量、趋势和筛选">
+  <Mark n={1} box="total" shape="rect" label="3 个月引荐访问 459.6 万" at="right" dx={20}>
+    只占总流量的 2.61%。对 remove.bg 这种 SEO 驱动的网站，引荐不是主渠道，但里面的来源很有研究价值。
+  </Mark>
+  <Mark n={2} box="chart" shape="rect">按月的引荐访问趋势，Jul 到 Sep 缓慢下降。</Mark>
+  <Mark n={3} box="filters" shape="rect" label="按行业、流量类型筛选" at="right" dx={10} />
+  <Mark n={4} box="checks" shape="rect" label="只看新来源 / 增长中的来源" at="right" dx={10}>
+    勾选 Newly discovered 只显示这段时间**新出现**的引荐网站；勾选 Trending websites 只显示引荐量**在增长**的网站。找新合作、新曝光渠道时最常用。
+  </Mark>
+  <Mark n={5} box="sumRefs" shape="rect" label="377 个引荐网站" at="top" dy={-8} />
+</Shot>
+
+往下是完整的引荐网站列表：
+
+<Shot id="sw-ref-table" caption="Referring websites：377 个引荐来源，按流量占比排序" space={[0, 0, 0, 220]}>
+  <Mark n={1} box="coinw+gate" shape="rect" label="加密交易所" at="left">
+    coinw.com（13.76%）、gate.com（10.87%）排在最前面。这种"意外来源"值得点开看看是哪些页面在链接 remove.bg。
+  </Mark>
+  <Mark n={2} box="kaleido" shape="rect" label="开发商 kaleido.ai" at="left">
+    remove.bg 是 Kaleido AI 开发的产品。名字后面的 (2) 表示有 2 个子域名，点前面的 <kbd>+</kbd> 展开。
+  </Mark>
+  <Mark n={3} box="canva" shape="rect" label="母公司 Canva" at="left" />
+  <Mark n={4} box="toolify" shape="rect" label="AI 工具导航站" at="left">
+    toolify.ai 是 AI 工具目录网站。**被导航站收录**是工具站常见的引荐来源，做新工具时可以照着这份名单去提交。
+  </Mark>
+  <Mark n={5} box="github" shape="rect" label="开发者 / API 文档" at="left" />
+  <Mark n={6} box="shopify" shape="rect" label="Shopify 后台" at="left">
+    来自 admin.shopify.com，说明有商家是从 Shopify 后台点过来的（例如通过应用或后台里的链接），电商商品图是它的一个重要场景。
+  </Mark>
+  <Mark n={7} box="chevrons" shape="rect">每行最左边的箭头可以展开，查看这个来源具体是哪些页面带来的流量。</Mark>
+</Shot>
+
+<Callout type="idea" title="从引荐列表里找机会">
+  | 来源类型 | 例子 | 你可以怎么做 |
+  | --- | --- | --- |
+  | 工具导航站 | toolify.ai | 把自己的工具提交到同样的导航站 |
+  | 平台应用市场 | admin.shopify.com | 做插件 / 集成，进入平台生态 |
+  | 开发者社区 | github.com | 开源 SDK、写 API 文档和示例 |
+  | 意外的行业网站 | coinw.com、gate.com | 研究对方的使用场景，可能是一个新的细分需求 |
+  | 竞品互相导流 | photoroom.com、iloveimg.com | 说明用户会在多个工具间切换，可做对比页、替代页 |
+</Callout>
+
+## Outgoing Traffic：它把访客送去了哪 [#outgoing-traffic它把访客送去了哪]
+
+切到 Outgoing Traffic 标签：
+
+<Shot id="sw-ref-out" caption="Outgoing Traffic：从 remove.bg 离开的访客去了哪些网站">
+  <Mark n={1} box="ov" shape="rect" label="出站访问 400 万次" at="right" dx={10} />
+  <Mark n={2} box="od" shape="rect" label="流向 285 个网站" at="bottom" dy={6} />
+  <Mark n={3} box="ind1" shape="rect">按行业看，72% 的出站访问流向图形、多媒体和网页设计类网站。</Mark>
+  <Mark n={4} box="aiRow" shape="rect">还有 2.92% 流向 AI 聊天工具（AI Chatbots and Tools）。</Mark>
+  <Mark n={5} box="canvaRow" shape="rect" label="64.83% 去了 Canva" at="top" dy={-10}>
+    而且同比增长了 155%。remove.bg 在 2021 年被 Canva 收购，这个数据说明 Canva 正在把 remove.bg 的用户**大规模导向自己的主站**。
+  </Mark>
+  <Mark n={6} box="canvaChange" shape="rect">去往 Canva 的出站流量同比增长 154.99%。</Mark>
+</Shot>
+
+<Callout type="warn" title="Outgoing 能看出商业关系">
+  出站流量高度集中在一个网站，通常意味着：母子公司导流、深度合作、或者联盟分成。分析一个网站的商业模式时，别忘了看 Outgoing——它往往比新闻稿更早暴露真实的业务重心。
+</Callout>
+
+## 本章小结 [#本章小结]
+
+1. **Incoming** 回答"谁在推荐它"，勾选 Newly discovered / Trending 找新渠道。
+2. 引荐来源可以分成：导航站、平台生态、开发者社区、意外场景、竞品互导，每一类对应一种获客打法。
+3. **Outgoing** 回答"它把用户送去了哪"，能看出母子公司、合作和变现方式。
+
+<Practice>
+1. 在 Incoming Traffic 里勾选 Newly discovered，看看最近 3 个月新出现了哪些引荐网站。
+2. 把行业筛选为 Computers Electronics and Technology，列出所有"AI 工具导航站"类型的来源。
+3. 打开 photoroom.com 的 Outgoing Traffic，看看它的出站流量主要去了哪里。
+</Practice>
+
+
+# Similarweb 搜索流量 Search overview (/similarweb/search-overview)
+
+<Goals>
+- 用 Search overview 的 6 张卡片快速判断一个网站的 **SEO 实力和投放规模**
+- 读懂"非品牌词"表：哪些词在给网站带来流量、在涨还是在跌
+- 从付费落地页反推竞品的**多语言投放策略**
+</Goals>
+
+打开方式：二级菜单点 <UI zh="搜索">Search</UI>，进入 Search overview。
+
+## 6 张概览卡片 [#6-张概览卡片]
+
+<Shot id="sw-so-cards" caption="Search overview：搜索流量概览（数值为月均，变化为同比 YoY）" space={[0, 0, 44, 0]}>
+  <Mark n={1} box="stCard" shape="rect" label="月均搜索流量 3227 万" at="bottom" dy={6}>
+    Search traffic = 自然搜索 + 付费搜索，占网站总流量的 55.04%，同比下降 15.59%。
+  </Mark>
+  <Mark n={2} box="otKw" shape="rect" label="4.13 万个排名词" at="bottom" dy={30}>
+    Organic traffic 占搜索流量的 99.96%，带来流量的自然搜索关键词有 4.13 万个，同比还多了 1.23%——词没少，但流量少了，说明是**排名或搜索需求在下降**。
+  </Mark>
+  <Mark n={3} box="ptCard" shape="rect" label="付费：27 个词" at="bottom" dy={6}>
+    Paid traffic 只有 1.16 万次，投放的关键词 27 个。
+  </Mark>
+  <Mark n={4} box="r13Note" shape="rect" label="前三名的词 1105 个" at="bottom" dy={30}>
+    Rank 1-3：在搜索结果前 3 名的关键词数量，占它所有关键词的 60.71%。注意下方小字"Sep 2026, India"——这张卡片只统计最近一个月、流量最大的国家。
+  </Mark>
+  <Mark n={5} box="ppcCpv" shape="rect" label="每次付费点击约 $0.12" at="bottom" dy={30}>
+    PPC spend 是估算的月均搜索广告花费，约 $1.4K。
+  </Mark>
+</Shot>
+
+<Callout type="idea" title="四个数字看懂 SEO 实力">
+  | 看什么 | 说明 |
+  | --- | --- |
+  | 搜索流量占总流量多少 | 超过 50% 说明网站高度依赖 SEO |
+  | 关键词数量的变化 | 词变多、流量变少 → 排名下滑或需求萎缩 |
+  | 前三名关键词占比 | 越高，说明在核心词上越强势 |
+  | PPC 花费 | 判断竞品是否在花钱买流量、预算多大 |
+</Callout>
+
+## 非品牌热词：Top non-branded keywords [#非品牌热词top-non-branded-keywords]
+
+往下滚动，先看非品牌关键词——它们才是新站有机会抢的流量：
+
+<Shot id="sw-so-keywords" caption="Top non-branded keywords：带来最多点击的非品牌搜索词（Jul–Sep 2026）">
+  <Mark n={1} box="aop" shape="rect" label="全部 / 自然 / 付费" at="bottom" dy={6} />
+  <Mark n={2} box="terms" shape="rect" label="都是'去背景'的各国说法" at="bottom" dy={4}>
+    tách nền（越南语，16.67 万次点击）、fondo blanco（西班牙语"白色背景"，14.51 万次）、arka plan kaldırma（土耳其语）、ตัดภาพพื้นหลัง（泰语）、cắt nền（越南语）。
+  </Mark>
+  <Mark n={3} box="yoyCol" shape="rect" label="同比大涨" at="top" dy={-8}>
+    这里是 **YoY 同比**：和去年同期比，fondo blanco 涨了 270%。
+  </Mark>
+  <Mark n={4} box="ovpCol" shape="rect" label="全部来自自然搜索" at="top" dy={-8} />
+  <Mark n={5} box="explore" shape="rect">Explore competitor's strategy 跳到关键词研究模块，看完整词表（后面章节详讲）。</Mark>
+</Shot>
+
+<Callout type="warn" title="为什么这里是涨，网站概览里是跌？">
+  [网站概览](/similarweb/website-performance)里同样的词显示下降 40%~60%，这里却显示上涨。原因是**比较口径不同**：网站概览比较的是 Sep 2026 和上一个月（环比），这里比较的是 Jul–Sep 2026 和去年同期（同比）。看到"变化"先确认是 MoM（环比）还是 YoY（同比）。
+</Callout>
+
+## 付费落地页：Top paid landing pages [#付费落地页top-paid-landing-pages]
+
+<Shot id="sw-so-paid" caption="Top paid landing pages：搜索广告把用户带到了哪些页面" space={[0, 0, 0, 180]}>
+  <Mark n={1} box="tnt" shape="rect">
+    **Top / Trending / New 三个视图。**
+    Trending 看点击增长最快的页面，New 看新出现的投放页面——竞品刚开始测试的新方向常常藏在这里。
+  </Mark>
+  <Mark n={2} box="p1" shape="rect" label="首页：主力投放页" at="left">
+    首页拿了 67.86% 的付费点击，投放词是 "bg remove" 等 12 个词，月花费约 $1.2K。
+  </Mark>
+  <Mark n={3} box="p2+p5" shape="rect" label="多语言落地页" at="left">
+    `/id`（印尼语）、`/es`（西班牙语）、`/fr`（法语）、`/pt-br`（巴西葡语）分别投放当地语言的关键词。
+  </Mark>
+  <Mark n={4} box="localKw" shape="rect" label="当地语言关键词" at="top" dy={-8}>
+    penghilang background png（印尼语）、eliminar fondo（西语）、retirer fond image（法语）、remover fundo（葡语）。
+  </Mark>
+</Shot>
+
+<Callout type="idea" title="从付费落地页反推策略">
+  remove.bg 的广告花费很少，但它的付费落地页已经暴露了它的打法：**每个主要市场一个本地语言页面，投当地语言的"去背景"关键词**。结合上一节的非品牌热词，你可以得到一份"哪个语言、哪个关键词值得做"的清单。
+</Callout>
+
+## 本章小结 [#本章小结]
+
+1. 先看 6 张卡片：搜索流量占比、关键词数量、前三名占比、广告花费。
+2. 再看非品牌热词：找到新站能抢的词，注意区分同比和环比。
+3. 最后看付费落地页：竞品愿意花钱的页面和关键词，通常就是最有商业价值的方向。
+
+<Practice>
+1. 在 Top non-branded keywords 里切到 Paid，看看 remove.bg 投放的非品牌词有哪些。
+2. 在 Top paid landing pages 里切到 New，记录最近新出现的投放页面。
+3. 打开 photoroom.com 的 Search overview，比较它和 remove.bg 的 PPC spend，判断谁更依赖买量。
+</Practice>
+
+
+# Similarweb 相似网站 Similar sites (/similarweb/similar-sites)
+
+<Goals>
+- 用 Similar sites 快速列出一个赛道里的主要玩家
+- 看懂 Affinity（相似度）和它的局限
+- 学会从相似网站列表里筛出真正的竞品和"跨界"对手
+</Goals>
+
+打开方式：二级菜单 <UI zh="概览">Overview</UI> → <UI zh="相似网站">Similar sites</UI>。
+
+这个报告不受顶部时间范围影响（日期控件是灰色的），反映的是 Similarweb 综合流量、受众和内容算出来的"长期相似度"。
+
+<Shot id="sw-ss" caption="Similar sites：和 remove.bg 最相似的 40 个网站，按 Affinity 排序" space={[0, 0, 0, 190]}>
+  <Mark n={1} box="filter" shape="rect" label="按行业筛选" at="right" dx={10}>
+    只看某个行业的相似网站，例如只看 Computers Electronics and Technology。
+  </Mark>
+  <Mark n={2} box="export" shape="rect">导出 Excel，方便批量查流量。</Mark>
+  <Mark n={3} box="affCol" shape="rect">
+    **相似度（越高越像）。**
+    Affinity 是 0–100% 的相似度得分。注意它不是"重合了多少用户"，而是综合受众、内容、流量来源的相似程度。
+  </Mark>
+  <Mark n={4} box="photoroom+iloveimg" shape="rect" label="直接竞品" at="left">
+    photoroom.com、pixelcut.ai、iloveimg.com：功能高度重叠的图片编辑 / 抠图工具。
+  </Mark>
+  <Mark n={5} box="slazzer+clipping" shape="rect" label="同类小站" at="left">
+    slazzer.com、erase.bg、removal.ai、clippingmagic.com：专门做"去背景"的工具，规模比 remove.bg 小得多。
+  </Mark>
+  <Mark n={6} box="canva+adobe" shape="rect" label="平台型对手" at="left">
+    canva.com（全球排名 #32）、adobe.com（#78）：不是专门做抠图，但抠图是它们的一个功能，抢的是同一批用户。
+  </Mark>
+  <Mark n={7} box="eraseInd" shape="rect">注意行业分类：erase.bg 被分到了"游戏"类，说明 Similarweb 的行业标签并不总是准确。</Mark>
+</Shot>
+
+## 怎么用这张表 [#怎么用这张表]
+
+<Steps>
+<Step>
+**先按 Affinity 看前 10~15 个**：这是 Similarweb 认为最像的网站，通常包括直接竞品、同类小站和平台型对手。
+</Step>
+<Step>
+**再看 Global rank 分层**：排名在几千名以内的是头部玩家（photoroom #3,348、iloveimg #1,318），几万到几十万名的是小站（slazzer #87,406、bgeraser #259,710）。小站往往更值得研究——它们的打法新站更容易复制。
+</Step>
+<Step>
+**把候选竞品加入对比**：挑 2~4 个，用顶部的 Add website to compare 和 remove.bg 做同屏对比（见「网站对比」一章）。
+</Step>
+</Steps>
+
+<Callout type="idea" title="和 Audience Interests 搭配">
+  Similar sites 是"Similarweb 觉得像"，[受众画像](/similarweb/audience)里的 Audience Interests 是"访客实际还去哪"。两张表都出现的网站（比如 photoroom、iloveimg、canva），才是最确定的竞品。
+</Callout>
+
+<Practice>
+1. 在 Similar sites 里找出排名在 #10,000 到 #100,000 之间的"去背景"工具，记下它们的域名。
+2. 分别打开它们的 Website performance，比较谁的自然搜索占比最高。
+3. 想一想：如果你要做一个新的抠图工具，最该学习哪一个？为什么？
+</Practice>
+
+
+# Similarweb 社交流量 Social (/similarweb/social)
+
+<Goals>
+- 看懂 Social 报告：社交访问总量、平台分布、趋势
+- 判断哪个平台是竞品的内容主阵地，去对应平台研究它的打法
+</Goals>
+
+打开方式：二级菜单点 <UI zh="社交">Social</UI>。
+
+<Shot id="sw-social" caption="Social：社交访问总量、各平台占比和趋势（Jul–Sep 2026）">
+  <Mark n={1} box="v" shape="rect" label="3 个月社交访问 640 万" at="bottom" dy={40}>
+    占总流量的 3.66%。
+  </Mark>
+  <Mark n={2} box="yt" shape="rect" label="YouTube 39.37%" at="left" dx={-170} />
+  <Mark n={3} box="fb+wa" shape="rect" label="Facebook + WhatsApp 超过 40%" at="left" dx={-170}>
+    WhatsApp Webapp 占 20.13%：多半是用户在 WhatsApp 网页版里互相分享 remove.bg 的链接——在印度、印尼、巴西这些 WhatsApp 普及的市场，这是很常见的传播方式。
+  </Mark>
+  <Mark n={4} box="pin+rd" shape="rect" label="Pinterest、Reddit" at="left" dx={-170} />
+  <Mark n={5} box="shareIcon">把这张图表分享或导出。</Mark>
+  <Mark n={6} box="chart" shape="rect" label="每月约 210 万，基本平稳" at="top" dy={-60}>
+    Social traffic over time：社交流量没有像搜索流量那样明显下滑。
+  </Mark>
+</Shot>
+
+## 怎么用社交数据 [#怎么用社交数据]
+
+| 你看到的 | 说明 | 下一步 |
+| --- | --- | --- |
+| YouTube 占比高 | 有大量教程、测评视频在推荐它 | 去 YouTube 搜产品名，看哪些视频带来流量、用户在问什么 |
+| Facebook / WhatsApp 占比高 | 用户在私域里分享，新兴市场常见 | 做适合分享的结果页（带水印、带链接） |
+| Reddit 占比高 | 社区讨论驱动 | 去相关 subreddit 看用户怎么评价竞品 |
+| Pinterest 占比高 | 视觉内容、素材需求 | 做图片模板、素材类落地页 |
+
+<Callout type="idea" title="社交流量 ≠ 社交媒体运营">
+  Social 统计的是**从社交平台点进网站的访问**，不是粉丝数，也不是帖子曝光。remove.bg 自己未必在运营 WhatsApp，这些流量是用户自发分享产生的。
+</Callout>
+
+页面下方还有按来源列出的明细表（All sources 筛选），可以看到具体是哪些社交平台、占比和变化。
+
+<Practice>
+1. 打开 remove.bg 的 Social 报告，记下前三个社交平台。
+2. 去 YouTube 搜索 "remove.bg"，看看排名靠前的视频是什么类型的内容。
+3. 对比 photoroom.com 的 Social 报告：它更依赖哪个平台？这和它的目标用户（电商卖家）有什么关系？
+</Practice>
+
+
+# Similarweb 网站技术栈 Website technologies (/similarweb/technologies)
+
+<Goals>
+- 看懂 Website technologies 的技术清单和"使用时长"
+- 从技术栈推断竞品的**投放渠道、增长手段和运营重点**
+</Goals>
+
+打开方式：二级菜单点 <UI zh="网站技术栈">Website technologies</UI>。这个报告不受时间范围影响。
+
+<Shot id="sw-tech" caption="Website technologies：remove.bg 使用的 73 项技术" space={[0, 0, 0, 200]}>
+  <Mark n={1} box="filters" shape="rect" label="按类别 / 子域名 / 状态筛选" at="right" dx={10}>
+    Installed and Removed 下拉可以只看"已移除"的技术——竞品换掉了什么工具，往往说明它的策略变了。
+  </Mark>
+  <Mark n={2} box="adRows" shape="rect" label="广告与再营销像素" at="left">
+    Facebook Advertiser、LinkedIn Advertiser、DoubleClick、Facebook Custom Audiences：说明它在这些平台投广告，并对访客做再营销。
+  </Mark>
+  <Mark n={3} box="cf" shape="rect" label="CDN" at="left" />
+  <Mark n={4} box="canva" shape="rect" label="Canva 的系统" at="left">
+    内容管理系统显示为 Canva，和"被 Canva 收购"对得上。
+  </Mark>
+  <Mark n={5} box="opt+hj" shape="rect" label="转化优化工具" at="left">
+    Optimizely（A/B 测试，用了约 1 年）、Google Analytics、Hotjar（热力图）：重视转化优化。
+  </Mark>
+  <Mark n={6} box="zd" shape="rect" label="客服系统" at="left" />
+  <Mark n={7} box="periodCol" shape="rect" label="使用了多久" at="top" dy={-8}>
+    Working period 和 First seen date：技术从什么时候开始被检测到。新装上的工具（比如只用了几个月的 A/B 测试工具）通常对应着新的增长动作。
+  </Mark>
+</Shot>
+
+## 从技术栈能推断什么 [#从技术栈能推断什么]
+
+| 检测到的技术 | 推断 |
+| --- | --- |
+| 各平台广告像素（Facebook、LinkedIn、TikTok…） | 在这些平台投广告，或至少在积累再营销人群 |
+| A/B 测试工具（Optimizely 等） | 在持续优化落地页和付费转化 |
+| 热力图 / 录屏（Hotjar 等） | 重视用户体验和转化漏斗 |
+| 客服 / 工单（Zendesk 等） | 有付费用户需要支持，可能是订阅制 |
+| 支付工具（Stripe、Paddle 等） | 有在线收费 |
+| 广告联盟（AdSense 等） | 靠展示广告变现 |
+
+<Callout type="warn" title="检测有遗漏">
+  Similarweb 通过扫描网页代码识别技术，服务端工具、App 内 SDK 都看不到；也可能把已经停用但代码还在的工具算作 Installed。把它当作线索，而不是完整清单。
+</Callout>
+
+<Practice>
+1. 在 Website technologies 里把状态切到 Removed，看看 remove.bg 停用过哪些工具。
+2. 打开 photoroom.com 的技术栈，比较两家在广告像素上的差异：谁在更多平台投放？
+</Practice>
+
+
+# Similarweb 流量与互动 Traffic & engagement (/similarweb/traffic-engagement)
+
+<Goals>
+- 用 Traffic & engagement 报告看一个网站流量的**逐月走势**
+- 分清访问次数、独立访客、去重受众三种"量"的口径
+- 用 Engaged visits only、桌面/移动拆分，判断流量**质量**
+</Goals>
+
+上一章的[网站概览](/similarweb/website-performance)只给了汇总数字。想知道"这些数字是怎么变过来的"，就要进 Traffic & engagement（流量与互动）报告。
+
+打开方式：二级菜单 <UI zh="流量">Traffic</UI> → <UI zh="流量与互动">Traffic & engagement</UI>。本章仍以 remove.bg、Jul–Sep 2026 为例。
+
+## 报告顶部 [#报告顶部]
+
+<Shot id="sw-te-top" caption="Traffic & engagement 顶部：时间、PoP、汇总卡片和工具栏" space={[0, 0, 40, 0]}>
+  <Mark n={1} box="guide">标题旁的学士帽图标是官方教程入口，看不懂某个报告时可以点开。</Mark>
+  <Mark n={2} box="pop" shape="rect" label="PoP 环比开关" at="bottom">
+    PoP = Period over Period（周期对比）。打开后，指标和图表会和"之前的同长度周期"做对比，旁边的下拉箭头用来选择对比口径。
+  </Mark>
+  <Mark n={3} box="tv" shape="rect" label="3 个月总访问" at="right" dx={30}>
+    和网站概览里的 Total visits 是同一个数。卡片右上角的 <kbd>+</kbd> 可以把这张卡片加到自己的看板（Dashboards）。
+  </Mark>
+  <Mark n={4} box="connect" shape="rect">
+    Connect your website：网站主可以连接自己的 Google Analytics，让 Similarweb 显示经过验证的真实数据。分析别人的网站时用不到。
+  </Mark>
+  <Mark n={5} box="engaged" shape="rect" label="只看有效访问" at="bottom">下面详细讲。</Mark>
+  <Mark n={6} box="mtd" shape="rect" label="本月至今" at="bottom">
+    Month-to-date：把当月已经过去的天数也算进来，看"这个月到目前为止"的数据。默认只统计完整月份。
+  </Mark>
+  <Mark n={7} box="excel">导出 Excel。</Mark>
+</Shot>
+
+## 访问量的四种口径 [#访问量的四种口径]
+
+工具栏下面是四个可以切换的指标标签，点哪个，下面的图就画哪个：
+
+<Shot id="sw-te-chart" caption="点击指标标签切换图表；图表按桌面端 / 移动网页端分层">
+  <Mark n={1} box="tabMV" shape="rect" label="月均访问" at="bottom" dy={10}>
+    **Monthly Visits**：每月访问次数的平均值，5862 万。一次访问 = 一次会话，用户停止操作超过 30 分钟就算一次新的访问。
+  </Mark>
+  <Mark n={2} box="tabUV" shape="rect" label="月独立访客" at="bottom" dy={10}>
+    **Unique Visitors**：每月有多少台设备访问过，2234 万。同一个人用电脑和手机各访问一次，算 2 个独立访客。
+  </Mark>
+  <Mark n={3} box="tabNR" shape="rect" label="新访客 52% / 老访客 48%" at="top" dy={-4}>
+    **New vs. Returning Visitors**：新访客占比高，说明拉新能力强；老访客占比高，说明留存好。
+  </Mark>
+  <Mark n={4} box="tabDA" shape="rect" label="去重受众" at="bottom" dy={10}>
+    **Deduplicated Audience**：跨设备去重后的"人数"，1860 万。它是 Similarweb 用模型估算的，比独立访客更接近真实用户数。
+  </Mark>
+  <Mark n={5} box="dwm" shape="rect">切换柱状图 / 折线图，以及按天（D）、周（W）、月（M）显示。</Mark>
+  <Mark n={6} box="bench" shape="rect" label="和行业平均比" at="bottom">
+    Benchmark to a category：把所属行业的平均水平画成一条参考线，判断这个网站在行业里算快还是慢。
+  </Mark>
+  <Mark n={7} box="legend" shape="rect">取消勾选 Desktop 或 Mobile Web，可以只看某一端的数据。</Mark>
+</Shot>
+
+三种"量"怎么选：
+
+| 你想知道 | 看哪个 | remove.bg |
+| --- | --- | --- |
+| 网站有多忙、广告位值多少钱 | Monthly Visits 访问次数 | 5862 万 / 月 |
+| 有多少设备在用 | Unique Visitors 独立访客 | 2234 万 / 月 |
+| 大概有多少真实用户 | Deduplicated Audience 去重受众 | 1860 万 / 月 |
+| 用户多久来一次 | 访问次数 ÷ 独立访客 | ≈ 2.6 次 / 月 |
+
+<Callout type="warn" title="不要拿访问次数和别人的'用户数'比">
+  产品发布、融资新闻里说的"月活用户"通常是人数口径。拿 Similarweb 的月访问量去比，会把对方的规模高估两三倍。用去重受众对比更公平。
+</Callout>
+
+## 互动质量：时长、页数、跳出率 [#互动质量时长页数跳出率]
+
+往下滚动是第二组指标，同样可以点标签切换图表：
+
+<Shot id="sw-te-engagement" caption="互动指标：按桌面端和移动网页端分别画线">
+  <Mark n={1} box="tabVD" shape="rect" label="平均访问时长 2:51" at="bottom" dy={10}>
+    **Visit Duration**：每次访问平均停留多久。
+  </Mark>
+  <Mark n={2} box="tabPPV" shape="rect" label="每次访问 2.87 页" at="bottom" dy={10}>
+    **Pages Per Visit**：每次访问平均浏览几个页面。
+  </Mark>
+  <Mark n={3} box="tabBR" shape="rect" label="跳出率 33.05%" at="bottom" dy={10}>
+    **Bounce Rate**：只看了一个页面就离开的访问占比。
+  </Mark>
+  <Mark n={4} box="tabPV" shape="rect" label="总浏览量 1.682 亿" at="bottom" dy={10}>
+    **Page Views**：所选时间内的页面浏览总次数。
+  </Mark>
+  <Mark n={5} box="mobileLine" shape="rect" label="移动网页端：约 3 分 20 秒" at="top" dy={-6} />
+  <Mark n={6} box="desktopLine" shape="rect" label="桌面端：约 2 分 30 秒" at="top" dy={-6}>
+    拆开看会发现，移动端用户的单次访问反而更长。对工具站来说，这通常意味着手机上传、处理图片更慢，而不是手机用户更"投入"。
+  </Mark>
+  <Mark n={7} box="engaged" shape="rect" label="只看有效访问" at="bottom" dx={-60}>
+    勾选 Engaged visits only 后，Similarweb 会去掉低互动的访问。实测 remove.bg：跳出率变为 N/A，访问时长从 2:51 变成 4:15，每次访问页数从 2.87 变成 3.79。
+  </Mark>
+</Shot>
+
+<Callout type="idea" title="怎么用互动指标找机会">
+  - 和竞品对比时，**访问量相近但访问时长、页数明显更高**的一方，通常产品体验或内容深度更好
+  - 跳出率很高的站，要么是"查一下就走"的工具（正常），要么是靠低质量流量堆起来的（要警惕）
+  - 用 Engaged visits only 过滤后再比较，可以排除刷量、误点带来的干扰
+</Callout>
+
+## 本章小结 [#本章小结]
+
+| 想回答的问题 | 去哪里看 |
+| --- | --- |
+| 流量在涨还是在跌 | Monthly Visits 标签 + M 粒度 |
+| 和上个周期比怎么样 | 打开 PoP |
+| 真实用户有多少 | Deduplicated Audience |
+| 用户粘不粘 | 访问次数 ÷ 独立访客、New vs. Returning |
+| 流量质量好不好 | Visit Duration、Pages Per Visit、Bounce Rate，必要时勾选 Engaged visits only |
+| 桌面和移动差异 | 图例里单独勾选 Desktop / Mobile Web |
+
+<Practice>
+1. 打开 remove.bg 的 Traffic & engagement，把粒度从 M 切到 W，看看月内有没有明显的周期波动。
+2. 打开 PoP 开关，比较 Jul–Sep 和上一个 3 个月。
+3. 在 Benchmark to a category 里选择它所属的行业，判断 remove.bg 的下滑是自身问题还是行业整体下滑。
+</Practice>
+
+
+# Similarweb 网站内容 Website content (/similarweb/website-content)
+
+<Goals>
+- 认识 Website content 的 4 个标签页：Folders、Business Lines、Popular Pages、Subdomains
+- 用 Subdomains 判断一个网站的流量是否集中在主站
+- 知道这个报告在什么情况下最有用，以及数据缺失时怎么办
+</Goals>
+
+打开方式：二级菜单 <UI zh="概览">Overview</UI> → <UI zh="网站内容">Website content</UI>。
+
+<Shot id="sw-wc-sub" caption="Website content › Subdomains：remove.bg 的流量 99.9% 在主域名">
+  <Mark n={1} box="tabFolders" shape="rect" label="目录" at="bottom" dy={4}>
+    Folders：按网址目录（如 `/blog/`、`/tools/`）统计流量。remove.bg 的目录很少，这里没有数据。
+  </Mark>
+  <Mark n={2} box="tabBL" shape="rect" label="业务线" at="bottom" dy={4}>
+    Business Lines（新功能）：把网站按业务拆开看，适合大型网站。
+  </Mark>
+  <Mark n={3} box="tabPP" shape="rect" label="热门页面" at="bottom" dy={4}>
+    Popular Pages：流量最高的具体页面，可以筛选 New（新出现的页面）和 Trending（正在上涨的页面）。
+  </Mark>
+  <Mark n={4} box="tabSub" shape="rect" label="子域名" at="bottom" dy={4}>
+    Subdomains：每个子域名的流量占比。
+  </Mark>
+  <Mark n={5} box="source" shape="rect" label="自动切成了桌面端" at="bottom-left">
+    子域名数据只统计桌面端，打开这个标签页时流量类型会自动变成 Desktop。
+  </Mark>
+  <Mark n={6} box="shareMain" shape="rect" label="主站 99.9%" at="left" dx={-150} />
+  <Mark n={7} box="subRows" shape="rect" label="其余子域名都不到 0.01%" at="right" dx={-500} dy={40}>
+    `api.`（接口）、`static.`（静态资源）、`es.`（西班牙语站）等子域名几乎没有直接访问。
+  </Mark>
+</Shot>
+
+## 这个报告什么时候最有用？ [#这个报告什么时候最有用]
+
+remove.bg 是单一工具，流量几乎全在首页，所以 Website content 能看到的东西不多。它真正的用武之地是**平台型、内容型网站**：
+
+| 网站类型 | 看哪个标签 | 能发现什么 |
+| --- | --- | --- |
+| 托管平台（如 `vercel.app`、`github.io`） | Subdomains | 平台上哪些用户网站流量最高、最近冒出了哪些新站 |
+| 内容站、博客 | Folders、Popular Pages | 哪个栏目、哪篇文章带来最多流量 |
+| 多语言网站 | Subdomains 或 Folders | 各语言版本的流量分布（`es.`、`/de/` 等） |
+| 电商、SaaS | Business Lines | 不同产品线的流量 |
+
+在「实战：从 vercel.app 挖新词」一章，我们会用平台型网站演示如何从子域名和落地页里发现新出现的工具站。
+
+<Callout type="warn" title="Popular Pages 加载失败怎么办？">
+  大网站选 3 个月时，Popular Pages 偶尔会提示 "Something went wrong. Please try again or choose a shorter date range."。按提示把时间范围改成 Last 1 Month 再打开即可，看完记得改回来。
+</Callout>
+
+<Practice>
+1. 打开 remove.bg 的 Website content，把时间改成 Last 1 Month，查看 Popular Pages 里流量最高的 10 个页面。
+2. 切到 New 筛选，看看最近有没有新上线的页面——新页面往往对应着新功能或新关键词。
+</Practice>
+
+
+# Similarweb 站点关键词 Website explorer › Keywords (/similarweb/website-keywords)
+
+<Goals>
+- 打开任意网站的关键词报告，看懂每一列
+- 用机会卡片和筛选器快速找到值得做的词
+- 从"Top URL"看出竞品是用哪个页面承接哪类词的
+</Goals>
+
+打开方式：Keyword research → Website explorer → <UI zh="关键词">Keywords</UI>，在弹出的搜索框里输入网站（可以是域名，也可以是具体 URL，例如 `remove.bg/es`）。
+
+## 报告顶部 [#报告顶部]
+
+<Shot id="sw-kr-kw-top" caption="Keywords 报告顶部：remove.bg 共有 52,098 个带来流量的关键词" space={[0, 0, 40, 16]}>
+  <Mark n={1} box="domain" shape="rect">当前分析的网站。</Mark>
+  <Mark n={2} box="gap" shape="rect" label="关键词差距分析" at="bottom" dy={6}>
+    Add Site for Keyword Gap：加入竞品后，可以看"对方有、你没有"的关键词。
+  </Mark>
+  <Mark n={3} box="tTotal+tPaid" shape="rect" label="全部 / 自然 / 付费" at="bottom" dy={6} />
+  <Mark n={4} box="filters" shape="rect" label="筛选器" at="right" dx={-300} dy={-40}>
+    最常用的组合：Branded/non-branded 选 Non-branded（去掉品牌词），Volume 设下限，Clicks change 选增长中的词。
+  </Mark>
+  <Mark n={5} box="cLong" shape="rect" label="6,621 个长尾机会" at="bottom" dy={6}>
+    机会卡片由 Similarweb 自动计算：Cannibalization（多个页面抢同一个词）、Long-tail opps.（长尾机会）、SERP features opps.（可以争取搜索结果特殊展示位的词）、High traffic opps.（高流量机会）、Low potential keywords（低潜力词）。点卡片就会把表格筛成对应的词。
+  </Mark>
+</Shot>
+
+## 关键词表：点击、变化、难度 [#关键词表点击变化难度]
+
+<Shot id="sw-kr-kw-table" caption="关键词表左半部分（Jul–Sep 2026）">
+  <Mark n={1} box="clicksCol" shape="rect">
+    **Clicks 点击**：这个词给网站带来的搜索点击（不是搜索量）。remove bg 带来 2040 万次，占全部搜索点击的 22.51%。
+  </Mark>
+  <Mark n={2} box="changeCol" shape="rect">Change：点击量的变化。</Mark>
+  <Mark n={3} box="r6Change" shape="rect" label="+357%：正在爆发的词" at="right" dx={10}>
+    background remove 的点击增长了 357%，结合下一节的搜索量就能看出它是一个正在快速变热的说法。
+  </Mark>
+  <Mark n={4} box="kdCol" shape="rect">
+    **排名难度 KD**（Keyword Difficulty）0–100，红点表示很难（80 以上），浅色表示中等。核心大词基本都在 84–92。
+  </Mark>
+  <Mark n={5} box="intentCol" shape="rect">
+    **搜索意图 Intent**：NAV = 导航型（想找某个网站），另外还有 INFO（了解信息）、COM（商业调研）、TRANS（交易）。
+  </Mark>
+  <Mark n={6} box="r7Kw" shape="rect" label="西语核心词" at="right" dx={140}>
+    quitar fondo（西班牙语"去除背景"）带来 280 万次点击，KD 只有 63——比英文核心词容易得多。
+  </Mark>
+  <Mark n={7} box="cot" shape="rect">勾选左侧的词后点 Clicks over time，可以看这些词的点击走势。</Mark>
+</Shot>
+
+## 关键词表：搜索量、CPC、零点击 [#关键词表搜索量cpc零点击]
+
+表格可以左右滚动，往右是另一组重要指标：
+
+<Shot id="sw-kr-kw-metrics" caption="关键词表向右滚动：搜索量、设备、CPC、零点击率">
+  <Mark n={1} box="volCol" shape="rect">
+    **Volume 当前搜索量**：所选时间段里这个词的月搜索量。
+  </Mark>
+  <Mark n={2} box="avgCol" shape="rect">
+    **Avg. volume 平均搜索量**：更长周期的平均月搜索量。和 Volume 差距大，说明这个词有季节性或趋势变化。
+  </Mark>
+  <Mark n={3} box="r6Vol+r6Avg" shape="rect" label="当前 280 万 vs 平均 63.8 万" at="left">
+    background remove 当前搜索量是平均水平的 4 倍多，和上一张图 +357% 的点击增长对得上。
+  </Mark>
+  <Mark n={4} box="dmCol" shape="rect">Desktop vs. mobile：搜索来自桌面端和移动端的比例。</Mark>
+  <Mark n={5} box="cpcCol" shape="rect">
+    **CPC 广告单价**：越高，说明广告主越愿意为这个词花钱、商业价值越高。bg remover 的 $0.67 是这组里最高的。
+  </Mark>
+  <Mark n={6} box="zcCol" shape="rect">
+    **Zero-click 零点击率**：搜索后没有点击任何结果的比例。越高，说明搜索结果页本身已经回答了问题，能抢到的点击越少。
+  </Mark>
+</Shot>
+
+再往右还有 **Top URL**（这个词主要落到网站的哪个页面）和 **SERP features**（搜索结果里出现了哪些特殊展示位）。例如 quitar fondo 的 Top URL 是 `remove.bg/es`，remover fundo 是 `remove.bg/pt-br`——竞品用**独立的语言页面**承接各国的本地词。
+
+## 怎么从词表里找机会 [#怎么从词表里找机会]
+
+<Steps>
+<Step>
+**去掉品牌词**：Branded/non-branded 选 Non-branded，排除 "remove bg" 这类带品牌名的词。
+</Step>
+<Step>
+**按难度排序**：点 KD 列表头，从低到高看，找 KD 低于 60、点击量还不错的词。
+</Step>
+<Step>
+**看 Volume 和 Avg. volume 的差距**：当前量远高于平均量的，是正在变热的词，越早做越有利。
+</Step>
+<Step>
+**看 Top URL**：竞品用什么页面承接这个词？如果只是首页顺带排上去的，你做一个专门的页面就很有机会。
+</Step>
+</Steps>
+
+<Practice>
+1. 打开 remove.bg 的 Keywords 报告，筛选 Non-branded，按 KD 升序，找出 5 个 KD 低于 60 的词。
+2. 在 Include/Exclude URLs 里只看 `remove.bg/es`，看看西语页面一共排了多少个词。
+3. 点 Add Site for Keyword Gap 加入 photoroom.com，找出 photoroom 有排名、remove.bg 没有的词。
+</Practice>
+
+
+# Similarweb 网站概览 Website performance (/similarweb/website-performance)
+
+<Goals>
+- 打开任意网站的 Website performance 报告，并把时间切换到按月统计
+- 看懂流量规模、排名、设备、互动指标这几组核心数字
+- 从国家、渠道、搜索词三个角度，5 分钟内给一个网站下初步结论
+</Goals>
+
+Website performance（网站概览）是 Website analysis 模块的第一个报告，也是你搜索一个域名后默认打开的页面。它把后面各章的内容各抽取了一小块放在一起，适合**快速判断一个网站值不值得深入研究**。
+
+本章以 remove.bg 为例，时间范围选 **Jul 2026 – Sep 2026（Last 3 Months）**，地区为 Worldwide。
+
+## 打开报告 [#打开报告]
+
+<Steps>
+<Step>
+左侧主导航点 <UI zh="网站分析">Website analysis</UI>，在搜索框输入 `remove.bg`，从下拉建议里选中它（参考上一章[界面导览](/similarweb/interface)）。
+</Step>
+<Step>
+默认进入二级菜单 Overview 下的 <UI zh="网站概览">Website performance</UI>。
+</Step>
+<Step>
+把顶部时间范围从 Last 28 days 改成 **Last 3 Months**。按天滚动的 28 天视图不显示环比，也看不到 Notable changes。
+</Step>
+</Steps>
+
+## 流量规模：Traffic & engagement [#流量规模traffic--engagement]
+
+页面第一块是流量和排名的总览：
+
+<Shot id="sw-wp-summary" caption="Traffic & engagement：流量、变化、设备与排名">
+  <Mark n={1} box="tv" shape="rect" label="3 个月总访问 1.758 亿" at="right" dx={20}>
+    Total visits 是所选时间范围内的**访问次数总和**（不是人数）。选了 3 个月，就是 3 个月加起来。
+  </Mark>
+  <Tag box="tvChange" text="比上月少 8.63%" at="right" />
+  <Mark n={2} box={["nc1", "nc2"]} shape="rect" label="自动找出的异常变化" at="top" dy={-6}>
+    Notable changes 会自动挑出变化最大的维度：这里是 Direct（直接访问）环比下降 10%、印度流量环比下降 12%，点后面的链接可以直接跳到对应报告。
+  </Mark>
+  <Mark n={3} box="aiBody" shape="rect" label="AI 流量洞察" at="bottom">
+    AI insights 是新功能，这里提示 AI 搜索带来的流量主要来自 Gemini。
+  </Mark>
+  <Mark n={4} box={["desktop", "mobile"]} shape="rect" label="桌面 67% / 移动 33%" at="top" dy={-10}>
+    Device distribution：桌面端和移动网页端的访问占比。注意它**不包含 App 内的访问**。
+  </Mark>
+  <Mark n={5} box={["grv", "crv", "irv"]} shape="rect" label="三种排名" at="left" dx={-150}>
+    Global rank 全球排名 #960；Country rank 在主要国家（印度）的排名 #565；Industry rank 在所属行业（图形多媒体与网页设计）里排第 5。排名越小越好。
+  </Mark>
+</Shot>
+
+几个容易误解的地方：
+
+| 指标 | 含义 | 怎么用 |
+| --- | --- | --- |
+| Total visits | 访问次数总和，同一个人打开两次算 2 次 | 和竞品比规模；**除以月数**才是月均访问 |
+| 环比（from last month） | 最后一个月对比前一个月 | 连续几个月都跌，才说明趋势不好 |
+| Device distribution | 桌面 vs 移动网页 | 工具类网站桌面占比高很正常 |
+| Industry rank | 在 Similarweb 行业分类里的名次 | 行业分类可能不准，点链接确认分在了哪个行业 |
+
+## 互动质量：Engagement overview [#互动质量engagement-overview]
+
+往下滚动是互动指标，用来判断"流量质量"：
+
+<Shot id="sw-wp-engagement" caption="Engagement overview：6 个互动指标" space={[0, 0, 10, 0]}>
+  <Mark n={1} box="mv" shape="rect">**Monthly visits 月均访问**：5862 万，即 Total visits ÷ 3。</Mark>
+  <Mark n={2} box="uv" shape="rect">**Monthly unique visitors 月独立访客**：2234 万人。月访问 ÷ 独立访客 ≈ 2.6，说明平均每人每月来 2~3 次。</Mark>
+  <Mark n={3} box="da" shape="rect">**Deduplicated audience 去重受众**：1860 万人。同一个人用电脑和手机都访问过只算一次，比独立访客更接近"真实用户数"。</Mark>
+  <Mark n={4} box="vd" shape="rect">**Visit duration 平均访问时长**：2 分 51 秒。</Mark>
+  <Mark n={5} box="pv" shape="rect">**Pages / visit 每次访问浏览页数**：2.87 页。</Mark>
+  <Mark n={6} box="br" shape="rect">**Bounce rate 跳出率**：33.05%，只看一个页面就离开的访问占比，越低越好。</Mark>
+  <Mark n={7} box="trends" shape="rect">点 See trends over time 会跳到「流量与互动」报告，看这些指标的逐月变化。</Mark>
+</Shot>
+
+<Callout type="idea" title="怎么判断数字好不好？">
+  互动指标没有统一的及格线，要**和同类网站比**。remove.bg 是"上传图片 → 下载结果"的单功能工具，2~3 分钟、不到 3 页、三成跳出，都是工具站很健康的水平；如果是内容站，同样的数字就偏低了。
+</Callout>
+
+## 访问趋势：Visits over time [#访问趋势visits-over-time]
+
+<Shot id="sw-wp-visits" caption="Visits over time：按月的访问趋势，以及系统推荐的竞品">
+  <Mark n={1} box="self" shape="rect" label="当前网站" at="bottom" dy={8}>
+    remove.bg 3 个月合计 1.758 亿次访问，折线是它的逐月走势：7 月到 9 月一路下滑。
+  </Mark>
+  <Mark n={2} box="rivals" shape="rect" label="系统推荐的竞品，勾选即可叠加对比" at="bottom" dy={8}>
+    photoroom.com、pixelcut.ai、iloveimg.com、slazzer.com 是 Similarweb 自动挑出的相似网站，勾选方框就能把它们的曲线画在同一张图里。
+  </Mark>
+  <Mark n={3} box="dwm" shape="rect" label="按天 / 周 / 月" at="bottom">
+    D / W / M 切换曲线粒度。看短期波动用 D 或 W，看趋势用 M。
+  </Mark>
+  <Mark n={4} box="more" shape="rect">See traffic over time 进入详细的流量报告。</Mark>
+</Shot>
+
+## 国家分布：Top countries [#国家分布top-countries]
+
+<Shot id="sw-wp-countries" caption="Top countries：流量来自哪些国家">
+  <Mark n={1} box="india" shape="rect" label="第一大市场：印度 20.36%" at="left" dx={-20}>
+    印度、印尼、美国、菲律宾、巴西是前五。地图上颜色越深，流量占比越高。
+  </Mark>
+  <Mark n={2} box="change" shape="rect" label="各国都在下滑" at="top-left">
+    Change 是该国流量的环比变化，前五个国家全部下降，和总访问量下滑一致。
+  </Mark>
+  <Mark n={3} box="more" shape="rect">See more countries 查看完整国家列表。</Mark>
+</Shot>
+
+<Callout title="出海视角">
+  看国家分布可以快速判断一个赛道的"主战场"。remove.bg 的流量大头在印度和东南亚，美国只占 8.76%——如果你想做一个面向欧美付费用户的同类工具，就要意识到这类工具的免费流量主要来自新兴市场。
+</Callout>
+
+## 渠道结构：Marketing channels [#渠道结构marketing-channels]
+
+<Shot id="sw-wp-channels" caption="Marketing channels：每个渠道贡献的流量占比">
+  <Mark n={1} box="org" shape="rect" label="自然搜索 55%" at="right" dx={10}>
+    Organic Search 是第一大来源，说明这个网站主要靠 SEO 获客。
+  </Mark>
+  <Mark n={2} box="direct" shape="rect" label="直接访问 37%" at="top" dy={-40}>
+    Direct：直接输入网址、书签、App 内跳转等。占比高说明品牌认知度高、回访用户多。
+  </Mark>
+  <Mark n={3} box="genai" shape="rect" label="AI 引荐 0.85%" at="top" dy={-40}>
+    Gen AI 是新增渠道：从 ChatGPT、Gemini、Perplexity 等 AI 产品点进来的访问。
+  </Mark>
+</Shot>
+
+这里一共 10 个渠道，含义见下表（「营销渠道」一章会详细展开）：
+
+| 渠道 | 中文 | 典型来源 |
+| --- | --- | --- |
+| Direct | 直接访问 | 输入网址、书签、无法识别来源的访问 |
+| Org. Search | 自然搜索 | Google、Bing 等搜索结果的自然排名 |
+| Paid Search | 付费搜索 | 搜索广告 |
+| Referrals | 引荐 | 其他网站上的链接 |
+| Display | 展示广告 | 横幅、图片广告 |
+| Org. Social | 自然社交 | Facebook、YouTube、Reddit 等的普通帖子 |
+| Paid Social | 付费社交 | 社交媒体广告 |
+| Gen AI | AI 引荐 | ChatGPT、Gemini、Perplexity 等 |
+| Email | 邮件 | 邮件营销、通知邮件 |
+| Affiliates | 联盟 | 联盟营销链接 |
+
+## 搜索词：Organic search [#搜索词organic-search]
+
+<Shot id="sw-wp-search" caption="Organic search：品牌词占比和非品牌热词（Sep 2026）">
+  <Mark n={1} box="note" shape="rect">右上角写着：自然搜索占网站总流量的 55.02%。</Mark>
+  <Mark n={2} box={["branded", "nonBranded"]} shape="rect" label="97% 是品牌词" at="right" dx={10}>
+    Branded 指搜索词里包含品牌名（例如 "remove bg"）。品牌词占比极高，说明用户是冲着这个品牌来的。
+  </Mark>
+  <Mark n={3} box="terms" shape="rect" label="非品牌热词：各国语言的'去除背景'" at="top" dy={-8}>
+    tách nền（越南语）、fondo blanco（西班牙语"白色背景"）、arka plan kaldır（土耳其语）、ตัดภาพพื้นหลัง（泰语）、cắt nền（越南语）——都是不同语言里的"抠图 / 去背景"。
+  </Mark>
+  <Mark n={4} box="change" shape="rect">右侧是这些词带来的流量环比，普遍下降四到六成。</Mark>
+</Shot>
+
+<Callout type="idea" title="找词思路">
+  非品牌词才是新站有机会抢的流量。这里一眼就能看出：**"去背景"这个需求在越南、西语、土耳其、泰国市场都有大量本地语言搜索**。做多语言落地页，是同类工具常用的 SEO 打法。完整的词表在 Search 报告和关键词研究模块里，后面章节会讲。
+</Callout>
+
+## 报告剩下的部分 [#报告剩下的部分]
+
+继续往下滚动，还有 Paid search（付费搜索词）、Referrals（引荐来源）、Display（展示广告）等区块，每块都是对应详细报告的缩略版。remove.bg 的付费搜索占比不到 1%、引荐占 2.61%，所以这些区块数据很少——这本身也是结论：它几乎不花钱买流量。
+
+## 5 分钟判断清单 [#5-分钟判断清单]
+
+拿到一个陌生网站，按这个顺序看 Website performance：
+
+| 顺序 | 看什么 | remove.bg 的答案 |
+| --- | --- | --- |
+| 1 | 月均访问多少？在涨还是跌？ | 约 5900 万 / 月，连续 3 个月下滑 |
+| 2 | 用户质量如何？ | 每人每月 2~3 次，跳出率 33%，健康 |
+| 3 | 主要市场在哪？ | 印度、印尼、美国、菲律宾、巴西 |
+| 4 | 靠什么获客？ | 55% 自然搜索 + 37% 直接访问，几乎不投广告 |
+| 5 | 搜索流量能不能抢？ | 97% 是品牌词，但多语言"去背景"长尾词值得研究 |
+
+<Practice>
+1. 把网站换成 `photoroom.com`，同样选 Last 3 Months，按上面的清单填一遍。
+2. 比较两者的渠道结构：哪个网站更依赖自然搜索？哪个直接访问占比更高？
+3. 在 Visits over time 里勾选 photoroom.com，看两条曲线的走势是否一致。
+</Practice>
+
+
+# Similarweb 网站排行榜 Website rankings (/similarweb/website-rankings)
+
+<Goals>
+- 按行业查看网站排行榜和"本期变动"
+- 用 Top climbers / New entrants 发现正在崛起的网站
+- 按渠道切换排行，找出某个渠道做得最好的网站
+</Goals>
+
+打开方式：左侧主导航 Website research → <UI zh="网站排行">Website rankings</UI>，在左上角选择行业。Similarweb 一共有 217 个行业分类，本章选 **AI Chatbots and Tools**。
+
+## 本期变动：谁在涨、谁在跌、谁是新面孔 [#本期变动谁在涨谁在跌谁是新面孔]
+
+<Shot id="sw-rank-movers" caption="Website rankings › AI Chatbots and Tools：Top movers this period（Jul–Sep 2026）">
+  <Mark n={1} box="channelTabs" shape="rect" label="按渠道看排行" at="bottom" dy={4}>
+    All 是总流量排行，也可以切到 Search（搜索）、Social、Referral、Gen AI 等，看某个渠道里谁最强。
+  </Mark>
+  <Mark n={2} box="climbers" shape="rect" label="排名上升最多" at="top" dy={-8}>
+    Top climbers：deepmind.com 上升 17 名（到 #54），x.ai、meta.ai、gamma.app 各上升 4 名，cursor.com 上升 3 名。
+  </Mark>
+  <Mark n={3} box="fallers" shape="rect" label="排名下降最多" at="top" dy={-8}>
+    Top fallers：yiyan.baidu.com、kimi.com、gensparkspace.com、chaton.ai、factory.ai。
+  </Mark>
+  <Mark n={4} box="entrants" shape="rect" label="新进榜" at="top" dy={-8}>
+    New entrants：这一期才进入行业排行的网站，例如 copilot.cloud.microsoft、muse.ai。**找新玩家最快的入口。**
+  </Mark>
+</Shot>
+
+## 完整排行榜 [#完整排行榜]
+
+<Shot id="sw-rank-table" caption="行业排行榜：流量份额、环比、行业排名、月访问、去重受众">
+  <Mark n={1} box="wtype" shape="rect">Website type：按网站类型筛选。</Mark>
+  <Mark n={2} box="chatgpt" shape="rect" label="chatgpt.com 占 51.96%" at="top" dy={-6}>
+    Traffic share 是它在整个行业流量里的份额。
+  </Mark>
+  <Mark n={3} box="momCol" shape="rect">MoM traffic change：流量环比变化。</Mark>
+  <Mark n={4} box="visitsCol" shape="rect" label="月访问" at="top" dy={-6}>
+    chatgpt.com 56.69 亿、gemini 26.48 亿、claude.ai 9.773 亿、chat.deepseek 3.129 亿。
+  </Mark>
+  <Mark n={5} box="claudeQ" shape="rect" label="claude.ai 季度 +11.99%" at="left" dx={-20} />
+</Shot>
+
+## 怎么用排行榜 [#怎么用排行榜]
+
+| 目的 | 操作 |
+| --- | --- |
+| 了解一个赛道的格局 | 看前 10 名的流量份额：前两名占了 76%，说明头部高度集中 |
+| 找正在崛起的产品 | 看 Top climbers 和 New entrants，再点进去看它们的 Website performance |
+| 找某个渠道的标杆 | 切到 Search 看 SEO 做得最好的网站，切到 Gen AI 看被 AI 推荐最多的网站 |
+| 找可以学习的中小站 | 排行榜往后翻，排名几十到几百、但季度增长很高的网站最值得研究 |
+
+<Callout type="idea" title="和关键词研究搭配">
+  排行榜告诉你"哪个网站在涨"，关键词研究告诉你"它靠什么词在涨"。看到一个上升的网站，下一步就是打开它的 [站点关键词](/similarweb/website-keywords)，按 Clicks change 排序，找出它最近增长最快的词。
+</Callout>
+
+<Practice>
+1. 在 Website rankings 里选择 Computers Electronics and Technology > Graphics Multimedia and Web Design（remove.bg 所在行业），找出 remove.bg 的行业排名。
+2. 切换到 Search 标签，看这个行业里自然搜索流量最大的前 5 个网站。
+3. 在 AI Chatbots and Tools 的 New entrants 里挑一个网站，打开它的 Website performance，判断它主要靠什么渠道起量。
+</Practice>

@@ -1,0 +1,50 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/1g06zhw3ey6zl.js"
+5:"/_next/static/chunks/1aga2qjb34sdf.js"
+6:"/_next/static/chunks/3hs0bsmaj5dyr.js"
+7:"/_next/static/chunks/3d2ejbcm78rg2.js"
+8:I[42194,["$4","$5","$6","$7"],"default"]
+9:I[5817,["$4","$5","$6","$7"],"default"]
+e:"/_next/static/chunks/3sbjfgdhd180d.js"
+f:"/_next/static/chunks/409tlja-jc021.js"
+10:"/_next/static/chunks/3tauuzlc48zfx.js"
+11:"/_next/static/chunks/33_2110uhpl7u.js"
+12:"/_next/static/chunks/2rpu758244840.js"
+13:I[91945,["$4","$5","$6","$7","$e","$f","$10","$11","$12"],"DocsPage"]
+14:I[91945,["$4","$5","$6","$7","$e","$f","$10","$11","$12"],"DocsTitle"]
+15:I[91945,["$4","$5","$6","$7","$e","$f","$10","$11","$12"],"DocsDescription"]
+16:I[91945,["$4","$5","$6","$7","$e","$f","$10","$11","$12"],"DocsBody"]
+17:I[53578,["$4","$5","$6","$7","$e","$f","$10","$11","$12"],"Heading"]
+18:I[63513,["$4","$5","$6","$7","$e","$f","$10","$11","$12"],"default"]
+24:"ViewportBoundary"
+25:I[13693,["$4","$5","$6","$7"],"$24"]
+26:"MetadataBoundary"
+27:I[13693,["$4","$5","$6","$7"],"$26"]
+28:"$Sreact.suspense"
+b:X
+b:C
+c:X
+d:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","$L13",null,{"toc":[{"depth":2,"url":"#拆解流程","title":"拆解流程"},{"depth":3,"url":"#规模它有多大在涨还是跌","title":"规模：它有多大、在涨还是跌"},{"depth":3,"url":"#质量用户粘不粘","title":"质量：用户粘不粘"},{"depth":3,"url":"#市场用户在哪","title":"市场：用户在哪"},{"depth":3,"url":"#渠道靠什么获客","title":"渠道：靠什么获客"},{"depth":3,"url":"#关键词靠哪些词","title":"关键词：靠哪些词"},{"depth":3,"url":"#生态谁在推荐它它在推荐谁","title":"生态：谁在推荐它、它在推荐谁"},{"depth":3,"url":"#对比和谁比","title":"对比：和谁比"},{"depth":2,"url":"#把结论写成一页","title":"把结论写成一页"}],"children":[["$","$L14",null,{"children":"实战：30 分钟完整拆解一个竞品"}],["$","$L15",null,{"className":"mb-0","children":"把前面学到的报告串成一套固定流程，以 remove.bg 为例产出一份竞品分析结论。"}],["$","$L16",null,{"children":[["$","div",null,{"className":"tut-box tut-goals not-prose-children","children":[["$","div",null,{"className":"tut-box-title","children":"本章你将学到"}],["$","div",null,{"className":"tut-box-body","children":["$","ul",null,{"children":["\n",["$","li",null,{"children":"掌握一套可复用的竞品拆解顺序：规模 → 质量 → 市场 → 渠道 → 关键词 → 生态 → 对比"}],"\n",["$","li",null,{"children":"每一步只看最关键的 1~2 个数字，最后写成一页结论"}],"\n"]}]}]]}],"\n",["$","p",null,{"children":["这一章不讲新功能，而是把前面的报告",["$","strong",null,{"children":"按固定顺序"}],"过一遍。每一步都给出\"看哪里、记什么\"，截图都在对应章节里。"]}],"\n",["$","$L17",null,{"as":"h2","id":"拆解流程","children":"拆解流程"}],"\n",["$","div",null,{"className":"fd-steps","children":[["$","div",null,{"className":"fd-step","children":[["$","$L17",null,{"as":"h3","id":"规模它有多大在涨还是跌","children":"规模：它有多大、在涨还是跌"}],["$","p",null,{"children":["打开 ",["$","$L18",null,{"href":"/similarweb/website-performance","children":"网站概览"}],"，时间选 Last 3 Months。记下：月均访问、环比、全球排名。"]}],["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"remove.bg：月均约 5862 万次访问，连续 3 个月下滑（最后一个月 -8.63%），全球排名 #960。"}],"\n"]}]]}],["$","div",null,{"className":"fd-step","children":[["$","$L17",null,{"as":"h3","id":"质量用户粘不粘","children":"质量：用户粘不粘"}],["$","p",null,{"children":["看 ",["$","$L18",null,{"href":"/similarweb/traffic-engagement","children":"流量与互动"}]," 的互动指标。记下：访问时长、每次访问页数、跳出率、每人每月访问次数。"]}],["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"2 分 51 秒、2.87 页、跳出率 33%，每人每月约 2.6 次——对单功能工具来说很健康。"}],"\n"]}]]}],["$","div",null,{"className":"fd-step","children":[["$","$L17",null,{"as":"h3","id":"市场用户在哪","children":"市场：用户在哪"}],["$","p",null,{"children":["看 ",["$","$L18",null,{"href":"/similarweb/audience","children":"受众画像"}]," › Geography，按 Change 排序。记下：前 5 大市场、逆势增长的国家。"]}],["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"印度 20%、印尼 14%、美国 9%、菲律宾 7%、巴西 7%；越南、秘鲁、马来西亚在增长。"}],"\n"]}]]}],["$","div",null,{"className":"fd-step","children":[["$","$L17",null,{"as":"h3","id":"渠道靠什么获客","children":"渠道：靠什么获客"}],["$","p",null,{"children":["看 ",["$","$L18",null,{"href":"/similarweb/marketing-channels","children":"营销渠道"}],"。记下：前两大渠道占比、PoP 热力表里拖累 / 拉动增长的渠道。"]}],["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"自然搜索 55% + 直接访问 37%，几乎不投广告；下滑主要来自这两个核心渠道。"}],"\n"]}]]}],["$","div",null,{"className":"fd-step","children":[["$","$L17",null,{"as":"h3","id":"关键词靠哪些词","children":"关键词：靠哪些词"}],["$","p",null,{"children":["看 ",["$","$L18",null,{"href":"/similarweb/search-overview","children":"搜索流量"}]," 和 ",["$","$L18",null,{"href":"/similarweb/website-keywords","children":"站点关键词"}],"。记下：品牌词占比、前 5 个非品牌词、多语言词的情况。"]}],["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"97% 是品牌词；非品牌词全是各国语言的\"去背景\"，每个主要市场都有独立语言页面承接。"}],"\n"]}]]}],["$","div",null,{"className":"fd-step","children":[["$","$L17",null,{"as":"h3","id":"生态谁在推荐它它在推荐谁","children":"生态：谁在推荐它、它在推荐谁"}],["$","p",null,{"children":["看 ",["$","$L18",null,{"href":"/similarweb/referral","children":"引荐流量"}]," 的 Incoming 和 Outgoing。"]}],["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"被导航站（toolify.ai）、开发者社区（github）、Shopify 后台引荐；出站流量 65% 流向母公司 Canva。"}],"\n"]}]]}],["$","div",null,{"className":"fd-step","children":[["$","$L17",null,{"as":"h3","id":"对比和谁比","children":"对比：和谁比"}],["$","p",null,{"children":["用 ",["$","$L18",null,{"href":"/similarweb/compare","children":"网站对比"}]," 加入 2~4 个竞品，至少看一遍规模、设备结构和互动指标。"]}],["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"photoroom.com 用户更粘（每人每月 3.57 次）、几乎全在桌面端；pixelcut.ai 移动端占比高、停留更久。"}],"\n"]}]]}]]}],"\n",["$","$L17",null,{"as":"h2","id":"把结论写成一页","children":"把结论写成一页"}],"\n",["$","p",null,{"children":"拆解完，用下面的模板写结论（以 remove.bg 为例）："}],"\n",["$","div",null,{"className":"relative overflow-auto prose-no-margin my-6","tabIndex":0,"children":["$","table",null,{"children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"children":"维度"}],["$","th",null,{"children":"结论"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"children":"一句话定位"}],["$","td",null,{"children":"全球最大的在线抠图工具之一，被 Canva 收购后成为 Canva 的导流入口"}]]}],"$L19","$L1a","$L1b","$L1c","$L1d"]}]]}]}],"\n","$L1e","\n","$L1f"]}]]}],["$L20","$L21"],"$L22"]}],"p":"$@23","v":null,"s":"$c"}}]]
+2:[["children",{"s":{"n":"slug","t":"c","k":"similarweb/case-competitor","s":["api","llms-full.txt","llms.txt"]},"h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","template":["$","$L9",null,{}]}]]}],"p":"$@a","v":"$b","s":"$c"},"c":"$Qd"}]]
+1:[["children",{"s":"(docs)","h":32,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L25",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L27",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$28",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"实战：30 分钟完整拆解一个竞品 - SEO 工具教程"}],["$","meta","1",{"name":"description","content":"把前面学到的报告串成一套固定流程，以 remove.bg 为例产出一份竞品分析结论。"}]]}]}],null]}],null]}],"p":"$@29","v":null,"s":"$c"}},"a":"$@2a","u":"$@2b","b":"p__DMIDszKs6DEbYp5VEM"}
+2c:I[20252,["$4","$5","$6","$7","$e","$f","$10","$11","$12"],"default"]
+2d:I[13693,["$4","$5","$6","$7"],"OutletBoundary"]
+19:["$","tr",null,{"children":[["$","td",null,{"children":"规模与趋势"}],["$","td",null,{"children":"月均约 5900 万访问，近期持续下滑"}]]}]
+1a:["$","tr",null,{"children":[["$","td",null,{"children":"核心用户"}],["$","td",null,{"children":"新兴市场（印度、东南亚、拉美）的年轻用户，桌面为主"}]]}]
+1b:["$","tr",null,{"children":[["$","td",null,{"children":"增长引擎"}],["$","td",null,{"children":"SEO（多语言\"去背景\"关键词）+ 品牌直接访问"}]]}]
+1c:["$","tr",null,{"children":[["$","td",null,{"children":"弱点 / 机会"}],["$","td",null,{"children":"核心渠道整体下滑；越南、秘鲁、马来西亚等市场在增长；\"视频去背景\"等细分需求独立存在"}]]}]
+1d:["$","tr",null,{"children":[["$","td",null,{"children":"对新进入者的启示"}],["$","td",null,{"children":"正面抢 remove background 这类大词不现实（KD 84）；从细分需求和小语种市场切入"}]]}]
+1e:["$","div",null,{"className":"flex gap-2 my-4 rounded-xl border bg-fd-card p-3 ps-1 text-sm text-fd-card-foreground","style":{"--callout-color":"var(--color-fd-idea, var(--color-fd-muted))"},"children":[["$","div",null,{"role":"none","className":"w-0.5 bg-(--callout-color)/50 rounded-sm"}],["$","$L2c",null,{"icon":{"name":"lightbulb","size":24,"node":[["path",{"d":"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5","key":"1gvzjb"}],["path",{"d":"M9 18h6","key":"x1upvd"}],["path",{"d":"M10 22h4","key":"ceow96"}]]},"className":"size-5 -me-0.5 fill-(--callout-color) text-(--callout-color)"}],["$","div",null,{"className":"flex flex-col gap-2 min-w-0 flex-1","children":[["$","p",null,{"className":"font-medium my-0!","children":"把流程固定下来"}],["$","div",null,{"className":"text-fd-muted-foreground prose-no-margin empty:hidden","children":["$","p",null,{"children":"每次分析新竞品都按同样的 7 步、记同样的数字，几次之后你就能在 30 分钟内完成一份对比表，而且不同竞品之间可以直接横向比较。"}]}]]}]]}]
+1f:["$","div",null,{"className":"tut-box tut-practice","children":[["$","div",null,{"className":"tut-box-title","children":"动手试一试"}],["$","div",null,{"className":"tut-box-body","children":["$","p",null,{"children":["按本章 7 步拆解 ",["$","code",null,{"children":"photoroom.com"}],"，并用上面的模板写一页结论，和 remove.bg 的结论放在一起对比。"]}]}]]}]
+20:["$","script","script-0",{"src":"/_next/static/chunks/33_2110uhpl7u.js","async":true}]
+21:["$","script","script-1",{"src":"/_next/static/chunks/2rpu758244840.js","async":true}]
+22:["$","$L2d",null,{"children":["$","$28",null,{"name":"Next.MetadataOutlet","children":"$@2e"}]}]
+2b:true
+c:300
+2e:null
+c:C
+2a:0
+a:"$undefined"
+29:"$undefined"
+23:"$undefined"
