@@ -135,7 +135,7 @@
 
 ## Referring Domains：链接从哪些网站来 [#referring-domains链接从哪些网站来]
 
-<Shot id="sm-bl-rd" caption="Referring Domains：remove.bg 的 35,641 个引荐域名（按外链数排序）" space={[0, 0, 0, 16]}>
+<Shot id="sm-bl-rd" caption="Referring Domains：remove.bg 约 3.6 万个引荐域名（按外链数排序）" space={[0, 0, 0, 16]}>
   <Mark n={1} box="status" shape="rect">All / Active / New / Lost：New 是最近新增的引荐域名，Lost 是丢失的。看竞品最近从哪里拿到链接，就点 New。</Mark>
   <Mark n={2} box="followToggle" shape="rect">Follow / Nofollow：只有 follow 链接传递权重。</Mark>
   <Mark n={3} box="colAs" shape="rect">AS：引荐域名自己的 Authority Score。</Mark>
@@ -1397,7 +1397,7 @@ Overview 再往下，有最重要的两张卡片：
   <Mark n={2} box="overlapArea" shape="rect" label="圆圈重叠部分 = 共同访客" at="left" dx={-10}>
     把鼠标移到圆圈上可以看到具体人数。注意：圆圈大小只是示意，不严格代表网站规模。
   </Mark>
-  <Mark n={3} box="legend" shape="rect" label="各自的月均独立访客" at="bottom" dy={8}>
+  <Mark n={3} box="legend" shape="rect" label="各自的月均独立访客" at="bottom" dy={8} zh={{ dy: 80 }}>
     remove.bg 2234 万、photoroom.com 555 万、pixelcut.ai 431 万，三家去重后合计 2910 万。
   </Mark>
   <Mark n={4} box="primaryTabs" shape="rect" label="切换主网站" at="top" dy={-8}>
@@ -2163,16 +2163,16 @@ Similarweb 不能直接看到别人网站的后台，它的数据是**多种来�
   <Mark n={2} box="engine" shape="rect" label="搜索引擎" at="bottom" dy={6}>
     默认 Google，也可以切换成其他搜索引擎。
   </Mark>
-  <Mark n={3} box="tPhrase" shape="rect" label="短语匹配 8,029 个" at="bottom" dy={30}>
+  <Mark n={3} box="tPhrase" shape="rect" label="短语匹配约 8 千个" at="bottom" dy={30}>
     **Phrase Match**：包含种子词的所有词（如 remove background free、remove background from image）。
   </Mark>
-  <Mark n={4} box="tRel" shape="rect" label="相关词 17,120 个" at="bottom" dy={30}>
+  <Mark n={4} box="tRel" shape="rect" label="相关词约 1.7 万个" at="bottom" dy={30} zh={{ label: "" }}>
     **Related Keywords**：不一定包含种子词、但搜索意图相近的词，用来发现同一需求的其他说法。
   </Mark>
-  <Mark n={5} box="tTrend" shape="rect" label="趋势词" at="bottom" dy={30}>
+  <Mark n={5} box="tTrend" shape="rect" label="趋势词" at="bottom" dy={30} zh={{ label: "" }}>
     **Trending Keywords**：最近搜索量增长最快的相关词。
   </Mark>
-  <Mark n={6} box="tQ" shape="rect" label="问题词 1,324 个" at="bottom" dy={30}>
+  <Mark n={6} box="tQ" shape="rect" label="问题词约 1,300 个" at="bottom" dy={30}>
     **Questions Queries**：疑问句形式的词（how to remove background…），适合写教程类内容。
   </Mark>
   <Mark n={7} box="totalVol" shape="rect" label="合计搜索量 1449 万" at="right" dx={10} />
@@ -2511,13 +2511,13 @@ remove.bg 是典型的"SEO + 品牌"型：55% 自然搜索加 37% 直接访问�
   <Mark n={1} box="mtd" shape="rect" label="已打开 Month-to-date" at="bottom" dy={6}>
     打开后会把当前月份已经过去的天数也画出来，所以最后一段是虚线，而且会明显变低（不完整的一周）。看趋势时别把它当成"暴跌"。
   </Mark>
-  <Mark n={2} box="dwm" shape="rect" label="当前按周（W）" at="bottom" dy={6} />
+  <Mark n={2} box="dwm" shape="rect" label="当前按周（W）" at="bottom" dy={6} zh={{ at: "top", dy: -4 }} />
   <Mark n={3} box="orgLine" shape="rect" label="自然搜索（橙线）" at="top" dy={-4} />
   <Mark n={4} box="directLine" shape="rect" label="直接访问（深蓝线）" at="bottom" dy={4} />
   <Mark n={5} box="legend" shape="rect" label="勾选要显示的渠道" at="left" dx={-10}>
     右侧图例列出每个渠道在这段时间的访问总量，奖杯图标标出最大的渠道。取消勾选可以隐藏某条线。
   </Mark>
-  <Mark n={6} box="mtdTail" shape="ellipse" label="不完整的当月数据" at="left" dx={-20} />
+  <Mark n={6} box="mtdTail" shape="ellipse" label="不完整的当月数据" at="left" dx={-20} zh={{ at: "bottom-left", dx: 0, dy: 0 }} />
 </Shot>
 
 ## 流量来源明细：Traffic sources [#流量来源明细traffic-sources]
@@ -2660,7 +2660,7 @@ remove.bg 是典型的"SEO + 品牌"型：55% 自然搜索加 37% 直接访问�
   <Mark n={1} box="stCard" shape="rect" label="月均搜索流量 3227 万" at="bottom" dy={6}>
     Search traffic = 自然搜索 + 付费搜索，占网站总流量的 55.04%，同比下降 15.59%。
   </Mark>
-  <Mark n={2} box="otKw" shape="rect" label="4.13 万个排名词" at="bottom" dy={30}>
+  <Mark n={2} box="otKw" shape="rect" label="4.13 万个排名词" at="bottom" dy={30} zh={{ at: "right", dx: 4, dy: 0 }}>
     Organic traffic 占搜索流量的 99.96%，带来流量的自然搜索关键词有 4.13 万个，同比还多了 1.23%——词没少，但流量少了，说明是**排名或搜索需求在下降**。
   </Mark>
   <Mark n={3} box="ptCard" shape="rect" label="付费：27 个词" at="bottom" dy={6}>
@@ -2942,7 +2942,7 @@ remove.bg 是典型的"SEO + 品牌"型：55% 自然搜索加 37% 直接访问�
     **Deduplicated Audience**：跨设备去重后的"人数"，1860 万。它是 Similarweb 用模型估算的，比独立访客更接近真实用户数。
   </Mark>
   <Mark n={5} box="dwm" shape="rect">切换柱状图 / 折线图，以及按天（D）、周（W）、月（M）显示。</Mark>
-  <Mark n={6} box="bench" shape="rect" label="和行业平均比" at="bottom">
+  <Mark n={6} box="bench" shape="rect" label="和行业平均比" at="bottom" zh={{ at: "left", dx: -10 }}>
     Benchmark to a category：把所属行业的平均水平画成一条参考线，判断这个网站在行业里算快还是慢。
   </Mark>
   <Mark n={7} box="legend" shape="rect">取消勾选 Desktop 或 Mobile Web，可以只看某一端的数据。</Mark>
@@ -2978,11 +2978,11 @@ remove.bg 是典型的"SEO + 品牌"型：55% 自然搜索加 37% 直接访问�
   <Mark n={4} box="tabPV" shape="rect" label="总浏览量 1.682 亿" at="bottom" dy={10}>
     **Page Views**：所选时间内的页面浏览总次数。
   </Mark>
-  <Mark n={5} box="mobileLine" shape="rect" label="移动网页端：约 3 分 20 秒" at="top" dy={-6} />
+  <Mark n={5} box="mobileLine" shape="rect" label="移动网页端：约 3 分 20 秒" at="top" dy={-6} zh={{ at: "bottom", dx: 150, dy: 4 }} />
   <Mark n={6} box="desktopLine" shape="rect" label="桌面端：约 2 分 30 秒" at="top" dy={-6}>
     拆开看会发现，移动端用户的单次访问反而更长。对工具站来说，这通常意味着手机上传、处理图片更慢，而不是手机用户更"投入"。
   </Mark>
-  <Mark n={7} box="engaged" shape="rect" label="只看有效访问" at="bottom" dx={-60}>
+  <Mark n={7} box="engaged" shape="rect" label="只看有效访问" at="bottom" dx={-60} zh={{ at: "left", dx: -10 }}>
     勾选 Engaged visits only 后，Similarweb 会去掉低互动的访问。实测 remove.bg：跳出率变为 N/A，访问时长从 2:51 变成 4:15，每次访问页数从 2.87 变成 3.79。
   </Mark>
 </Shot>
@@ -3031,7 +3031,7 @@ remove.bg 是典型的"SEO + 品牌"型：55% 自然搜索加 37% 直接访问�
   <Mark n={3} box="tabPP" shape="rect" label="热门页面" at="bottom" dy={4}>
     Popular Pages：流量最高的具体页面，可以筛选 New（新出现的页面）和 Trending（正在上涨的页面）。
   </Mark>
-  <Mark n={4} box="tabSub" shape="rect" label="子域名" at="bottom" dy={4}>
+  <Mark n={4} box="tabSub" shape="rect" label="子域名" at="bottom" dy={4} zh={{ dy: 40 }}>
     Subdomains：每个子域名的流量占比。
   </Mark>
   <Mark n={5} box="source" shape="rect" label="自动切成了桌面端" at="bottom-left">
@@ -3080,10 +3080,10 @@ remove.bg 是单一工具，流量几乎全在首页，所以 Website content �
 
 <Shot id="sw-kr-kw-top" caption="Keywords 报告顶部：remove.bg 共有 52,098 个带来流量的关键词" space={[0, 0, 40, 16]}>
   <Mark n={1} box="domain" shape="rect">当前分析的网站。</Mark>
-  <Mark n={2} box="gap" shape="rect" label="关键词差距分析" at="bottom" dy={6}>
+  <Mark n={2} box="gap" shape="rect" label="关键词差距分析" at="bottom" dy={6} zh={{ at: "right", dx: 8, dy: 0 }}>
     Add Site for Keyword Gap：加入竞品后，可以看"对方有、你没有"的关键词。
   </Mark>
-  <Mark n={3} box="tTotal+tPaid" shape="rect" label="全部 / 自然 / 付费" at="bottom" dy={6} />
+  <Mark n={3} box="tTotal+tPaid" shape="rect" label="全部 / 自然 / 付费" at="bottom" dy={6} zh={{ at: "top", dy: -4 }} />
   <Mark n={4} box="filters" shape="rect" label="筛选器" at="right" dx={-300} dy={-40}>
     最常用的组合：Branded/non-branded 选 Non-branded（去掉品牌词），Volume 设下限，Clicks change 选增长中的词。
   </Mark>

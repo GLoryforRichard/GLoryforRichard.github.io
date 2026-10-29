@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/0rn50wss2upbf.css","style"]
+:HL["/_next/static/chunks/245ap1kxg5m8w.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"c","k":"similarweb/website-performance","s":["api","llms-full.txt","llms.txt"]},"h":64,"c":"$Q3"}]]
 1:[["children",{"s":"(docs)","h":32,"c":"$Q2"}]]
-0:{"b":"x8yK6lqnOgLj5dvHOMxlP","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"4lls38j8y1rwNzxeaooCd","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
